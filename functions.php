@@ -2,7 +2,7 @@
 /**
  * GeneratePress child theme functions and definitions.
  *
- * Add your custom PHP in this file. 
+ * Add your custom PHP in this file.
  * Only edit this file if you have direct access to it on your server (to fix errors if they happen).
  */
 
@@ -12,3 +12,8 @@ function generatepress_child_enqueue_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'generatepress_child_enqueue_scripts', 100 );
+
+function wp_custom_new_menu() {
+  register_nav_menu('footer-menu',__( 'Footer Menu' ));
+}
+add_action( 'init', 'wp_custom_new_menu' );

@@ -8,3 +8,115 @@
  Version:      0.1
 */
 
+/* Set site container to full width */
+body .site.grid-container {
+    max-width: 100%;
+}
+
+/* Hide Site Info Bar */
+.site-info {
+  display: none;
+}
+
+/* Header*/
+.inside-header {
+  padding: 20px 20px 0px 20px;
+  /*display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;*/
+}
+.menu-toggle {
+  padding: 0 0;
+  font-size: 25px; /*increases size of menu ham */
+}
+button.menu-toggle {
+  text-align: right;
+}
+.mobile-menu {
+  display: none;
+} /* Hides menu word in mobile */
+.search-item a {
+  font-size: 25px;
+}
+.main-navigation .mobile-bar-items a {
+  padding-right: 0px;
+}
+
+/* Front Page */
+
+main#main.site-main {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}/* remove margin on front page*/
+div.entry-content {
+  margin-top: 0px;
+}/* remove margin on front page*/
+#main div.inside-article {
+  padding: 20px 40px 0px 40px;
+}/* remove padding on front page*/
+
+/* Sidebar Button Styling */
+a.elementor-button-link.elementor-button.elementor-size-xl{
+  width: 100%;
+}
+/* Topics of Concern */
+.premium-image-button-container {
+  width: 100%;
+}
+a.premium-image-button.premium-image-button-block {
+  min-height: 190px;
+}
+/* Footer */
+#footer {
+  text-align: center;
+  background-color: #D8D8D8;
+}
+#footer-widgets {
+  background-color: #D8D8D8;
+}
+/* Footer Social Icons */
+#footer-social {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: 40px;
+  grid-column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+/* Footer Menu */
+#menu-footer-menu{
+  text-align: center;
+  margin-left: 0px;
+}
+ul#menu-footer-menu.menu li{
+  display: inline;
+  padding-left: 5px;
+}
+ul#menu-footer-menu.menu li~li {
+  border-left: 1px solid #000000;
+}
+#footer-final-paragraph {
+  margin-bottom: 0px;
+}
+
+
+@media screen and (min-width: 768px) {
+/*Tablet styles here!*/
+/*Tablet Header styles*/
+}
+@media screen and (min-width: 940px) {
+/*Desktop styles here!*/
+    /* Nav bar styling*/
+    #menu-main-navigation .menu-item {
+      /*max-width: 150px;*/
+    }
+    .main-navigation .main-nav ul li a {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .inside-header {
+      padding: 40px 40px 0px 40px;
+    }
+}
