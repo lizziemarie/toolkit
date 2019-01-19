@@ -17,3 +17,40 @@ function wp_custom_new_menu() {
   register_nav_menu('footer-menu',__( 'Footer Menu' ));
 }
 add_action( 'init', 'wp_custom_new_menu' );
+
+function create_custom_post_types() {
+	register_post_type( 'topics of concern',
+		array(
+			'labels' => array(
+					'name' => __ ( 'Topics of Concern' ),
+					'singular_name' => __ ( 'Topic of Concern' )
+			 ),
+			 'public' => true,
+			 'has_archive' => true,
+			 'rewrite' => array( 'slug' => 'topics-of-concern' ),
+		)
+	);
+	register_post_type( 'opportunities',
+		array(
+			'labels' => array(
+					'name' => __ ( 'Opportunities' ),
+					'singular_name' => __ ( 'Opportunity' )
+			 ),
+			 'public' => true,
+			 'has_archive' => true,
+			 'rewrite' => array( 'slug' => 'opportunities-for-change' ),
+		)
+	);
+	register_post_type( 'tools for action',
+		array(
+			'labels' => array(
+					'name' => __ ( 'Tools for Action' ),
+					'singular_name' => __ ( 'Tool for Action' )
+			 ),
+			 'public' => true,
+			 'has_archive' => true,
+			 'rewrite' => array( 'slug' => 'tools-for-action' ),
+		)
+	);
+}
+add_action( 'init', 'create_custom_post_types' );

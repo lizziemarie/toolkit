@@ -8,6 +8,16 @@
  Version:      0.1
 */
 
+/* Site Wide Styles */
+.grid {
+  display: grid;
+}
+.grid-profile-images {
+  grid-template-columns: repeat(3,1fr);
+}
+.grid-color-block {
+  grid-template-columns: 100%;
+}
 /* Set site container to full width */
 body .site.grid-container {
     max-width: 100%;
@@ -42,30 +52,20 @@ button.menu-toggle {
   padding-right: 0px;
 }
 
-/* Front Page */
+/* Front Page
 
 main#main.site-main {
   margin-top: 0px;
   margin-bottom: 0px;
-}/* remove margin on front page*/
+}/* remove margin on front page
 div.entry-content {
   margin-top: 0px;
-}/* remove margin on front page*/
+}/* remove margin on front page
 #main div.inside-article {
   padding: 20px 40px 0px 40px;
-}/* remove padding on front page*/
+}/* remove padding on front page
 
-/* Sidebar Button Styling */
-a.elementor-button-link.elementor-button.elementor-size-xl{
-  width: 100%;
-}
-/* Topics of Concern */
-.premium-image-button-container {
-  width: 100%;
-}
-a.premium-image-button.premium-image-button-block {
-  min-height: 190px;
-}
+
 /* Footer */
 #footer {
   text-align: center;

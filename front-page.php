@@ -10,7 +10,7 @@ get_header(); ?>
 
 	<div id="primary">
 		<main id="main">
-      <?php
+      <?php while ( have_posts() ) : the_post();
         $feature_image = get_field('feature_image');
         $feature_title = get_field('feature_title');
         $feature_subtitle = get_field('feature_subtitle');
@@ -43,24 +43,26 @@ get_header(); ?>
         $size = "full";
         ?>
         <section>
-          <div class="feature-image">
-            <?php if($feature_image) {
-              echo wp_get_attachment_image( $feature_image, $size);}
-            ?>
-            <h2><?php the_field('feature_title'); ?></h2>
-            <h3><?php the_field('feature_subtitle'); ?></h3>
-            <p><a href="<?php the_field('download'); ?>" target="_blank"><?php the_field('download_button_text'); ?></a></P>
+          <div class="home-section hero" style="background-image: url(<?php echo $feature_image; ?>);">
+            <div>
+              <h2><?php the_field('feature_title'); ?></h2>
+              <h3><?php the_field('feature_subtitle'); ?></h3>
+              <p><a href="<?php the_field('download'); ?>" target="_blank"><?php the_field('download_button_text'); ?></a></p>
+            </div>
           </div>
 
           <div class="grid">
             <div class="social-bar">
+              <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
             </div>
             <div class="page-content">
+
               <?php the_content(); ?>
+
             </div>
           </div>
 
-          <div class="grid">
+          <div class="grid grid-profile-images">
             <?php if($profile_image_1) {
               echo wp_get_attachment_image( $profile_image_1, $size);}
             ?>
@@ -99,9 +101,9 @@ get_header(); ?>
             ?>
           </div>
 
-          <div class="grid">
+          <div class="grid grid-color-block">
             <a href="" target="_blank">
-              <div class="">
+              <div class="" style="background-color: #0B5770;">
                 <?php if($box_icon_1) {
                   echo wp_get_attachment_image( $box_icon_1, $size);}
                 ?>
@@ -109,7 +111,7 @@ get_header(); ?>
               </div>
             </a>
             <a href="" target="_blank">
-              <div class="">
+              <div class="" style="background-color: #34A9AC;">
                 <?php if($box_icon_2) {
                   echo wp_get_attachment_image( $box_icon_2, $size);}
                 ?>
@@ -117,7 +119,7 @@ get_header(); ?>
               </div>
             </a>
             <a href="" target="_blank">
-              <div class="">
+              <div class="" style="background-color: #1F363D;">
                 <?php if($box_icon_3) {
                   echo wp_get_attachment_image( $box_icon_3, $size);}
                 ?>
@@ -125,7 +127,7 @@ get_header(); ?>
               </div>
             </a>
             <a href="" target="_blank">
-              <div class="">
+              <div class="" style="background-color: #170027;">
                 <?php if($box_icon_4) {
                   echo wp_get_attachment_image( $box_icon_4, $size);}
                 ?>
@@ -134,7 +136,7 @@ get_header(); ?>
             </a>
             <a href="" target="_blank">
             <a href="" target="_blank">
-              <div class="">
+              <div class="" style="background-color: #FC371E;">
                 <?php if($box_icon_5) {
                   echo wp_get_attachment_image( $box_icon_5, $size);}
                 ?>
@@ -142,15 +144,17 @@ get_header(); ?>
               </div>
             </a>
             <a href="" target="_blank">
-              <div class="">
+              <div class="" style="background-color: #FCBA04;">
                 <?php if($box_icon_6) {
                   echo wp_get_attachment_image( $box_icon_6, $size);}
                 ?>
                 <?php echo $box_text_6; ?>
               </div>
             </a>
+
           </div>
 
+          <?php endwhile; // end of the loop. ?>
         </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
