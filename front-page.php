@@ -40,6 +40,12 @@ get_header(); ?>
         $box_text_4 = get_field('box_text_4');
         $box_text_5 = get_field('box_text_5');
         $box_text_6 = get_field('box_text_6');
+				$box_color_1 = get_field('box_color_1');
+				$box_color_2 = get_field('box_color_2');
+				$box_color_3 = get_field('box_color_3');
+				$box_color_4 = get_field('box_color_4');
+				$box_color_5 = get_field('box_color_5');
+				$box_color_6 = get_field('box_color_6');
         $size = "full";
         ?>
         <section>
@@ -103,7 +109,7 @@ get_header(); ?>
 
           <div class="grid grid-color-block">
             <a href="" target="_blank">
-              <div class="" style="background-color: #0B5770;">
+              <div class="" style="background-color: <?php the_field('box_color_1'); ?>;">
                 <?php if($box_icon_1) {
                   echo wp_get_attachment_image( $box_icon_1, $size);}
                 ?>
@@ -111,7 +117,7 @@ get_header(); ?>
               </div>
             </a>
             <a href="" target="_blank">
-              <div class="" style="background-color: #34A9AC;">
+              <div class="" style="background-color: <?php the_field('box_color_2'); ?>;">
                 <?php if($box_icon_2) {
                   echo wp_get_attachment_image( $box_icon_2, $size);}
                 ?>
@@ -119,7 +125,7 @@ get_header(); ?>
               </div>
             </a>
             <a href="" target="_blank">
-              <div class="" style="background-color: #1F363D;">
+              <div class="" style="background-color: <?php the_field('box_color_3'); ?>;">
                 <?php if($box_icon_3) {
                   echo wp_get_attachment_image( $box_icon_3, $size);}
                 ?>
@@ -127,7 +133,7 @@ get_header(); ?>
               </div>
             </a>
             <a href="" target="_blank">
-              <div class="" style="background-color: #170027;">
+              <div class="" style="background-color: <?php the_field('box_color_4'); ?>;">
                 <?php if($box_icon_4) {
                   echo wp_get_attachment_image( $box_icon_4, $size);}
                 ?>
@@ -135,8 +141,7 @@ get_header(); ?>
               </div>
             </a>
             <a href="" target="_blank">
-            <a href="" target="_blank">
-              <div class="" style="background-color: #FC371E;">
+              <div class="" style="background-color: <?php the_field('box_color_5'); ?>;">
                 <?php if($box_icon_5) {
                   echo wp_get_attachment_image( $box_icon_5, $size);}
                 ?>
@@ -144,7 +149,7 @@ get_header(); ?>
               </div>
             </a>
             <a href="" target="_blank">
-              <div class="" style="background-color: #FCBA04;">
+              <div class="" style="background-color: <?php the_field('box_color_6'); ?>;">
                 <?php if($box_icon_6) {
                   echo wp_get_attachment_image( $box_icon_6, $size);}
                 ?>

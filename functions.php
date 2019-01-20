@@ -19,15 +19,15 @@ function wp_custom_new_menu() {
 add_action( 'init', 'wp_custom_new_menu' );
 
 function create_custom_post_types() {
-	register_post_type( 'topics of concern',
+	register_post_type( 'topics concern',
 		array(
 			'labels' => array(
-					'name' => __ ( 'Topics of Concern' ),
-					'singular_name' => __ ( 'Topic of Concern' )
+					'name' => __ ( 'Topics Concern' ),
+					'singular_name' => __ ( 'Topic Concern' )
 			 ),
 			 'public' => true,
 			 'has_archive' => false,
-			 'rewrite' => array( 'slug' => 'topics-of-concern' ),
+			 'rewrite' => array( 'slug' => 'topics-concern' ),
 		)
 	);
 	register_post_type( 'opportunities',
@@ -38,7 +38,7 @@ function create_custom_post_types() {
 			 ),
 			 'public' => true,
 			 'has_archive' => false,
-			 'rewrite' => array( 'slug' => 'opportunities-for-change' ),
+			 'rewrite' => array( 'slug' => 'opportunities-change' ),
 		)
 	);
 	register_post_type( 'tools for action',
@@ -54,3 +54,26 @@ function create_custom_post_types() {
 	);
 }
 add_action( 'init', 'create_custom_post_types' );
+
+/* Add Custom Color Palettes to ACF */
+function klf_acf_input_admin_footer() {
+		?>
+		<script type="text/javascript">
+			(function($) {
+				acf.add_filter('color_picker_args', function( args, $field ){
+
+				// add the hexadecimal codes here for the colors you want to appear as swatches
+				args.palettes = ['#0B5770', '#34A9AC', '#FC371E', '#FCBA04', '#1F363D', '#170027']
+
+			// return colors
+			return args;
+
+			});
+
+			})(jQuery);
+		</script>
+		<?php
+
+		}
+
+add_action('acf/input/admin_footer', 'klf_acf_input_admin_footer');
