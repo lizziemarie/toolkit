@@ -26,7 +26,7 @@ function create_custom_post_types() {
 					'singular_name' => __ ( 'Topic of Concern' )
 			 ),
 			 'public' => true,
-			 'has_archive' => true,
+			 'has_archive' => false,
 			 'rewrite' => array( 'slug' => 'topics-of-concern' ),
 		)
 	);
@@ -37,7 +37,7 @@ function create_custom_post_types() {
 					'singular_name' => __ ( 'Opportunity' )
 			 ),
 			 'public' => true,
-			 'has_archive' => true,
+			 'has_archive' => false,
 			 'rewrite' => array( 'slug' => 'opportunities-for-change' ),
 		)
 	);
@@ -48,7 +48,7 @@ function create_custom_post_types() {
 					'singular_name' => __ ( 'Tool for Action' )
 			 ),
 			 'public' => true,
-			 'has_archive' => true,
+			 'has_archive' => false,
 			 'rewrite' => array( 'slug' => 'tools-for-action' ),
 		)
 	);

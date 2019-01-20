@@ -39,12 +39,14 @@ get_header(); ?>
             <div class="page-content">
               <?php the_content(); ?>
             </div>
-            <div class="related-content">
-              <h3><?php the_field('related_topics_of_concern_header'); ?></h3>
-              <p><a href="<?php the_field('related_topic_link_1'); ?>" target="_blank"><?php the_field('related_topic_text_1'); ?></a></p>
-              <p><a href="<?php the_field('related_topic_link_2'); ?>" target="_blank"><?php the_field('related_topic_text_2'); ?></a></p>
-              <p><a href="<?php the_field('related_topic_link_3'); ?>" target="_blank"><?php the_field('related_topic_text_3'); ?></a></p>
-            </div>
+            <div>
+								<div class="related-content">
+		              <h3><?php the_field('related_topics_of_concern_header'); ?></h3>
+		              <p><a href="<?php the_field('related_topic_link_1'); ?>" target="_blank"><?php the_field('related_topic_text_1'); ?></a></p>
+		              <p><a href="<?php the_field('related_topic_link_2'); ?>" target="_blank"><?php the_field('related_topic_text_2'); ?></a></p>
+		              <p><a href="<?php the_field('related_topic_link_3'); ?>" target="_blank"><?php the_field('related_topic_text_3'); ?></a></p>
+	            </div>
+						</div>
           </div>
 
           <?php endwhile; // end of the loop. ?>
