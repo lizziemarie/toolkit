@@ -28,9 +28,9 @@ get_header();
         <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
       </div>
       <div class="social-bar">
-        <h2>How to Make Change</h2>
-        <h2>Checklists and Templates</h2>
-        <h2>External Resources</h2>
+        <a href="#tools-one"><h2>How to Make Change</h2></a>
+        <a href="#tools-two"><h2>Checklists and Templates</h2></a>
+        <a href="#tools-three"><h2>External Resources</h2></a>
       </div>
       <div class="page-content">
 
@@ -39,7 +39,7 @@ get_header();
       </div>
     </div>
 
-    <section class="">
+    <section class="" id="tools-one">
       <h2>How to Make Change</h2>
       <?php $args = array( 'post_type' =>'how to make change', );
       $query = new WP_Query( $args );?>
@@ -58,7 +58,7 @@ get_header();
       <!--</div>-->
     </section>
 
-    <section class="">
+    <section class="" id="tools-two">
       <h2>Checklists and Templates</h2>
       <?php $args = array( 'post_type' =>'checklists templates', );
       $query = new WP_Query( $args );?>
@@ -77,7 +77,7 @@ get_header();
       <!--</div>-->
     </section>
 
-    <section class="">
+    <section class="" id="tools-three">
       <h2>External Resources</h2>
       <?php $args = array( 'post_type' =>'external resources', );
       $query = new WP_Query( $args );?>
