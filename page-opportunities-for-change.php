@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the topics of concern landing page
+ * The template for displaying the opportunities for change landing page
  *
  *
  * @package GeneratePress Child

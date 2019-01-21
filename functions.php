@@ -41,15 +41,37 @@ function create_custom_post_types() {
 			 'rewrite' => array( 'slug' => 'opportunities-change' ),
 		)
 	);
-	register_post_type( 'tools for action',
+	register_post_type( 'how to make change',
 		array(
 			'labels' => array(
-					'name' => __ ( 'Tools for Action' ),
-					'singular_name' => __ ( 'Tool for Action' )
+					'name' => __ ( 'How to Make Change' ),
+					'singular_name' => __ ( 'How to' )
 			 ),
 			 'public' => true,
 			 'has_archive' => false,
-			 'rewrite' => array( 'slug' => 'tools-for-action' ),
+			 'rewrite' => array( 'slug' => 'how-to-make-change' ),
+		)
+	);
+	register_post_type( 'Checklists Templates',
+		array(
+			'labels' => array(
+					'name' => __ ( 'Checklists Templates' ),
+					'singular_name' => __ ( 'Checklist Template' )
+			 ),
+			 'public' => true,
+			 'has_archive' => false,
+			 'rewrite' => array( 'slug' => 'checklists-templates' ),
+		)
+	);
+	register_post_type( 'External Resources',
+		array(
+			'labels' => array(
+					'name' => __ ( 'External Resources' ),
+					'singular_name' => __ ( 'External Resource' )
+			 ),
+			 'public' => true,
+			 'has_archive' => false,
+			 'rewrite' => array( 'slug' => 'external-resources' ),
 		)
 	);
 }
