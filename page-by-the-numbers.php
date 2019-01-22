@@ -26,13 +26,13 @@ get_header(); ?>
         ?>
         <section>
           <div class="home-section hero" style="background-image: url(<?php echo $feature_image; ?>);">
-            <div>
+            <div class="hero-content grid">
               <h2><?php the_field('feature_title'); ?></h2>
-              <p><a href="<?php the_field('download'); ?>" target="_blank"><?php the_field('download_button_text'); ?></a></p>
+              <p><a href="<?php the_field('download'); ?>" class="btn btnRed" target="_blank"><?php the_field('download_button_text'); ?></a></p>
             </div>
           </div>
 
-          <div class="grid">
+          <div class="grid content-container content-grid">
             <div class="social-bar">
               <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
             </div>
@@ -42,9 +42,9 @@ get_header(); ?>
             <div>
 								<div class="related-content">
 		              <h3><?php the_field('related_topics_of_concern_header'); ?></h3>
-		              <p><a href="<?php the_field('related_topic_link_1'); ?>" target="_blank"><?php the_field('related_topic_text_1'); ?></a></p>
-		              <p><a href="<?php the_field('related_topic_link_2'); ?>" target="_blank"><?php the_field('related_topic_text_2'); ?></a></p>
-		              <p><a href="<?php the_field('related_topic_link_3'); ?>" target="_blank"><?php the_field('related_topic_text_3'); ?></a></p>
+		              <p><a href="<?php the_field('related_topic_link_1'); ?>" class="btn btnRed btnFull" target="_blank"><?php the_field('related_topic_text_1'); ?></a></p>
+		              <p><a href="<?php the_field('related_topic_link_2'); ?>" class="btn btnRed btnFull" target="_blank"><?php the_field('related_topic_text_2'); ?></a></p>
+		              <p><a href="<?php the_field('related_topic_link_3'); ?>" class="btn btnRed btnFull" target="_blank"><?php the_field('related_topic_text_3'); ?></a></p>
 	            </div>
 						</div>
           </div>

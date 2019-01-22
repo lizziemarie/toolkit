@@ -14,17 +14,17 @@
     <div id="footer-social">
 			<div class="footer-social-icon">
 					<a href="" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/fb-bs.png" alt="Facebook Link">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="Facebook Link">
 					</a>
 			</div>
 			<div class="footer-social-icon">
 					<a href="" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/ig-bs.png" alt="Twitter Link">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="Twitter Link">
 					</a>
 			</div>
 			<div class="footer-social-icon">
-					<a href="" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/p-bs.png" alt="Email Link">
+					<a href="mailto:someone@example.com?Subject=Hello%20again" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="Email Link">
 					</a>
 			</div>
 		</div>
