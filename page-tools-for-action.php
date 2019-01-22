@@ -19,7 +19,7 @@ get_header();
     <div class="home-section hero" style="background-image: url(<?php echo $feature_image; ?>);">
       <div class="hero-content grid">
         <h2><?php the_title(); ?></h2>
-        <p><a href="<?php the_field('download'); ?>" target="_blank"><?php the_field('download_button_text'); ?></a></p>
+        <p><a href="<?php the_field('download'); ?>" class="btn btnRed" target="_blank"><?php the_field('download_button_text'); ?></a></p>
       </div>
     </div>
 
@@ -44,9 +44,10 @@ get_header();
       <?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
       <!--<div class="showcase">-->
 
-        <a href="<?php the_permalink(); ?>" class="">
+        <a href="<?php the_field('button_file'); ?>" class="">
           <div class="special-color custom-post" style="background-color: <?php the_field('color'); ?>;">
             <h2><?php the_title(); ?></h2>
+            <p><?php the_content(); ?><p>
           </div>
         </a>
 
@@ -82,12 +83,14 @@ get_header();
       <?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
       <!--<div class="showcase">-->
 
-        <a href="<?php the_permalink(); ?>" class="">
-          <div class="special-color external-resource" style="background-color: <?php the_field('color'); ?>;">
-            <h2><?php the_title(); ?></h2>
+
+          <div class="external-resource" style="background-color: <?php the_field('color'); ?>;">
+            <a href="<?php the_permalink(); ?>" class="">
+              <h2><?php the_title(); ?></h2>
+            </a>
             <?php the_content(); ?>
           </div>
-        </a>
+
 
       <?php endwhile; ?>
       <?php else: ?>

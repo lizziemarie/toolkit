@@ -27,14 +27,14 @@ get_header(); ?>
       ?>
         <section>
 
-          <div class="grid">
+          <div class="grid content-container">
 
             <div class="social-bar">
               <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
             </div>
 
             <div class="page-content">
-              <h2 class="intro-blurb"><?php the_title(); ?></h2>
+              <h2 class=""><?php the_title(); ?></h2>
               <?php the_content(); ?>
             </div>
 
@@ -47,14 +47,14 @@ get_header(); ?>
                 <div class="related-chapter">
   		            <h3><?php the_field('related_chapter_title'); ?></h3>
   		            <p><?php the_field('related_reports_content'); ?></p>
-                  <p><a href="<?php the_field('related_chapter_file'); ?>"><?php the_field('related_chapter_button_text'); ?></a></p>
+                  <p><a href="<?php the_field('related_chapter_file'); ?>" class="btn btnRed"><?php the_field('related_chapter_button_text'); ?></a></p>
   	            </div>
 
   							<div class="related-content">
   		            <h3><?php the_field('related_links_title'); ?></h3>
-  		            <p><a href="<?php the_field('related_link_1'); ?>"><?php the_field('related_link_text_1'); ?></a></p>
-  		            <p><a href="<?php the_field('related_link_2'); ?>"><?php the_field('related_link_text_2'); ?></a></p>
-  		            <p><a href="<?php the_field('related_link_3'); ?>"><?php the_field('related_link_text_3'); ?></a></p>
+  		            <p><a href="<?php the_field('related_link_1'); ?>" class="btn btnRed"><?php the_field('related_link_text_1'); ?></a></p>
+  		            <p><a href="<?php the_field('related_link_2'); ?>" class="btn btnRed"><?php the_field('related_link_text_2'); ?></a></p>
+  		            <p><a href="<?php the_field('related_link_3'); ?>" class="btn btnRed"><?php the_field('related_link_text_3'); ?></a></p>
   	            </div>
 
 						</div>
