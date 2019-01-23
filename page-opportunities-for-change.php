@@ -30,25 +30,24 @@ get_header();
       <div class="page-content">
         <?php the_content(); ?>
       </div>
+      <div class="custom-post-types-section grid">
+        <?php $args = array( 'post_type' =>'opportunities', );
+        $query = new WP_Query( $args );?>
+        <?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
+
+          <a href="<?php the_permalink(); ?>" class="">
+            <div class="special-color custom-post" style="background-color: <?php the_field('color'); ?>;">
+              <h2><?php the_title(); ?></h2>
+            </div>
+          </a>
+
+        <?php endwhile; ?>
+        <?php else: ?>
+        <?php endif; ?>
+      </div>
     </div>
 
-    <section class="custom-post-types-section grid">
-      <?php $args = array( 'post_type' =>'opportunities', );
-      $query = new WP_Query( $args );?>
-      <?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
-      <!--<div class="showcase">-->
 
-        <a href="<?php the_permalink(); ?>" class="">
-          <div class="special-color custom-post" style="background-color: <?php the_field('color'); ?>;">
-            <h2><?php the_title(); ?></h2>
-          </div>
-        </a>
-
-      <?php endwhile; ?>
-      <?php else: ?>
-      <?php endif; ?>
-      <!--</div>-->
-    </section>
 
     <?php endwhile; // end of the loop. ?>
   </section>

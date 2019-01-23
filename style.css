@@ -16,7 +16,8 @@
   width: 90%;
   max-width: 1300px;
   padding: 0 5%;
-  margin: 0 auto;
+  /*margin: 20px auto 0;*/
+  justify-content: center;
 }
 .hero {
   height: 45vh;
@@ -34,6 +35,10 @@
 /* Hide Site Info Bar */
 .site-info {
   display: none;
+}
+/* Page Content */
+.page-content {
+  margin: 0;
 }
 
 /*Button styling*/
@@ -56,7 +61,7 @@ a.btn {
 .btnTeal {
   background:#34A9AC;
 }
-.btnHero, .btnSide {
+.btnHero {
   width: 250px;
 }
 
@@ -68,10 +73,6 @@ body .site.grid-container {
 /* Hide Social Bar on Mobile */
 .social-bar {
   display: none;
-}
-/* Page Content */
-.page-content {
-  margin: 20px 0px;
 }
 
 /* Custom Post Types Styling - Topics, Opps, Tools */
@@ -107,9 +108,10 @@ body .site.grid-container {
 }
 
 /* By the Numbers ============================*/
-.related-content, .download-files, .related-reports {
+.related-content, .download-files, .related-reports, .related-chapters {
   display: grid;
-  justify-items: center;
+  grid-template-columns: 100%;
+  justify-items: stretch;
 }
 
 /* Header============================*/
@@ -188,6 +190,9 @@ h2 {
   /*Tablet Header styles*/
 
   /* Site Wide Styles ======================*/
+  .hero-content {
+    grid-template-columns: repeat(2,50%);
+  }
 
   /* Front Page Styles =====================*/
   .grid-profile-images {
@@ -221,9 +226,21 @@ h2 {
         grid-row: 3;
       }
   /* Custom Post Types Styling - Topics, Opps, Tools */
-  .custom-post-types-section {
+  .custom-post-types-section, .external-resources-section {
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 20px;
+  }
+  .related-content, .download-files, .related-reports, .related-chapters {
+    grid-template-rows: minmax(auto,1fr);
+  }
+  /* Tools for Action */
+  #tools-bar {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+  }
+  .tool-header {
+    text-align: center;
   }
 }
 
@@ -246,8 +263,11 @@ h2 {
     .content-grid-2 {
       grid-template-columns: 5% 95%;
     }
+      .custom-post-types-section {
+        grid-column: 2/3;
+      }
     .content-grid-3 {
-      grid-template-columns: 5% 80% 15%;
+      grid-template-columns: 5% 70% 25%;
     }
     /* Front Page Styles =====================*/
 

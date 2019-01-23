@@ -40,14 +40,14 @@ get_header(); ?>
             <div class="grid">
 
                 <div class="download-files">
-                  <p><a href="<?php the_field('download_file'); ?>" class="btn btnRed btnSide" target="_blank"><?php the_field('download_button_text'); ?></a></p>
+                  <a href="<?php the_field('download_file'); ?>" class="btn btnRed btnSide" target="_blank"><p><?php the_field('download_button_text'); ?></p></a>
                 </div>
 
   							<div class="related-content">
   		            <h3><?php the_field('related_links_title'); ?></h3>
-  		            <p><a href="<?php the_field('related_link_1'); ?>" class="btn btnTeal btnSide"><?php the_field('related_link_text_1'); ?></a></p>
-  		            <p><a href="<?php the_field('related_link_2'); ?>" class="btn btnTeal btnSide"><?php the_field('related_link_text_2'); ?></a></p>
-  		            <p><a href="<?php the_field('related_link_3'); ?>" class="btn btnTeal btnSide"><?php the_field('related_link_text_3'); ?></a></p>
+  		            <a href="<?php the_field('related_link_1'); ?>" class="btn btnTeal btnSide"><p><?php the_field('related_link_text_1'); ?></p></a>
+  		            <a href="<?php the_field('related_link_2'); ?>" class="btn btnTeal btnSide"><p><?php the_field('related_link_text_2'); ?></p></a>
+  		            <a href="<?php the_field('related_link_3'); ?>" class="btn btnTeal btnSide"><p><?php the_field('related_link_text_3'); ?></p></a>
   	            </div>
 
                 <div class="related-reports">
