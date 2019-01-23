@@ -26,13 +26,14 @@ get_header(); ?>
         $related_topic_link_3 = get_field('related_topic_link_3');
         $related_reports_title = get_field('related_reports_title');
         $related_reports_content = get_field('related_reports_content');
+				$related_reports_link = get_field('related_reports_link');
         $size = "full";
       ?>
         <section>
           <div class="home-section hero" style="background-image: url(<?php echo $feature_image; ?>);">
           </div>
 
-          <div class="grid content-container">
+          <div class="grid content-container content-grid-3">
 
             <div class="social-bar">
               <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
@@ -45,22 +46,22 @@ get_header(); ?>
 
             <div class="grid">
 
-                <div>
-                  <p><a href="<?php the_field('download_file_1'); ?>" class="btn btnRed" target="_blank"><?php the_field('download_button_text_1'); ?></a></p>
-                  <p><a href="<?php the_field('download_file_2'); ?>" class="btn btnRed" target="_blank"><?php the_field('download_button_text_2'); ?></a></p>
-                  <p><a href="<?php the_field('download_file_3'); ?>" class="btn btnRed" target="_blank"><?php the_field('download_button_text_3'); ?></a></p>
+                <div class="download-files">
+                  <p><a href="<?php the_field('download_file_1'); ?>" class="btn btnRed btnSide" target="_blank"><?php the_field('download_button_text_1'); ?></a></p>
+                  <p><a href="<?php the_field('download_file_2'); ?>" class="btn btnRed btnSide" target="_blank"><?php the_field('download_button_text_2'); ?></a></p>
+                  <p><a href="<?php the_field('download_file_3'); ?>" class="btn btnRed btnSide" target="_blank"><?php the_field('download_button_text_3'); ?></a></p>
                 </div>
 
   							<div class="related-content">
   		            <h3><?php the_field('related_topics_of_concern_header'); ?></h3>
-  		            <p><a href="<?php the_field('related_topic_link_1'); ?>" class="btn btnRed" target="_blank"><?php the_field('related_topic_text_1'); ?></a></p>
-  		            <p><a href="<?php the_field('related_topic_link_2'); ?>" class="btn btnRed" target="_blank"><?php the_field('related_topic_text_2'); ?></a></p>
-  		            <p><a href="<?php the_field('related_topic_link_3'); ?>" class="btn btnRed" target="_blank"><?php the_field('related_topic_text_3'); ?></a></p>
+  		            <p><a href="<?php the_field('related_topic_link_1'); ?>" class="btn btnTeal btnSide" target="_blank"><?php the_field('related_topic_text_1'); ?></a></p>
+  		            <p><a href="<?php the_field('related_topic_link_2'); ?>" class="btn btnTeal btnSide" target="_blank"><?php the_field('related_topic_text_2'); ?></a></p>
+  		            <p><a href="<?php the_field('related_topic_link_3'); ?>" class="btn btnTeal btnSide" target="_blank"><?php the_field('related_topic_text_3'); ?></a></p>
   	            </div>
 
                 <div class="related-reports">
   		            <h3><?php the_field('related_reports_title'); ?></h3>
-  		            <p><?php the_field('related_reports_content'); ?></p>
+  		            <p><a href="<?php the_field('related_reports_link'); ?>"><?php the_field('related_reports_content'); ?></a></p>
   	            </div>
 
 						</div>

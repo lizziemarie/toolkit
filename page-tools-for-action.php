@@ -23,7 +23,7 @@ get_header();
       </div>
     </div>
 
-    <div class="grid content-container content-grid">
+    <div class="grid content-container content-grid-2">
       <div class="social-bar">
         <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
       </div>

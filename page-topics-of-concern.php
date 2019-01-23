@@ -19,11 +19,11 @@ get_header();
     <div class="home-section hero" style="background-image: url(<?php echo $feature_image; ?>);">
       <div class="hero-content grid">
         <h2><?php the_title(); ?></h2>
-        <p><a href="<?php the_field('download'); ?>" class="btn btnRed" target="_blank"><?php the_field('download_button_text'); ?></a></p>
+        <p><a href="<?php the_field('download'); ?>" class="btn btnRed btnHero" target="_blank"><?php the_field('download_button_text'); ?></a></p>
       </div>
     </div>
 
-    <div class="grid content-container content-grid">
+    <div class="grid content-container content-grid-2">
       <div class="social-bar">
         <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
       </div>

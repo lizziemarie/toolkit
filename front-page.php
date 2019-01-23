@@ -59,11 +59,11 @@ get_header(); ?>
             <div class="hero-content grid">
               <h2><?php the_field('feature_title'); ?></h2>
               <h3><?php the_field('feature_subtitle'); ?></h3>
-              <p><a href="<?php the_field('download'); ?>" class="btn btnRed" target="_blank"><?php the_field('download_button_text'); ?></a></p>
+              <p><a href="<?php the_field('download'); ?>" class="btn btnRed btnHero" target="_blank"><?php the_field('download_button_text'); ?></a></p>
             </div>
           </div>
 
-          <div class="grid content-container">
+          <div class="grid content-container content-grid-2">
             <div class="social-bar">
               <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
             </div>
@@ -112,7 +112,7 @@ get_header(); ?>
           </div>
 
           <div class="grid grid-color-block">
-            <a href="<?php the_field('box_link_1'); ?>">
+            <a href="<?php the_field('box_link_1'); ?>" id="color-block-item-1">
               <div class="color-block-item grid" style="background-color: <?php the_field('box_color_1'); ?>;">
                 <?php if($box_icon_1) {
                   echo wp_get_attachment_image( $box_icon_1, $size);}
@@ -120,7 +120,7 @@ get_header(); ?>
                 <?php echo $box_text_1; ?>
               </div>
             </a>
-            <a href="<?php the_field('box_link_2'); ?>">
+            <a href="<?php the_field('box_link_2'); ?>" id="color-block-item-2">
               <div class="color-block-item grid" style="background-color: <?php the_field('box_color_2'); ?>;">
                 <?php if($box_icon_2) {
                   echo wp_get_attachment_image( $box_icon_2, $size);}
@@ -128,7 +128,7 @@ get_header(); ?>
                 <?php echo $box_text_2; ?>
               </div>
             </a>
-            <a href="<?php the_field('box_link_3'); ?>">
+            <a href="<?php the_field('box_link_3'); ?>" id="color-block-item-3">
               <div class="color-block-item grid" style="background-color: <?php the_field('box_color_3'); ?>;">
                 <?php if($box_icon_3) {
                   echo wp_get_attachment_image( $box_icon_3, $size);}
@@ -136,7 +136,7 @@ get_header(); ?>
                 <?php echo $box_text_3; ?>
               </div>
             </a>
-            <a href="<?php the_field('box_link_4'); ?>">
+            <a href="<?php the_field('box_link_4'); ?>" id="color-block-item-4">
               <div class="color-block-item grid" style="background-color: <?php the_field('box_color_4'); ?>;">
                 <?php if($box_icon_4) {
                   echo wp_get_attachment_image( $box_icon_4, $size);}
@@ -144,7 +144,7 @@ get_header(); ?>
                 <?php echo $box_text_4; ?>
               </div>
             </a>
-            <a href="<?php the_field('box_link_5'); ?>">
+            <a href="<?php the_field('box_link_5'); ?>" id="color-block-item-5">
               <div class="color-block-item grid" style="background-color: <?php the_field('box_color_5'); ?>;">
                 <?php if($box_icon_5) {
                   echo wp_get_attachment_image( $box_icon_5, $size);}
@@ -152,7 +152,7 @@ get_header(); ?>
                 <?php echo $box_text_5; ?>
               </div>
             </a>
-            <a href="<?php the_field('box_link_6'); ?>">
+            <a href="<?php the_field('box_link_6'); ?>" id="color-block-item-6">
               <div class="color-block-item grid" style="background-color: <?php the_field('box_color_6'); ?>;">
                 <?php if($box_icon_6) {
                   echo wp_get_attachment_image( $box_icon_6, $size);}
