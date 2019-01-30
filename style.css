@@ -29,9 +29,9 @@
 }
 /*More site wide styles*/
 .content-container {
-  width: 90%;
+  width: 96%;
   max-width: 1300px;
-  padding: 0 5%;
+  padding: 0 2%;
   margin: 20px auto 0;
 }
 .hero {
@@ -78,6 +78,9 @@ a.btn {
 }
 .btnHero {
   width: 250px;
+}
+.btnSide {
+  width: 100%;
 }
 
 /* Set site container to full width */
@@ -167,6 +170,48 @@ figure.slider img {
   display: grid;
   grid-template-columns: 100%;
   justify-items: stretch;
+}
+
+/* Single Topics of Concern ===================*/
+.tablink {
+  background-color: #105870;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 16.66%;
+}
+
+.tablink:hover {
+  background-color: #38A5A9;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: #000000;
+  display: none;
+}
+
+#Key {
+  background-color:#ffffff;
+}
+#Puzzle {
+  background-color:#ffffff;
+}
+#Message {
+  background-color:#ffffff;
+}
+#Competition {
+  background-color:#ffffff;
+}
+#Change {
+  background-color:#ffffff;
+}
+#External {
+  background-color:#ffffff;
 }
 
 /* Header============================*/
