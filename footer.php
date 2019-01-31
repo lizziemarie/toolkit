@@ -11,6 +11,9 @@
 
 <section id="footer">
     <div id="footer-content">
+      <a href="" target="_blank">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="The Leadership Conference on Civil and Human Rights Logo">
+      </a>
       <p>THE LEADERSHIP CONFERENCE ON CIVIL AND HUMAN RIGHTS</p>
       <p>1620 L Street NW, Suite 1100, Washington, DC 20036 | Phone: (202) 466-3311</p>
       <?php

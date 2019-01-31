@@ -89,7 +89,7 @@ get_header(); ?>
 
             </div>
 
-            <div class="grid">
+            <div class="">
                   <p><a href="<?php the_field('download_file_1'); ?>" class="btn btnRed btnSide" target="_blank"><?php the_field('download_button_text_1'); ?></a></p>
                   <p><a href="<?php the_field('download_file_2'); ?>" class="btn btnRed btnSide" target="_blank"><?php the_field('download_button_text_2'); ?></a></p>
                   <p><a href="<?php the_field('download_file_3'); ?>" class="btn btnRed btnSide" target="_blank"><?php the_field('download_button_text_3'); ?></a></p>
@@ -99,7 +99,6 @@ get_header(); ?>
   		            <p><a href="<?php the_field('related_topic_link_3'); ?>" class="btn btnTeal btnSide" target="_blank"><?php the_field('related_topic_text_3'); ?></a></p>
   		            <h3><?php the_field('related_reports_title'); ?></h3>
   		            <p><a href="<?php the_field('related_reports_link'); ?>"><?php the_field('related_reports_content'); ?></a></p>
-
 						</div>
 
           </div>

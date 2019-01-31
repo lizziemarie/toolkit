@@ -214,6 +214,12 @@ figure.slider img {
   background-color:#ffffff;
 }
 
+/* Glossary Page ===================*/
+
+.glossary-page-content {
+  padding-left: 50px;
+}
+
 /* Header============================*/
 
 .menu-toggle {
@@ -273,6 +279,11 @@ ul#menu-footer-menu.menu li~li {
   align-items: center;
   justify-content: center;
 }
+
+/* Sassy Social Share ==================================*/
+i.heateorSssSharing, .heateorSssSharingButton {
+  margin: 0px;
+} /*removes margin from social buttons */
 /* Typography =============================*/
 h2 {
   text-transform: uppercase;

@@ -16,14 +16,16 @@ get_header(); ?>
         ?>
         <section>
           <div class="home-section hero" style="background-image: url(<?php echo $feature_image; ?>);">
-            <h2 class=""><?php the_title(); ?></h2>
+            <div class="hero-content grid">
+							<h2 class=""><?php the_title(); ?></h2>
+						</div>
           </div>
 
-          <div class="grid">
+          <div class="grid content-container content-grid-2">
             <div class="social-bar">
               <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
             </div>
-            <div class="page-content">
+            <div class="glossary-page-content">
               <?php the_content(); ?>
             </div>
 
