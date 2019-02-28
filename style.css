@@ -9,6 +9,9 @@
 */
 
 /* Site Wide Styles ======================*/
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
 .grid {
   display: grid;
 }
@@ -280,22 +283,6 @@ ul#menu-footer-menu.menu li~li {
   justify-content: center;
 }
 
-/* Sassy Social Share ==================================*/
-i.heateorSssSharing, .heateorSssSharingButton {
-  margin: 0px;
-} /*removes margin from social buttons */
-/* Typography =============================*/
-h2 {
-  text-transform: uppercase;
-}
-#footer p {
-  color: #ffffff;
-}
-#menu-footer-menu a {
-  color: #FFFFFF;
-  font-weight: bold;
-}
-
 /* Media Queries ===========================*/
 @media screen and (min-width: 768px) {
 /*Tablet styles here!*/
@@ -369,4 +356,180 @@ h2 {
     .social-bar {
       display: inline-block;
     }
+
+    /* NEW DESKTOP STYLES AS OF FEB 27 */
+    h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
+      font-weight: 800;
+      font-size: 40px;
+      color: #135971;
+      line-height: 1.75;
+    }
+    h3 /* section 3 text over image*/ {
+    	color: #FFFFFF;
+    	font-size: 60px;
+    	font-weight: 800;
+    	line-height: 1.13;
+    }
+
+    h6 /* text on section 2 of homepage "now more than ever"*/{
+    	color: #38A5A8;
+    	font-size: 25px;
+    	font-weight: 800;
+    	line-height: 1.24;
+    }
+    p {
+    	color: #091C27;
+    	font-family: "Nunito Sans";
+    	font-size: 18px;
+    	line-height: 26px;
+    }
+
+    /* Homepage Styles */
+    .section-two, .section-four {
+      display: flex;
+      padding: 80px 40px 120px 0px;
+    }
+        .s2img1 {
+          width:100%;
+        }
+        .s2content {
+          grid-template-columns: 60% 40%;
+          grid-template-rows: 90% 10%;
+          padding: 0 0 20px 5%;
+        }
+          .s2item1 {
+            max-width: 500px;
+            padding: 30px 0 0 0;
+          }
+          .s2item2 {
+            padding: 0 0 0 27px;
+            margin: 90px 0;
+            border-left: 0.5px solid #991B1F;
+          }
+          .s2item3 {
+            grid-column: 1/3;
+            display: flex;
+          }
+              .s2item3 a {
+                color: #E23425;
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 1.2;
+                margin: 0 100px 0 0;
+              }
+          /* section four styles */
+          .section-four {
+            background-color: #091C27;
+            display: flex;
+          }
+          .s4content {
+            padding: 30px 0 27px 5%;
+          }
+            .s4img1 {
+              width: 100%;
+            }
+            .s4item2 {
+            	color: #FFFFFF;
+            	font-size: 36px;
+            	font-weight: 800;
+            	line-height: 1.22;
+              padding: 0 5% 0 0;
+            }
+            .s4item3 {
+              margin: 40px 0 0 0;
+            }
+                .s4item3 a {
+                  color: #E23425;
+                  font-size: 18px;
+                  font-weight: 800;
+                  line-height: 1.22;
+                  margin: 0 100px 0 0;
+                }
+
+
+      .section-three, .section-five {
+        background-image: url(http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png);
+        background-position: left top;
+        background-size: auto;
+        background-repeat: no-repeat;
+        height: 671px;
+      }
+        .highlight-text-overlay {
+          position: relative;
+          top: -30px;
+        }
+
+    /* Section 5 styles */
+    .section-five h3 span {
+    	color: #FFFFFF;
+    	font-size: 36px;
+    	font-weight: 800;
+
+    }
+    .section-five h3 {
+      margin: 0;
+      line-height: .9;
+    }
+
+    .section-five-text {
+    	color: #FFFFFF;
+    	font-size: 36px;
+    	font-weight: 800;
+    	line-height: 1.22;
+      text-align: right;
+      padding: 0 0 0 40%;
+
+      position: absolute;
+      top: 257px;
+      right: 0;
+    }
+
+
+    /* underline styles */
+    .underline {
+      text-decoration: underline;
+    }
+    .underline-red {
+      text-decoration-color: #E23425;
+      text-decoration-skip: ink;
+    }
+
+    /* highlight styles */
+    h3 .highlight {
+      line-height: 1.15em;
+      margin-bottom: 10px;
+    }
+      .highlight {
+        display: inline;
+        color: #ffffff;
+      }
+
+      .highlight-wrapping {
+        position: relative;
+        padding: 0 10px 0 60px;
+      }
+
+      .highlight-wrapping-inline {
+        position: relative;
+        padding: 0 8px 0 8px;
+      }
+
+      .highlight-teal {
+        background: #38A5A8;
+        box-shadow: 0 0 0 #38A5A8,
+                    0 -1 0 0 #38A5A8;
+      }
+      .highlight-red {
+        background: #E23425;
+        box-shadow: 0 0 0 #E23425,
+                    0 -1 0 0 #E23425;
+      }
+      /*highlight with links */
+      h3 span a{
+        text-decoration: underline;
+      }
+
+      h3 span a:visited {
+        color: #ffffff;
+      }
 }
