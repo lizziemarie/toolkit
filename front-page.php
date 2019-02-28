@@ -77,6 +77,14 @@ get_header(); ?>
 									<?php endif;
 								?>
 							</figure>
+							<figure>
+								<?php
+									$gallery_image_3 = get_field('gallery_image_3');
+									if( !empty($gallery_image_3) ): ?>
+										<img src="<?php echo $gallery_image_3['url']; ?>" alt="<?php echo $gallery_image_3['alt']; ?>" />
+									<?php endif;
+								?>
+							</figure>
 						</figure>
 					</div>
 
@@ -100,10 +108,9 @@ get_header(); ?>
             	</div>
 
 							<div class="s2item3">
-								<img src=""><a href="<?php the_field('box_link_1'); ?>">Policing by the Numbers</a>
-								<img src=""><a href="<?php the_field('box_link_2'); ?>">Topics of Concern</a>
+								<a href="<?php the_field('box_link_1'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/loaction-2x.pnpg 2x" class="inline-icon">Policing by the Numbers</a>
+								<a href="<?php the_field('box_link_2'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/loaction-2x.pnpg 2x" class="inline-icon">Topics of Concern</a>
 							</div>
-
 						</div>
 
           </section>
@@ -124,8 +131,8 @@ get_header(); ?>
 					<section class="section-four">
 						<div class="s4img1">
 							<?php if($s4img1) {
-              echo wp_get_attachment_image( $s4img1, $size);}
-            	?>
+              echo wp_get_attachment_image( $s4img1, $size);
+							}?>
 						</div>
 
 						<div class="s4content">
@@ -134,8 +141,8 @@ get_header(); ?>
             	</div>
 
 							<div class="s4item3">
-								<img src=""><a href="<?php the_field('box_link_1'); ?>">Policing by the Numbers</a>
-								<img src=""><a href="<?php the_field('box_link_2'); ?>">Topics of Concern</a>
+								<a href="<?php the_field('box_link_3'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="inline-icon">Policing by State</a>
+								<a href="<?php the_field('box_link_4'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="inline-icon">Opportunities for Change</a>
 							</div>
 						</div>
 
@@ -146,20 +153,90 @@ get_header(); ?>
 					<section class="section-five">
 						<div class="highlight-text-overlay">
 							<h3><span class="highlight highlight-wrapping highlight-red">This Toolkit is part of <a href="">The Leadership</a></span></h3>
-							<h3><span class="highlight highlight-wrapping highlight-red"><a href="" class="higlight-link">Conference’s Policing Campaign</a> project.</span></h3>
+							<h3><span class="highlight highlight-wrapping highlight-red"><a href="">Conference’s Policing Campaign</a> project.</span></h3>
 						<div>
-						<div class="section-five-text">
-							<div class="">
-              	Visit New Era of Policing: A Guide for Fair, Safe, and Effective Policing for more information about the current state of policing, and recommendations for all levels of police departments to make improvements.
+						<div class="section-five-content">
+							<div class="s5item1">
+              	Visit <a href="" class="underline underline-teal">New Era of Policing:</a> A Guide for Fair, Safe, and Effective Policing for more information about the current state of policing, and recommendations for all levels of police departments to make improvements.
             	</div>
-							<div class="">
-								<img src=""><a href="<?php the_field('box_link_1'); ?>">Tools for Action</a>
-								<img src=""><a href="<?php the_field('box_link_2'); ?>">Glossary</a>
+							<div class="s5item2">
+								<a href="<?php the_field('box_link_5'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="inline-icon">Tools for Action</a>
+								<a href="<?php the_field('box_link_6'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="inline-icon">Glossary</a>
 							</div>
+							<p><a href="" class="" target="_blank">Share This</a></p>
 
 						</div>
 					</section>
 					<!-- end of section 5 -->
+
+					<!-- start of section 6 -->
+					<section class="section-six">
+						<div id="toolkit-title">
+							Toolkit Topics:
+						</div>
+
+						<div class="toolkit-item">
+							<a href="<?php the_field('box_link_3'); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<h6>Topics for Concern</h6>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<p>Find information about key issues elements of change, talking points and strategies for overcoming opposition.</p>
+							</a>
+						</div>
+
+						<div class="toolkit-item">
+							<a href="<?php the_field('box_link_4'); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<h6>Opportunities for Change</h6>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<p>In order to enact lasting change to the policing in our communities, it’s important to understand the law enforcement structures already in place.</p>
+							</a>
+
+						</div>
+
+						<div class="toolkit-item">
+							<a href="<?php the_field('box_link_1'); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<h6>Policing by the Numbers</h6>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<p>With over 2 million people behind bars, 9 million more ensnared in the criminal legal system, and 10 million arrests every year.</p>
+							</a>
+						</div>
+
+						<div>
+						</div>
+
+						<div class="toolkit-item">
+							<a href="<?php the_field('box_link_2'); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<h6>Policing by State</h6>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+							</a>
+
+						</div>
+
+						<div class="toolkit-item">
+							<a href="<?php the_field('box_link_5'); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<h6>Tools for Action</h6>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<p>Resources that can provide direction and oversight for active community members and organizers alike.</p>
+							</a>
+
+						</div>
+
+						<div class="toolkit-item">
+							<a href="<?php the_field('box_link_6'); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<h6>Glossary</h6>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<p>Search the glossary for key terms related to policing an reforms.</p>
+							</a>
+						</div>
+
+					</section>
+					<!-- end of section 6 -->
 
           <?php endwhile; // end of the loop. ?>
         </section>
