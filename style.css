@@ -14,8 +14,100 @@ body {
 }
 .grid {
   display: grid;
+} /* take this out!*/
+
+/* NEW MOBILE STYLES AS OF FEB 27 */
+h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
+  font-weight: 800;
+  font-size: 30px;
+  color: #135971;
+  line-height: 1.66;
 }
-/*Skip to content*/
+h3 /* section 3 text over image*/ {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h6 /* text on section 2 of homepage "now more than ever"*/{
+  color: #38A5A8;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.24;
+  margin: 0;
+}
+p {
+  color: #091C27;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  line-height: 1.44;
+}
+
+/* underline styles */
+.underline, a.underline {
+  text-decoration: underline;
+}
+.underline-red {
+  text-decoration-color: #E23425;
+  text-decoration-skip: ink;
+}
+a.underline-teal, .underline-teal {
+  text-decoration-color: #38A5A8;
+  text-decoration-skip: ink;
+}
+
+
+/* highlight styles */
+h3.highlight {
+  line-height: 0.85em;
+  margin-bottom: 1px; /* this is different for desktop*/
+}
+  .highlight {
+    display: inline;
+    color: #ffffff;
+  }
+
+  .highlight-wrapping {
+    position: relative;
+    padding: 0 10px 0 30px; /* this is different for desktop*/
+  }
+
+  .highlight-wrapping-inline {
+    position: relative;
+    padding: 0 8px 0 8px;
+  }
+
+  .highlight-teal {
+    background: #38A5A8;
+    box-shadow: 0 0 0 #38A5A8,
+                0 -1 0 0 #38A5A8;
+  }
+  .highlight-red {
+    background: #E23425;
+    box-shadow: 0 0 0 #E23425,
+                0 -1 0 0 #E23425;
+  }
+  span.highlight a:hover {
+    text-decoration: underline;
+  }
+  /*highlight with links */
+  h3 span a{
+    text-decoration: underline;
+  }
+
+  h3 span a:visited {
+    color: #ffffff;
+  }
+
+  /* icons inline */
+  img.inline-icon {
+    padding: 0 12px 0 0; /* this is different for desktop*/
+  }
+
+
+/* Accesibility Skip to content*/
 #skip-to-content {
   padding: 1em;
   position: absolute;
@@ -31,239 +123,388 @@ body {
   background: #222;
 }
 /*More site wide styles*/
-.content-container {
-  width: 96%;
-  max-width: 1300px;
-  padding: 0 2%;
-  margin: 20px auto 0;
-}
-.hero {
-  height: 45vh;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  vertical-align: top;
-}
-.hero-content {
-  justify-items: center;
-  text-align: center;
-  padding: 10% 5% 0% 5%;
-  color: #ffffff;
-}
-/* Hide Site Info Bar */
-.site-info {
+.not-mobile {
   display: none;
 }
-/* Page Content */
-.page-content {
-  margin: 0;
-}
-
-/*Button styling*/
-a.btn {
-  display: block;
-  position: relative;
-  float: left;
-  padding: 15px 20px;
-  margin: 10px 0px 10px 0;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 40px;
-  color: #FFF;
-  transition: all 0.2s ;
-}
-.btnRed {
-  background: #FC371E;
-}
-.btnTeal {
-  background:#34A9AC;
-}
-.btnHero {
-  width: 250px;
-}
-.btnSide {
-  width: 100%;
-}
-
-/* Set site container to full width */
-body .site.grid-container {
-    max-width: 100%;
-}
-
-/* Custom Post Types Styling - Topics, Opps, Tools */
-.custom-post-types-section {
-  grid-template-columns: 100%;
-  grid-row-gap: 20px;
-  margin: 0 5% 20px 5%;
-}
-.custom-post {
-  min-height: 200px;
+/* Front Page  Styles */
+.section-two, .section-four {
   display: grid;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
+  grid-template-columns: 100%; /* this is different for desktop*/
+  padding: 40px 20px 60px 20px; /* this is different for desktop*/
 }
-.custom-post h2 {
-  color: #ffffff;
-  font-weight: bold;
-  margin: 0 2%;
-  text-transform: uppercase;
-}
-/* Front Page Styles =====================*/
-/* Gallery styles*/
-@keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
-}
-* {
-  box-sizing: border-box;
-}
-figure {
-  margin: 0;
-}
-div#gallery {
-  width: 100%;
-  overflow: hidden;
-}
-figure.slider {
-  position: relative;
-  width: 500%;
-  font-size: 0;
-  animation: 20s slidy infinite;
-}
-figure.slider figure {
-  width: 20%;
-  height: auto;
-  display: inline-block;
-  position: inherit;
-}
-figure.slider img {
-  width: 100%;
-  height: auto; }
+    .s2img1 {
+      width:100%;
+    }
+    .s2content {
+      display: grid;
+      grid-template-columns: 1fr; /* this is different for desktop*/
+      grid-template-rows: auto auto auto; /* this is different for desktop*/
+      padding: 0 0 0 0; /* this is different for desktop*/
+    }
+      .s2item2 {
+        padding: 30px 0 0 0;
+        /* removed border for mobile */
+      }
+          .s2item2 h6 {
+            margin: 0 0 8px 0;
+          }
 
+          .s2item3 a {
+            color: #E23425;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 40px 50px 0 0;
+            display: flex;
+            align-items: center;
+          }
+  /* section four styles */
+  .section-four {
+    background-color: #091C27;
+  }
+  .s4content {
+    display: grid;
+    grid-template-columns: 1fr; /* this is different for desktop*/
+    grid-template-rows: auto auto auto;
+    padding: 60px 0 20px 0; /*different for desktop*/
+  }
+    .s4img1 {
+      width: 100%;
+    }
+    .s4item2 {
+      color: #FFFFFF;
+      font-size: 24px; /*different for desktop*/
+      font-weight: 800;
+      line-height: 1.22;
+    }
+    .s4item3 {
+      margin: 40px 0 0 0;
+    }
+        .s4item3 a {
+          color: #E23425;
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 1.22;
+          margin: 40px 80px 0 0;
+          display: flex;
+          align-items: center;
+        }
 
-/* By the Numbers ============================*/
-.related-content, .download-files, .related-reports, .related-chapters {
-  display: grid;
-  grid-template-columns: 100%;
-  justify-items: stretch;
-}
+  /* Section Three and Five Styles */
+  .section-three{
+    background-image: url(http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png);
+    height: 671px;
+  }
+  .section-five {
+    background-image: url(http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png);
+    height:640px; /* this is different for desktop*/
+  }
+  .section-three, .section-five {
+    background-position: center top; /* this is different for desktop*/
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+    .highlight-text-overlay {
+      position: relative;
+      top: -20px; /* this is different for desktop*/
+    }
 
-/* Single Topics of Concern ===================*/
-.tablink {
-  background-color: #105870;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 16.66%;
+.section-five h3 span {
+  color: #FFFFFF;
+  font-size: 30px; /* this is different for desktop*/
+  font-weight: 800;
+  line-height: 1.6;
 }
-
-.tablink:hover {
-  background-color: #38A5A9;
-}
-
-/* Style the tab content */
-.tabcontent {
-  color: #000000;
-  display: none;
-}
-
-#Key {
-  background-color:#ffffff;
-}
-#Puzzle {
-  background-color:#ffffff;
-}
-#Message {
-  background-color:#ffffff;
-}
-#Competition {
-  background-color:#ffffff;
-}
-#Change {
-  background-color:#ffffff;
-}
-#External {
-  background-color:#ffffff;
+.section-five h3 {
+  margin: 0 0 0 0; /* this is different for desktop*/
+  line-height: 1.6; /* this is different for desktop*/
 }
 
-/* Glossary Page ===================*/
-
-.glossary-page-content {
-  padding-left: 50px;
-}
-
-/* Header============================*/
-
-.menu-toggle {
-  padding: 0 0;
-  font-size: 25px; /*increases size of menu ham */
-}
-button.menu-toggle {
+.section-five-content {
   text-align: right;
-}
-.mobile-menu {
-  display: none;
-} /* Hides menu word in mobile */
-.search-item a {
-  font-size: 25px;
-}
-.main-navigation .mobile-bar-items a {
-  padding-right: 0px;
+  margin: 20px 25px 23px 13px;
 }
 
-/* Footer ==================================*/
+  .s5item1 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.35; /* different on desktop*/
+  }
+  .s5item1 a {
+    color: #FFFFFF;
+  }
+
+
+  .s5item2{
+    margin: 30px 0 0 0;
+  }
+    .s5item2 div {
+      margin: 20px 0 0 0;
+    }
+      .s5item2 a {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.22;
+      }
+
+/* Section 6 styles */
+
+.section-six {
+  padding: 24px 36px 24px 36px;
+}
+.section-six #toolkit-title {
+  color: #38A5A8;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.55;
+}
+    #mobile-toolkit-dropdown {
+      width: 290px;
+      height: 66px;
+      font-size: 16px;
+      border: 1px solid #38A5A8;
+      margin: 29px 0 40px 0;
+      padding: 23px 0 21px 36px;
+    }
+
+/* New Footer Mobile ==================================*/
+
 #footer {
-  background-color: #170027;
+  background-color: #091C27;
+  padding: 5% 35px 5% 35px;
   display: grid;
-  grid-template-columns: .25fr 2fr .25fr;
-  padding: 20px 5%;
-  text-align: center;
+  grid-template-columns: calc(100vw - 70px);
 }
-/* Footer Content */
-#footer-content {
-  grid-column: 2/3;
+
+#footer, #footer p, #footer a, #footer a:visited {
+  color: #FFFFFF;
 }
-/* Footer Menu */
-#footer-widgets {
-  background-color: #170027;
+
+#footer p.title {
+  font-size: 14px;
+  line-height: 1.21;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline;
 }
 #menu-footer-menu{
   margin-left: 0px;
+  padding: 10px 0 0 0;
+}
+ul#menu-footer-menu.menu li, #footer p{
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 300;
+  list-style: none;
+}
+ul#menu-footer-menu.menu li {
+  padding: 4px 0 0 18px;
+}
+#footer p.footer-text {
+  padding: 10px 0 0 18px;
+}
+#footer-copyright p {
   text-align: center;
 }
-ul#menu-footer-menu.menu li{
-  display: inline;
-  padding-left: 5px;
-}
-ul#menu-footer-menu.menu li~li {
-  border-left: 1px solid #FFFFFF;
-}
-#footer-final-paragraph {
-  margin-bottom: 0px;
-}
-/* Footer Social Icons */
-#footer-social {
-  grid-column: 3/4;
-  display: grid;
-  grid-template-columns: 60px;
-  grid-template-rows: repeat(3,40px);
-  grid-row-gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
+
+
+
+/*Old Styles */
+            .content-container {
+              width: 96%;
+              max-width: 1300px;
+              padding: 0 2%;
+              margin: 20px auto 0;
+            }
+            .hero {
+              height: 45vh;
+              background-size: cover;
+              background-position: center center;
+              position: relative;
+              vertical-align: top;
+            }
+            .hero-content {
+              justify-items: center;
+              text-align: center;
+              padding: 10% 5% 0% 5%;
+              color: #ffffff;
+            }
+            /* Hide Site Info Bar */
+            .site-info {
+              display: none;
+            }
+            /* Page Content */
+            .page-content {
+              margin: 0;
+            }
+
+            /*Button styling*/
+            a.btn {
+              display: block;
+              position: relative;
+              float: left;
+              padding: 15px 20px;
+              margin: 10px 0px 10px 0;
+              font-weight: 600;
+              text-align: center;
+              text-transform: uppercase;
+              line-height: 40px;
+              color: #FFF;
+              transition: all 0.2s ;
+            }
+            .btnRed {
+              background: #FC371E;
+            }
+            .btnTeal {
+              background:#34A9AC;
+            }
+            .btnHero {
+              width: 250px;
+            }
+            .btnSide {
+              width: 100%;
+            }
+
+            /* Set site container to full width */
+            body .site.grid-container {
+                max-width: 100%;
+            }
+
+            /* Custom Post Types Styling - Topics, Opps, Tools */
+            .custom-post-types-section {
+              grid-template-columns: 100%;
+              grid-row-gap: 20px;
+              margin: 0 5% 20px 5%;
+            }
+            .custom-post {
+              min-height: 200px;
+              display: grid;
+              align-items: center;
+              justify-items: center;
+              text-align: center;
+            }
+            .custom-post h2 {
+              color: #ffffff;
+              font-weight: bold;
+              margin: 0 2%;
+              text-transform: uppercase;
+            }
+            /* Front Page Styles =====================*/
+            /* Gallery styles*/
+            @keyframes slidy {
+            0% { left: 0%; }
+            20% { left: 0%; }
+            25% { left: -100%; }
+            45% { left: -100%; }
+            50% { left: -200%; }
+            70% { left: -200%; }
+            75% { left: -300%; }
+            95% { left: -300%; }
+            100% { left: -400%; }
+            }
+            * {
+              box-sizing: border-box;
+            }
+            figure {
+              margin: 0;
+            }
+            div#gallery {
+              width: 100%;
+              overflow: hidden;
+            }
+            figure.slider {
+              position: relative;
+              width: 500%;
+              font-size: 0;
+              animation: 20s slidy infinite;
+            }
+            figure.slider figure {
+              width: 20%;
+              height: auto;
+              display: inline-block;
+              position: inherit;
+            }
+            figure.slider img {
+              width: 100%;
+              height: auto; }
+
+
+            /* By the Numbers ============================*/
+            .related-content, .download-files, .related-reports, .related-chapters {
+              display: grid;
+              grid-template-columns: 100%;
+              justify-items: stretch;
+            }
+
+            /* Single Topics of Concern ===================*/
+            .tablink {
+              background-color: #105870;
+              color: white;
+              float: left;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding: 14px 16px;
+              font-size: 17px;
+              width: 16.66%;
+            }
+
+            .tablink:hover {
+              background-color: #38A5A9;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+              color: #000000;
+              display: none;
+            }
+
+            #Key {
+              background-color:#ffffff;
+            }
+            #Puzzle {
+              background-color:#ffffff;
+            }
+            #Message {
+              background-color:#ffffff;
+            }
+            #Competition {
+              background-color:#ffffff;
+            }
+            #Change {
+              background-color:#ffffff;
+            }
+            #External {
+              background-color:#ffffff;
+            }
+
+            /* Glossary Page ===================*/
+
+            .glossary-page-content {
+              padding-left: 50px;
+            }
+
+            /* Header============================*/
+
+            .menu-toggle {
+              padding: 0 0;
+              font-size: 25px; /*increases size of menu ham */
+            }
+            button.menu-toggle {
+              text-align: right;
+            }
+            .mobile-menu {
+              display: none;
+            } /* Hides menu word in mobile */
+            .search-item a {
+              font-size: 25px;
+            }
+            .main-navigation .mobile-bar-items a {
+              padding-right: 0px;
+            }
+
 
 /* Media Queries ===========================*/
 @media screen and (min-width: 768px) {
@@ -275,13 +516,6 @@ ul#menu-footer-menu.menu li~li {
     grid-template-columns: repeat(2,50%);
   }
 
-  /* Front Page Styles =====================*/
-  .grid-profile-images {
-    grid-template-columns: repeat(6,1fr);
-  }
-  .grid-color-block {
-    grid-template-columns: repeat(2,1fr);
-  }
   /* Custom Post Types Styling - Topics, Opps, Tools */
   .custom-post-types-section, .external-resources-section {
     grid-template-columns: repeat(2,1fr);
@@ -334,40 +568,24 @@ ul#menu-footer-menu.menu li~li {
       max-width: 1300px;
       margin: 0 auto 20px;
     }
-    /* Unhide Social Bar on Mobile */
-    .social-bar {
-      display: inline-block;
-    }
 
     /* NEW DESKTOP STYLES AS OF FEB 27 */
+    .not-desktop {
+      display: none;
+    }
+    .not-mobile {
+      display: block;
+    }
     h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
-      font-weight: 800;
       font-size: 40px;
-      color: #135971;
       line-height: 1.75;
     }
     h3 /* section 3 text over image*/ {
-    	color: #FFFFFF;
     	font-size: 60px;
-    	font-weight: 800;
     	line-height: 1.13;
     }
 
-    h6 /* text on section 2 of homepage "now more than ever"*/{
-    	color: #38A5A8;
-    	font-size: 25px;
-    	font-weight: 800;
-    	line-height: 1.24;
-      margin: 0;
-    }
-    p {
-    	color: #091C27;
-    	font-family: "Nunito Sans";
-    	font-size: 18px;
-    	line-height: 26px;
-    }
-
-    /* Homepage Styles */
+    /* Front Page  Styles */
     .section-two, .section-four {
       display: grid;
       grid-template-columns: 35% 65%;
@@ -433,6 +651,7 @@ ul#menu-footer-menu.menu li~li {
               margin: 0 80px 0 0;
             }
 
+      /* Section Three and Five Styles */
       .section-three{
         background-image: url(http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png);
         height: 671px;
@@ -451,7 +670,6 @@ ul#menu-footer-menu.menu li~li {
           top: -30px;
         }
 
-    /* Section 5 styles */
     .section-five h3 span {
     	color: #FFFFFF;
     	font-size: 36px;
@@ -531,32 +749,12 @@ ul#menu-footer-menu.menu li~li {
     }
 
 
-    /* underline styles */
-    .underline, a.underline {
-      text-decoration: underline;
-    }
-    .underline-red {
-      text-decoration-color: #E23425;
-      text-decoration-skip: ink;
-    }
-    a.underline-teal, .underline-teal {
-      text-decoration-color: #38A5A8;
-      text-decoration-skip: ink;
-    }
-
-
-    /* highlight styles */
+    /* desktop highlight styles */
     h3 .highlight {
-      line-height: 1.15em;
       margin-bottom: 10px;
     }
-      .highlight {
-        display: inline;
-        color: #ffffff;
-      }
 
       .highlight-wrapping {
-        position: relative;
         padding: 0 10px 0 60px;
       }
 
@@ -565,30 +763,7 @@ ul#menu-footer-menu.menu li~li {
         padding: 0 8px 0 8px;
       }
 
-      .highlight-teal {
-        background: #38A5A8;
-        box-shadow: 0 0 0 #38A5A8,
-                    0 -1 0 0 #38A5A8;
-      }
-      .highlight-red {
-        background: #E23425;
-        box-shadow: 0 0 0 #E23425,
-                    0 -1 0 0 #E23425;
-      }
-      span.highlight a:hover {
-        text-decoration: underline;
-      }
-      /*highlight with links */
-      h3 span a{
-        text-decoration: underline;
-      }
-
-      h3 span a:visited {
-        color: #ffffff;
-      }
-
       /* icons inline */
       img.inline-icon {
         padding: 0 12px 0 0;
       }
-}

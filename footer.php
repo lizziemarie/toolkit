@@ -10,38 +10,65 @@
 </div><!-- #page -->
 
 <section id="footer">
-    <div id="footer-content">
+    <div class="footer-item" id="footer-logo">
       <a href="" target="_blank">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="The Leadership Conference on Civil and Human Rights Logo">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/" alt="The Leadership Conference on Civil and Human Rights Logo">
       </a>
-      <p>THE LEADERSHIP CONFERENCE ON CIVIL AND HUMAN RIGHTS</p>
-      <p>1620 L Street NW, Suite 1100, Washington, DC 20036 | Phone: (202) 466-3311</p>
-      <?php
-        wp_nav_menu( array(
-            'theme_location' => 'footer-menu',
-            'container_class' => 'footer-menu-class' ) );
-      ?>
-      <p>The Policing Campaign is a project of The Leadership Conference on Civil and Human Rights & The Leadership Conference Education Fund.</p>
-      <p id="footer-final-paragraph">© 2019 The Leadership Conference on Civil and Human Rights/The Leadership Conference Education Fund. All rights reserved.</p>
+      The Policing Campaign is a project of The Leadership Conference on Civil and Human Rights & The Leadership Conference Education Fund.
     </div>
 
-    <div id="footer-social">
-			<div class="footer-social-icon">
-					<a href="" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="Facebook Link">
-					</a>
-			</div>
-			<div class="footer-social-icon">
-					<a href="" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="Twitter Link">
-					</a>
-			</div>
-			<div class="footer-social-icon">
-					<a href="mailto:someone@example.com?Subject=Hello%20again" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="Email Link">
-					</a>
-			</div>
+    <div class="footer-item" id="footer-additional-links">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="">
+      <p class="title">Additional Links</p>
+        <?php
+          wp_nav_menu( array(
+            'theme_location' => 'footer-menu',
+            'container_class' => 'footer-menu-class' ) );
+        ?>
+    </div>
+
+    <div class="footer-item" id="footer-location">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="">
+      <p class="title">Location</p>
+      <p class="footer-text">1620 L Street NW<br>
+        Suite 1100<br>
+        Washington, DC 20036<br>
+        (202) 466-3311</p>
+    </div>
+
+    <div class="footer-item" id="footer-download-toolkit">
+      <p>
+        <a href="<?php the_field('download'); ?>" class="" target="_blank"><?php the_field('download_button_text'); ?>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="">
+        </a>
+      </p>
+      <p>
+        <a href="<?php the_field('download'); ?>" class="" target="_blank">Descargar en Español</a>
+      </p>
+    </div>
+
+    <div class="footer-item" id="footer-download-guidebook">
+      <p>
+        <a href="<?php the_field('download'); ?>" class="" target="_blank">Download Guidebook
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="">
+        </a>
+      <p>
+        <a href="<?php the_field('download'); ?>" class="" target="_blank">Descargar en Español</a>
+      </p>
+    </div>
+
+    <div class="footer-item" id="footer-social">
+			<a href="" target="_blank">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="Facebook Link">
+			</a>
+    	<a href="" target="_blank">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="Twitter Link">
+			</a>
 		</div>
+
+    <div class="footer-item" id="footer-copyright">
+      <p>© 2019 The Leadership Conference on Civil and Human Rights/The Leadership Conference Education Fund. All rights reserved.</p>
+    </div>
 
 </section>
 
