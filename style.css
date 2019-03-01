@@ -53,7 +53,11 @@ p {
   text-decoration-color: #E23425;
   text-decoration-skip: ink;
 }
-a.underline-teal, .underline-teal {
+a.underline-teal,
+.underline-teal,
+a:visited .underline-teal,
+a:hover .underline-teal,
+a:focus .underline-teal {
   text-decoration-color: #38A5A8;
   text-decoration-skip: ink;
 }
@@ -126,7 +130,66 @@ h3.highlight {
 .not-mobile {
   display: none;
 }
+
 /* Front Page  Styles */
+.section-one {
+  /*overlay grey gradient on bottom homepage image*/
+  background: -moz-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png') no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 28, 39, 0)), color-stop(59%, rgba(9, 28, 39, 0)), color-stop(100%, rgba(9, 28, 39, 0.65))), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png') no-repeat;
+  background: -webkit-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png') no-repeat;
+  background: -o-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png') no-repeat;
+  background: -ms-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png') no-repeat;
+  background: linear-gradient(top to bottom, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.2) 59%, rgba(9, 28, 39, 0.58) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png') no-repeat;
+  background-position: center center; /* this is different for desktop*/
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  height: 700px;
+}
+
+
+  .hero-highlight {
+    position: relative;
+    top: 100px;
+  }
+  .s1content{
+    padding: 100px 47px 20px 17px;
+  }
+  .homepage-subtitle {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  .download-button {
+    border: 2px solid #38A5A8;
+    padding: 21px 0 21px 36px;
+    margin: 20px 0 0 0;
+    display: flex;
+    align-content: center;
+  }
+    .download-button a, .download-button a:visited{
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    .download-button img {
+      margin: 0 0 0 24px;
+    }
+    .download-spanish {
+      padding: 14px 0 0 0;
+    }
+
+    .download-spanish a {
+      color: #FFFFFF;
+      font-size:14px;
+      font-weight: 800;
+      line-height: 17px;
+      text-decoration: underline;
+      text-decoration-color: #38A5A8;
+    }
+
+/* turn mouse to a click icon*/
+/* Section 2 and 4 on homepage */
 .section-two, .section-four {
   display: grid;
   grid-template-columns: 100%; /* this is different for desktop*/
@@ -196,7 +259,13 @@ h3.highlight {
     height: 671px;
   }
   .section-five {
-    background-image: url(http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png);
+    background: -moz-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 28, 39, 0)), color-stop(59%, rgba(9, 28, 39, 0)), color-stop(100%, rgba(9, 28, 39, 0.65))), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+    background: -webkit-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+    background: -o-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+    background: -ms-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+    background: linear-gradient(top to bottom, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.58) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+
     height:640px; /* this is different for desktop*/
   }
   .section-three, .section-five {

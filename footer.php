@@ -18,7 +18,7 @@
     </div>
 
     <div class="footer-item" id="footer-additional-links">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, <?php echo get_stylesheet_directory_uri(); ?>/img/location@2x.png 2x" alt="">
       <p class="title">Additional Links</p>
         <?php
           wp_nav_menu( array(
@@ -28,7 +28,7 @@
     </div>
 
     <div class="footer-item" id="footer-location">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, <?php echo get_stylesheet_directory_uri(); ?>/img/location@2x.png 2x" alt="">
       <p class="title">Location</p>
       <p class="footer-text">1620 L Street NW<br>
         Suite 1100<br>
@@ -39,7 +39,7 @@
     <div class="footer-item" id="footer-download-toolkit">
       <p>
         <a href="<?php the_field('download'); ?>" class="" target="_blank"><?php the_field('download_button_text'); ?>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, <?php echo get_stylesheet_directory_uri(); ?>/img/location@2x.png 2x" alt="">
         </a>
       </p>
       <p>
@@ -50,7 +50,7 @@
     <div class="footer-item" id="footer-download-guidebook">
       <p>
         <a href="<?php the_field('download'); ?>" class="" target="_blank">Download Guidebook
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, <?php echo get_stylesheet_directory_uri(); ?>/img/location@2x.png 2x" alt="">
         </a>
       <p>
         <a href="<?php the_field('download'); ?>" class="" target="_blank">Descargar en Español</a>
@@ -59,10 +59,10 @@
 
     <div class="footer-item" id="footer-social">
 			<a href="" target="_blank">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="Facebook Link">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, <?php echo get_stylesheet_directory_uri(); ?>/img/location@2x.png 2x" alt="Facebook Link">
 			</a>
     	<a href="" target="_blank">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" alt="Twitter Link">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, <?php echo get_stylesheet_directory_uri(); ?>/img/location@2x.png 2x" alt="Twitter Link">
 			</a>
 		</div>
 
