@@ -108,8 +108,8 @@ get_header(); ?>
             	</div>
 
 							<div class="s2item3">
-								<a href="<?php the_field('box_link_1'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/loaction-2x.pnpg 2x" class="inline-icon">Policing by the Numbers</a>
-								<a href="<?php the_field('box_link_2'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/loaction-2x.pnpg 2x" class="inline-icon">Topics of Concern</a>
+								<a href="<?php the_field('box_link_1'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png, /img/trending-up@2x.pnpg 2x"class="inline-icon">Policing by the Numbers</a>
+								<a href="<?php the_field('box_link_2'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bolt.png" class="inline-icon">Topics of Concern</a>
 							</div>
 						</div>
 
@@ -141,8 +141,8 @@ get_header(); ?>
             	</div>
 
 							<div class="s4item3">
-								<a href="<?php the_field('box_link_3'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="inline-icon">Policing by State</a>
-								<a href="<?php the_field('box_link_4'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="inline-icon">Opportunities for Change</a>
+								<a href="<?php the_field('box_link_3'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png, /img/map@2x.pnpg 2x" class="inline-icon">Policing by State</a>
+								<a href="<?php the_field('box_link_4'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png, /img/sunset@2x.pnpg 2x" class="inline-icon">Opportunities for Change</a>
 							</div>
 						</div>
 
@@ -160,8 +160,8 @@ get_header(); ?>
               	Visit <a href="" class="underline underline-teal">New Era of Policing:</a> A Guide for Fair, Safe, and Effective Policing for more information about the current state of policing, and recommendations for all levels of police departments to make improvements.
             	</div>
 							<div class="s5item2">
-								<a href="<?php the_field('box_link_5'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="inline-icon">Tools for Action</a>
-								<a href="<?php the_field('box_link_6'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="inline-icon">Glossary</a>
+								<a href="<?php the_field('box_link_5'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png, /img/horn@2x.pnpg 2x" class="inline-icon">Tools for Action</a>
+								<a href="<?php the_field('box_link_6'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png, /img/book-opened@2x.pnpg 2x" class="inline-icon">Glossary</a>
 							</div>
 							<p><a href="" class="" target="_blank">Share This</a></p>
 
@@ -177,18 +177,18 @@ get_header(); ?>
 
 						<div class="toolkit-item">
 							<a href="<?php the_field('box_link_3'); ?>">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bolt.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/bolt.png, /img/bolt@2x.pnpg 2x" class="">
 								<h6>Topics for Concern</h6>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
 								<p>Find information about key issues elements of change, talking points and strategies for overcoming opposition.</p>
 							</a>
 						</div>
 
 						<div class="toolkit-item">
 							<a href="<?php the_field('box_link_4'); ?>">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png, /img/sunset@2x.pnpg 2x" class="">
 								<h6>Opportunities for Change</h6>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
 								<p>In order to enact lasting change to the policing in our communities, it’s important to understand the law enforcement structures already in place.</p>
 							</a>
 
@@ -196,9 +196,9 @@ get_header(); ?>
 
 						<div class="toolkit-item">
 							<a href="<?php the_field('box_link_1'); ?>">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png, /img/trending-up@2x.pnpg 2x" class="">
 								<h6>Policing by the Numbers</h6>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
 								<p>With over 2 million people behind bars, 9 million more ensnared in the criminal legal system, and 10 million arrests every year.</p>
 							</a>
 						</div>
@@ -208,9 +208,9 @@ get_header(); ?>
 
 						<div class="toolkit-item">
 							<a href="<?php the_field('box_link_2'); ?>">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png, /img/map@2x.pnpg 2x" class="">
 								<h6>Policing by State</h6>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
 								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
 							</a>
 
@@ -218,9 +218,9 @@ get_header(); ?>
 
 						<div class="toolkit-item">
 							<a href="<?php the_field('box_link_5'); ?>">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png, /img/horn@2x.pnpg 2x" class="">
 								<h6>Tools for Action</h6>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
 								<p>Resources that can provide direction and oversight for active community members and organizers alike.</p>
 							</a>
 
@@ -228,9 +228,9 @@ get_header(); ?>
 
 						<div class="toolkit-item">
 							<a href="<?php the_field('box_link_6'); ?>">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png, /img/book-opened@2x.pnpg 2x" class="">
 								<h6>Glossary</h6>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/location.png" srcset="<?php echo get_template_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png, /img/location-2x.pnpg 2x" class="">
 								<p>Search the glossary for key terms related to policing an reforms.</p>
 							</a>
 						</div>
