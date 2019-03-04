@@ -153,7 +153,7 @@ h3.highlight {
     top: 100px;
   }
   .s1content{
-    padding: 100px 47px 20px 17px;
+    padding: 100px 47px 60px 17px;
   }
   .homepage-subtitle {
     color: #FFFFFF;
@@ -167,6 +167,7 @@ h3.highlight {
     margin: 20px 0 0 0;
     display: flex;
     align-content: center;
+    font-weight: 800;
   }
     .download-button a, .download-button a:visited{
       color: #FFFFFF;
@@ -175,17 +176,22 @@ h3.highlight {
     .download-button img {
       margin: 0 0 0 24px;
     }
-    .download-spanish {
+  .download-spanish {
       padding: 14px 0 0 0;
-    }
+  }
 
-    .download-spanish a {
-      color: #FFFFFF;
-      font-size:14px;
-      font-weight: 800;
-      line-height: 17px;
-      text-decoration: underline;
-      text-decoration-color: #38A5A8;
+      .download-spanish a {
+        color: #FFFFFF;
+        font-size:14px;
+        font-weight: 800;
+        line-height: 17px;
+        text-decoration: underline;
+        text-decoration-color: #38A5A8;
+      }
+
+    .scrollarrow {
+      display: flex;
+      justify-content: center;
     }
 
 /* turn mouse to a click icon*/
@@ -212,6 +218,13 @@ h3.highlight {
             margin: 0 0 8px 0;
           }
 
+          .s2item3 img, .s4item3 img {
+            padding: 0 20px 0 0;
+          }
+          .s2item3 a#bolt-icon {
+            padding: 0 0 0 5px;
+          }
+
           .s2item3 a {
             color: #E23425;
             font-size: 20px;
@@ -229,7 +242,7 @@ h3.highlight {
     display: grid;
     grid-template-columns: 1fr; /* this is different for desktop*/
     grid-template-rows: auto auto auto;
-    padding: 60px 0 20px 0; /*different for desktop*/
+    padding: 60px 0 50px 0; /*different for desktop*/
   }
     .s4img1 {
       width: 100%;
@@ -240,17 +253,18 @@ h3.highlight {
       font-weight: 800;
       line-height: 1.22;
     }
-    .s4item3 {
-      margin: 40px 0 0 0;
-    }
+
         .s4item3 a {
           color: #E23425;
           font-size: 18px;
           font-weight: 800;
           line-height: 1.22;
-          margin: 40px 80px 0 0;
+          margin: 40px 40px 0 0;
           display: flex;
           align-items: center;
+        }
+        .s4item3 a#map-icon {
+          padding: 0 0 0 3px;
         }
 
   /* Section Three and Five Styles */
@@ -307,6 +321,10 @@ h3.highlight {
 
   .s5item2{
     margin: 30px 0 0 0;
+    display: grid;
+    justify-items: start;
+    position: relative;
+    left: 45%;
   }
     .s5item2 div {
       margin: 20px 0 0 0;
@@ -316,6 +334,20 @@ h3.highlight {
         font-size: 18px;
         font-weight: 800;
         line-height: 1.22;
+        text-align: left;
+      }
+      .share-button {
+        border: 2px solid #E23425;
+        padding: 16px 10px 15px 31px;
+        margin: 20px 0 0 0;
+        font-weight: 800;
+      }
+      .share-button a {
+        display: flex;
+        align-content: center;
+      }
+      .share-button img {
+        margin: 0 0 0 12px;
       }
 
 /* Section 6 styles */
@@ -337,6 +369,10 @@ h3.highlight {
       margin: 29px 0 40px 0;
       padding: 23px 0 21px 36px;
     }
+
+      #mobile-toolkit-dropdown img{
+        padding: 0 0 0 15px;
+      }
 
 /* New Footer Mobile ==================================*/
 
