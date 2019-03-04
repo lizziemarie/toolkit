@@ -66,7 +66,7 @@ a:focus .underline-teal {
 /* highlight styles */
 h3.highlight {
   line-height: 0.85em;
-  margin-bottom: 1px; /* this is different for desktop*/
+  margin-bottom: 1px;
 }
   .highlight {
     display: inline;
@@ -75,7 +75,7 @@ h3.highlight {
 
   .highlight-wrapping {
     position: relative;
-    padding: 0 10px 0 30px; /* this is different for desktop*/
+    padding: 0 10px 0 30px;
   }
 
   .highlight-wrapping-inline {
@@ -107,7 +107,7 @@ h3.highlight {
 
   /* icons inline */
   img.inline-icon {
-    padding: 0 12px 0 0; /* this is different for desktop*/
+    padding: 0 12px 0 0;
   }
 
 
@@ -692,13 +692,10 @@ ul#menu-footer-menu.menu li {
 
     /* Front Page  Styles */
     .section-two, .section-four {
-      display: grid;
       grid-template-columns: 35% 65%;
       padding: 80px 40px 100px 0px;
     }
-        .s2img1 {
-          width:100%;
-        }
+
         .s2content {
           grid-template-columns: 60% 40%;
           grid-template-rows: auto auto;
@@ -713,81 +710,43 @@ ul#menu-footer-menu.menu li {
             margin: 90px 0;
             border-left: 0.5px solid #991B1F;
           }
-              .s2item2 h6 {
-                margin: 0 0 8px 0;
-              }
+
           .s2item3 {
             grid-column: 1/3;
             display: flex;
             align-items: center;
           }
               .s2item3 a {
-                color: #E23425;
-                font-size: 20px;
-                font-weight: 800;
-                line-height: 1.2;
                 margin: 0 100px 0 0;
               }
       /* section four styles */
-      .section-four {
-        background-color: #091C27;
-      }
       .s4content {
         padding: 80px 0 27px 8%;
       }
-        .s4img1 {
-          width: 100%;
-        }
+
         .s4item2 {
-        	color: #FFFFFF;
         	font-size: 36px;
-        	font-weight: 800;
-        	line-height: 1.22;
           padding: 0 5% 0 0;
         }
         .s4item3 {
           margin: 40px 0 0 0;
         }
             .s4item3 a {
-              color: #E23425;
-              font-size: 18px;
-              font-weight: 800;
-              line-height: 1.22;
               margin: 0 80px 0 0;
             }
 
       /* Section Three and Five Styles */
-      .section-three{
-        background-image: url(http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png);
-        height: 671px;
-      }
-      .section-five {
-        background-image: url(http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png);
-        height:576px;
-      }
       .section-three, .section-five {
         background-position: left top;
-        background-size: auto;
-        background-repeat: no-repeat;
       }
         .highlight-text-overlay {
-          position: relative;
           top: -30px;
         }
-
-    .section-five h3 span {
-    	color: #FFFFFF;
-    	font-size: 36px;
-    	font-weight: 800;
-
-    }
     .section-five h3 {
-      margin: 0;
       line-height: .9;
     }
 
     .section-five-content {
-      text-align: right;
       margin: 0 48px 0 0;
 
       position: absolute;
@@ -798,15 +757,8 @@ ul#menu-footer-menu.menu li {
     }
 
       .s5item1 {
-        color: #FFFFFF;
-      	font-size: 20px;
-      	font-weight: 800;
       	line-height: 1.22;
       }
-      .s5item1 a {
-        color: #FFFFFF;
-      }
-
 
       .s5item2{
         display: flex;
@@ -814,10 +766,6 @@ ul#menu-footer-menu.menu li {
         margin: 27px 0 0 0;
       }
           .s5item2 a {
-            color: #FFFFFF;
-            font-size: 18px;
-            font-weight: 800;
-            line-height: 1.22;
             margin: 0 0 0 50px;
           }
 
@@ -828,12 +776,6 @@ ul#menu-footer-menu.menu li {
       grid-template-rows: repeat (2, 320px);
       padding: 56px 40px 56px 40px;
       grid-column-gap: 30px;
-    }
-    .section-six #toolkit-title {
-    	color: #38A5A8;
-    	font-size: 36px;
-    	font-weight: 800;
-    	line-height: 1.55;
     }
     .toolkit-item {
       padding: 20px 0 0 0;
@@ -861,14 +803,4 @@ ul#menu-footer-menu.menu li {
 
       .highlight-wrapping {
         padding: 0 10px 0 60px;
-      }
-
-      .highlight-wrapping-inline {
-        position: relative;
-        padding: 0 8px 0 8px;
-      }
-
-      /* icons inline */
-      img.inline-icon {
-        padding: 0 12px 0 0;
       }
