@@ -9,6 +9,18 @@
 */
 
 /* Site Wide Styles ======================*/
+@font-face {
+  font-family: 'Gilroy';
+  src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/38E43B_1_0.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/38E43B_0_0.woff);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/38E43B_1_0.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/38E43B_1_0.woff);
+  font-weight: 800;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -18,23 +30,24 @@ body {
 
 /* NEW MOBILE STYLES AS OF FEB 27 */
 h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 800;
   font-size: 30px;
   color: #135971;
   line-height: 1.66;
 }
 h3 /* section 3 text over image*/ {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   color: #FFFFFF;
   font-size: 30px;
   font-weight: 800;
   line-height: 1.5;
   margin: 0;
+  letter-spacing: 0.1px;
 }
 
 h6 /* text on section 2 of homepage "now more than ever"*/{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   color: #38A5A8;
   font-size: 25px;
   font-weight: 800;
@@ -230,6 +243,7 @@ h3.highlight {
 
           .s2item3 a {
             color: #E23425;
+            font-family: 'Gilroy', sans-serif;
             font-size: 20px;
             font-weight: 800;
             line-height: 1.2;
