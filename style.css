@@ -708,80 +708,209 @@ ul#menu-footer-menu.menu li {
 /* Media Queries ===========================*/
 @media screen and (min-width: 768px) {
 /*Tablet styles here!*/
-  /*Tablet Header styles*/
 
-  /* Site Wide Styles ======================*/
-  .hero-content {
-    grid-template-columns: repeat(2,50%);
+/* NEW DESKTOP STYLES AS OF MAR 5 */
+.not-desktop {
+  display: none;
+}
+.not-mobile {
+  display: block;
+}
+.not-tablet {
+  display: none;
+}
+
+h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
+  font-size: 32px;
+  line-height: 1.75;
+}
+h3 /* section 3 text over image*/ {
+  font-size: 45px;
+  line-height: 1.6;
+}
+
+/* Front Page  Styles */
+.section-two {
+  padding: 40px 30px 60px 30px;
+}
+    .s2content {
+      grid-template-columns: 55% 45%;
+      grid-template-rows: auto auto;
+      padding: 0 0 20px 0;
+    }
+      .s2item1 {
+        padding: 30px 40px 0 0;
+      }
+      .s2item2 {
+        padding: 10px 0 10px 27px;
+        margin: 60px 0;
+        border-left: 0.5px solid #991B1F;
+      }
+
+      .s2item3 {
+        grid-column: 1/3;
+        display: flex;
+        align-items: center;
+      }
+          .s2item3 a {
+            margin: 0 100px 0 0;
+          }
+  /* section four styles */
+  .section-four {
+    grid-template-columns: 50% 50%;
+    padding: 60px 20px 80px 0px;
+  }
+  .s4content {
+    padding: 40px 0 27px 8%;
   }
 
-  /* Custom Post Types Styling - Topics, Opps, Tools */
-  .custom-post-types-section, .external-resources-section {
-    grid-template-columns: repeat(2,1fr);
-    grid-column-gap: 20px;
+    .s4item2 {
+      font-size: 24px;
+      padding: 0 5% 0 0;
+    }
+    .s4item3 {
+      margin: 20px 0 0 0;
+    }
+        .s4item3 a {
+          margin: 20px 20px 0 0;
+        }
+  /* Section three and five styles */
+  /* Section Three and Five Styles */
+    .highlight-text-overlay {
+      top: -30px;
+    }
+  .section-five h3 {
+    line-height: 1.2;
   }
-  .related-content, .download-files, .related-reports, .related-chapters {
-    grid-template-rows: minmax(auto,1fr);
+
+  .section-five-content {
+    margin: 80px 48px 0 20%;
   }
-  /* Tools for Action */
-  #tools-bar {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-  }
-  .tool-header {
-    text-align: center;
-  }
+
+    .s5item1 {
+      line-height: 1.4;
+    }
+
+    .s5item2{
+      margin: 27px 0 0 0;
+      justify-items: end;
+    }
+      #glossary-link {
+        padding: 0 58px 0 0;
+      }
+
+/* Section 6 styles */
+      .section-six {
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 15px));
+        grid-template-rows: repeat (3, 320px);
+        padding: 56px 20px 56px 20px;
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+      }
+      div#toolkit-title {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin: 0 0 10px 0;
+      }
+
+      .toolkit-item a{
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: 30px 100px;
+      }
+      .section-six a h6{
+          color: #091C27;
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 1.2;
+          display: inline;
+          padding: 3px 0 0 0;
+      }
+      .section-six a h6 img {
+        padding: 0 0 0 8px;
+      }
+      .section-six a p {
+          color: #091C27;
+          font-size: 14px;
+          line-height: 1.42;
+          padding: 10px 0 0 0;
+
+          grid-column: 2/3;
+      }*/
+
+
+  /*OLD styles*/
+
+          /* Site Wide Styles ======================*/
+          .hero-content {
+            grid-template-columns: repeat(2,50%);
+          }
+
+          /* Custom Post Types Styling - Topics, Opps, Tools */
+          .custom-post-types-section, .external-resources-section {
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 20px;
+          }
+          .related-content, .download-files, .related-reports, .related-chapters {
+            grid-template-rows: minmax(auto,1fr);
+          }
+          /* Tools for Action */
+          #tools-bar {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            text-align: center;
+          }
+          .tool-header {
+            text-align: center;
+          }
 }
 
 @media screen and (min-width: 940px) {
-/*Desktop styles here!*/
-    /* Nav bar styling*/
-    #menu-main-navigation .menu-item {
-      /*max-width: 150px;*/
-    }
-    .main-navigation .main-nav ul li a {
-      font-size: 16px;
-      line-height: 24px;
-      text-align: center;
-      text-transform: uppercase;
-    }
-    .inside-header {
-      padding: 40px 40px 0px 40px;
-    }
-    /* Site Wide Styles ======================*/
-    .content-grid-2 {
-      grid-template-columns: 5% 95%;
-    }
-      .custom-post-types-section {
-        grid-column: 2/3;
-      }
-    .content-grid-3 {
-      grid-template-columns: 5% 70% 25%;
-    }
-    /* Front Page Styles =====================*/
+/*OLD styles here!*/
+            /* Nav bar styling*/
+            #menu-main-navigation .menu-item {
+              /*max-width: 150px;*/
+            }
+            .main-navigation .main-nav ul li a {
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              text-transform: uppercase;
+            }
+            .inside-header {
+              padding: 40px 40px 0px 40px;
+            }
+            /* Site Wide Styles ======================*/
+            .content-grid-2 {
+              grid-template-columns: 5% 95%;
+            }
+              .custom-post-types-section {
+                grid-column: 2/3;
+              }
+            .content-grid-3 {
+              grid-template-columns: 5% 70% 25%;
+            }
+            /* Front Page Styles =====================*/
 
-    /* Custom Post Types Styling - Topics, Opps, Tools */
-    .custom-post-types-section {
-      grid-template-columns: repeat(3,1fr);
-      max-width: 1300px;
-      margin: 0 auto 20px;
+            /* Custom Post Types Styling - Topics, Opps, Tools */
+            .custom-post-types-section {
+              grid-template-columns: repeat(3,1fr);
+              max-width: 1300px;
+              margin: 0 auto 20px;
     }
 
     /* NEW DESKTOP STYLES AS OF FEB 27 */
-    .not-desktop {
-      display: none;
-    }
-    .not-mobile {
-      display: block;
-    }
     h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
       font-size: 40px;
       line-height: 1.75;
     }
     h3 /* section 3 text over image*/ {
     	font-size: 60px;
-    	line-height: 1.13;
+    	line-height: 1.4;
+    }
+    .not-tablet {
+      display: block;
     }
 
     /* Front Page  Styles */
@@ -823,6 +952,7 @@ ul#menu-footer-menu.menu li {
           padding: 0 5% 0 0;
         }
         .s4item3 {
+          grid-column: 1/3;
           margin: 40px 0 0 0;
         }
             .s4item3 a {
@@ -836,29 +966,29 @@ ul#menu-footer-menu.menu li {
         .highlight-text-overlay {
           top: -30px;
         }
-    .section-five h3 {
-      line-height: .9;
-    }
-
-    .section-five-content {
-      margin: 0 48px 0 0;
-
-      position: absolute;
-      top: 257px;
-      right: 0;
-
-      max-width: 547px;
-    }
-
-      .s5item1 {
-      	line-height: 1.22;
+      .section-five h3 {
+        line-height: .9;
       }
 
-      .s5item2{
-        display: flex;
-        justify-content: flex-end;
-        margin: 27px 0 0 0;
+      .section-five-content {
+        margin: 0 48px 0 0;
+
+        position: absolute;
+        top: 257px;
+        right: 0;
+
+        max-width: 547px;
       }
+
+        .s5item1 {
+        	line-height: 1.22;
+        }
+
+        .s5item2{
+          display: flex;
+          justify-content: flex-end;
+          margin: 27px 0 0 0;
+        }
           .s5item2 a {
             margin: 0 0 0 50px;
           }
@@ -896,5 +1026,5 @@ ul#menu-footer-menu.menu li {
     }
 
       .highlight-wrapping {
-        padding: 0 10px 0 60px;
+        padding: 8px 10px 8px 60px;
       }

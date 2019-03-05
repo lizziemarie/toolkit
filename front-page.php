@@ -111,7 +111,7 @@ get_header(); ?>
 
 					<!-- start of section 2 -->
           <section class="section-two" id="sectiontwo">
-						<div class="s2img1 not-mobile" alt="">
+						<div class="s2img1 not-mobile not-tablet" alt="">
 							<?php if($s2img1) {
               echo wp_get_attachment_image( $s2img1, $size);}
             	?>
@@ -130,7 +130,7 @@ get_header(); ?>
 
 							<div class="s2item3">
 									<a href="<?php the_field('box_link_1'); ?>">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/trending-up-big.png 2x" class="inline-icon" alt="trending up icon">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/trending-up@2x.png 2x" class="inline-icon" alt="trending up icon">
 										Policing by the Numbers
 									</a>
 
@@ -152,7 +152,7 @@ get_header(); ?>
 							<h3><span class="highlight highlight-wrapping highlight-teal">and human rights</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-teal">through policing</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-teal">practices.</span></h3>
-						<div>
+						</div>
 						<div class="highlight-text-overlay not-mobile">
 							<h3><span class="highlight highlight-wrapping highlight-teal">We all have a role to play in</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-teal">resisting infringements on civil</span></h3>
@@ -198,7 +198,7 @@ get_header(); ?>
 							<h3><span class="highlight highlight-wrapping highlight-red">The Leadership</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">Conference’s Policing</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">Campaign project.</span></h3>
-						<div>
+						</div>
 
 						<div class="highlight-text-overlay not-mobile">
 							<h3><span class="highlight highlight-wrapping highlight-red">This Toolkit is part of <a href="">The Leadership</a></span></h3>
@@ -217,7 +217,7 @@ get_header(); ?>
 									</a>
 								</div>
 
-								<div>
+								<div id="glossary-link">
 									<a href="<?php the_field('box_link_6'); ?>">
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png, <?php echo get_stylesheet_directory_uri(); ?>/img/book-opened@2x.png 2x" class="inline-icon" alt="glossary icon">
 										Glossary
@@ -248,9 +248,8 @@ get_header(); ?>
 
 						<div class="toolkit-item not-mobile">
 							<a href="<?php the_field('box_link_3'); ?>">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bolt.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/bolt.png, <?php echo get_stylesheet_directory_uri(); ?>/img/bolt@2x.png 2x" class="" alt="">
-								<h6>Topics for Concern</h6>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png, <?php echo get_stylesheet_directory_uri(); ?>/img/sunset@2x.png 2x" class="" alt="">
+								<h6>Topics for Concern<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
 								<p>Find information about key issues elements of change, talking points and strategies for overcoming opposition.</p>
 							</a>
 						</div>
@@ -258,8 +257,7 @@ get_header(); ?>
 						<div class="toolkit-item not-mobile">
 							<a href="<?php the_field('box_link_4'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png, <?php echo get_stylesheet_directory_uri(); ?>/img/sunset@2x.png 2x" class="" alt="">
-								<h6>Opportunities for Change</h6>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt="">
+								<h6>Opportunities for Change<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
 								<p>In order to enact lasting change to the policing in our communities, it’s important to understand the law enforcement structures already in place.</p>
 							</a>
 
@@ -268,20 +266,18 @@ get_header(); ?>
 						<div class="toolkit-item not-mobile">
 							<a href="<?php the_field('box_link_1'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png, <?php echo get_stylesheet_directory_uri(); ?>/img/trending-up@2x.png 2x" class="" alt="">
-								<h6>Policing by the Numbers</h6>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt="">
+								<h6>Policing by the Numbers<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
 								<p>With over 2 million people behind bars, 9 million more ensnared in the criminal legal system, and 10 million arrests every year.</p>
 							</a>
 						</div>
 
-						<div>
+						<div class="not-tablet">
 						</div>
 
 						<div class="toolkit-item not-mobile">
 							<a href="<?php the_field('box_link_2'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png, <?php echo get_stylesheet_directory_uri(); ?>/img/map@2x.png 2x" class="" alt="">
-								<h6>Policing by State</h6>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt="">
+								<h6>Policing by State<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
 								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
 							</a>
 
@@ -290,8 +286,7 @@ get_header(); ?>
 						<div class="toolkit-item not-mobile">
 							<a href="<?php the_field('box_link_5'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png, <?php echo get_stylesheet_directory_uri(); ?>/img/horn@2x.png 2x" class="" alt="">
-								<h6>Tools for Action</h6>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt="">
+								<h6>Tools for Action<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
 								<p>Resources that can provide direction and oversight for active community members and organizers alike.</p>
 							</a>
 
@@ -300,8 +295,7 @@ get_header(); ?>
 						<div class="toolkit-item not-mobile">
 							<a href="<?php the_field('box_link_6'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png, <?php echo get_stylesheet_directory_uri(); ?>/img/book-opened@2x.png 2x" class="" alt="">
-								<h6>Glossary</h6>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt="">
+								<h6>Glossary<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
 								<p>Search the glossary for key terms related to policing an reforms.</p>
 							</a>
 						</div>
