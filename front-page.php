@@ -120,7 +120,7 @@ get_header(); ?>
 						<div class="s2content">
 
             	<div class="s2item1">
-              	<h2 class="underline underline-red">Policing, criminalization, and mass incarceration are primary civil rights issues of our time.</h2>
+              	<h2 class="underline-red">Policing, criminalization, and mass incarceration are primary civil rights issues of our time.</h2>
             	</div>
 
             	<div class="s2item2">
@@ -194,7 +194,7 @@ get_header(); ?>
 					<!-- start of section 5 -->
 					<section class="section-five gradient">
 						<div class="highlight-text-overlay not-desktop">
-							<h3><span class="highlight highlight-wrapping highlight-red">This <a href="" class="underline-teal">Toolkit</a> is part of</span></h3>
+							<h3><span class="highlight highlight-wrapping highlight-red">This <a href="" class="underline-teal-large">Toolkit</a> is part of</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">The Leadership</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">Conference’s Policing</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">Campaign project.</span></h3>
@@ -207,7 +207,7 @@ get_header(); ?>
 
 						<div class="section-five-content">
 							<div class="s5item1">
-              	Visit <a href="" class="underline underline-teal">New Era of Policing:</a> A Guide for Fair, Safe, and Effective Policing for more information about the current state of policing, and recommendations for all levels of police departments to make improvements.
+              	Visit <a href="" class="underline-teal">New Era of Policing:</a> A Guide for Fair, Safe, and Effective Policing for more information about the current state of policing, and recommendations for all levels of police departments to make improvements.
             	</div>
 							<div class="s5item2">
 								<div>

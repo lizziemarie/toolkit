@@ -30,20 +30,20 @@ body {
 
 /* NEW MOBILE STYLES AS OF FEB 27 */
 h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy', sans-serif, Arial;
   font-weight: 800;
   font-size: 30px;
   color: #135971;
   line-height: 1.66;
 }
 h3 /* section 3 text over image*/ {
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy', sans-serif, Arial;
   color: #FFFFFF;
   font-size: 30px;
   font-weight: 800;
-  line-height: 1.5;
+  line-height: 1.7;
   margin: 0;
-  letter-spacing: 0.1px;
+  letter-spacing: 1px;
 }
 
 h6 /* text on section 2 of homepage "now more than ever"*/{
@@ -61,23 +61,34 @@ p {
   line-height: 1.44;
 }
 
-/* underline styles */
-.underline, a.underline {
-  text-decoration: underline;
-}
+
+/*------------------------------------*/
+/*------ Basic Underline Styles ------*/
+/*------------------------------------*/
+
+
+/*------------------------------------*/
+/*--- Individual Custom Underlines ---*/
+/*------------------------------------*/
 .underline-red {
+  text-decoration: underline;
   text-decoration-color: #E23425;
   text-decoration-skip: ink;
 }
+
 a.underline-teal,
-.underline-teal,
 a:visited .underline-teal,
 a:hover .underline-teal,
 a:focus .underline-teal {
-  text-decoration-color: #38A5A8;
-  text-decoration-skip: ink;
+  border-bottom: 2px solid #38A5A8;
 }
 
+span a.underline-teal-large,
+span a:visited .underline-teal-large,
+span a:hover .underline-teal-large,
+span a:focus .underline-teal-large {
+  text-decoration-color: #38A5A8;
+}
 
 /* highlight styles */
 h3.highlight {
@@ -91,7 +102,7 @@ h3.highlight {
 
   .highlight-wrapping {
     position: relative;
-    padding: 0 10px 0 30px;
+    padding: 8px 10px 8px 30px; /* top and bottom padding adds to highlighted area*/
   }
 
   .highlight-wrapping-inline {
@@ -201,8 +212,6 @@ h3.highlight {
         font-size:14px;
         font-weight: 800;
         line-height: 17px;
-        text-decoration: underline;
-        text-decoration-color: #38A5A8;
       }
 
     .scrollarrow {
