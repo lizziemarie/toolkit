@@ -10,6 +10,7 @@
 </div><!-- #page -->
 
 <section id="footer">
+
     <div class="footer-item" id="footer-logo">
       <a href="" target="_blank">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef.png, <?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef@2x.png 2x"alt="The Leadership Conference on Civil and Human Rights Logo">
@@ -20,11 +21,13 @@
     <div class="footer-item" id="footer-additional-links">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-link.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-link.png, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-link@2x.png 2x" alt="">
       <p class="title">Additional Links</p>
+      <div id="additional-links-menu">
         <?php
           wp_nav_menu( array(
             'theme_location' => 'footer-menu',
             'container_class' => 'footer-menu-class' ) );
         ?>
+      </div>
     </div>
 
     <div class="footer-item" id="footer-location">
@@ -36,24 +39,24 @@
         (202) 466-3311</p>
     </div>
 
-    <div class="footer-item" id="footer-download-toolkit">
+    <div class="footer-item footer-download-div" id="footer-download-toolkit">
       <p>
-        <a href="<?php the_field('download'); ?>" class="" target="_blank"><?php the_field('download_button_text'); ?>
+        <a href="<?php the_field('download'); ?>" class="download-button" target="_blank"><?php the_field('download_button_text'); ?>
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-download-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-download-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-download-red@2x.png 2x" alt="">
         </a>
       </p>
-      <p>
-        <a href="<?php the_field('download'); ?>" class="" target="_blank">Descargar en Español</a>
+      <p class="download-spanish">
+        <a href="<?php the_field('download'); ?>" class="underline-teal" target="_blank">Descargar en Español</a>
       </p>
     </div>
 
-    <div class="footer-item" id="footer-download-guidebook">
+    <div class="footer-item footer-download-div" id="footer-download-guidebook">
       <p>
-        <a href="<?php the_field('download'); ?>" class="" target="_blank">Download Guidebook
+        <a href="<?php the_field('download'); ?>" class="download-button" target="_blank">Download Guidebook
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-download-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-download-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-download-red@2x.png 2x" alt="">
         </a>
-      <p>
-        <a href="<?php the_field('download'); ?>" class="" target="_blank">Descargar en Español</a>
+      <p class="download-spanish">
+        <a href="<?php the_field('download'); ?>" class="underline-teal" target="_blank">Descargar en Español</a>
       </p>
     </div>
 

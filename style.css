@@ -18,12 +18,14 @@ body {
 
 /* NEW MOBILE STYLES AS OF FEB 27 */
 h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 800;
   font-size: 30px;
   color: #135971;
   line-height: 1.66;
 }
 h3 /* section 3 text over image*/ {
+  font-family: 'Nunito Sans', sans-serif;
   color: #FFFFFF;
   font-size: 30px;
   font-weight: 800;
@@ -32,6 +34,7 @@ h3 /* section 3 text over image*/ {
 }
 
 h6 /* text on section 2 of homepage "now more than ever"*/{
+  font-family: 'Nunito Sans', sans-serif;
   color: #38A5A8;
   font-size: 25px;
   font-weight: 800;
@@ -40,7 +43,7 @@ h6 /* text on section 2 of homepage "now more than ever"*/{
 }
 p {
   color: #091C27;
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
   line-height: 1.44;
 }
@@ -322,9 +325,10 @@ h3.highlight {
   .s5item2{
     margin: 30px 0 0 0;
     display: grid;
+    grid-template-columns: auto;
+    padding: 0 0 0 45%;
     justify-items: start;
-    position: relative;
-    left: 45%;
+    grid-row-gap: 5px;
   }
     .s5item2 div {
       margin: 20px 0 0 0;
@@ -335,6 +339,8 @@ h3.highlight {
         font-weight: 800;
         line-height: 1.22;
         text-align: left;
+        display: flex;
+        align-content: center;
       }
       .share-button {
         border: 2px solid #E23425;
@@ -378,25 +384,60 @@ h3.highlight {
 
 #footer {
   background-color: #091C27;
-  padding: 5% 35px 5% 35px;
+  padding: 45px 35px 5% 35px;
   display: grid;
   grid-template-columns: calc(100vw - 70px);
 }
 
-#footer, #footer p, #footer a, #footer a:visited {
-  color: #FFFFFF;
+    #footer, #footer p, #footer a, #footer a:visited {
+      color: #FFFFFF;
+    }
+
+    #footer p.title {
+      font-size: 14px;
+      line-height: 1.21;
+      font-weight: 800;
+      text-transform: uppercase;
+      display: inline;
+      margin: 0 0 10px 0;
+    }
+/* footer logo */
+#footer-logo {
+  border-bottom: 0.5px solid #D3D3D3;
+  padding: 0 0 15px 0;
+}
+    #footer-logo p{
+      padding: 20px 15% 0 15%;
+    }
+    #footer-logo img{
+      width: 100%;
+      padding: 0 20% 0 20%;
+    }
+
+/* additional links */
+#footer-additional-links {
+  margin: 20px 0 0 0;
 }
 
-#footer p.title {
-  font-size: 14px;
-  line-height: 1.21;
-  font-weight: 800;
-  text-transform: uppercase;
-  display: inline;
+#footer-additional-links, #footer-location {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  padding: 20px 5% 0 15%;
+  grid-column-gap: 12px;
 }
+#footer-additional-links img, #footer-location img {
+  display: flex;
+  justify-self: end;
+}
+  #additional-links-menu, .footer-text {
+    grid-column: 2/3;
+  }
 #menu-footer-menu{
   margin-left: 0px;
-  padding: 10px 0 0 0;
+  padding: 0 0 0 0;
+}
+ul#menu-footer-menu {
+  margin: 0 0 10px 0;
 }
 ul#menu-footer-menu.menu li, #footer p{
   font-size: 14px;
@@ -405,14 +446,44 @@ ul#menu-footer-menu.menu li, #footer p{
   list-style: none;
 }
 ul#menu-footer-menu.menu li {
-  padding: 4px 0 0 18px;
+  padding: 4px 0 0 0;
 }
-#footer p.footer-text {
+
+/* location details */
+/*#footer p.footer-text {
   padding: 10px 0 0 18px;
-}
+} */
 #footer-copyright p {
   text-align: center;
 }
+
+/* download details */
+.footer-download-div {
+  padding: 0 4% 0 4%;
+}
+.footer-download-div p {
+  font-size: 16px;
+}
+.footer-download-div .download-button {
+  align-content: flex-end;
+}
+.footer-download-div .download-spanish {
+  text-align: center;
+  padding: 0 0 0 0;
+  margin: 0 0 10px 0;
+}
+/* social links */
+#footer-social {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+#footer-social a {
+  padding: 0 5px 0 5px;
+}
+
+
+
 
 
 
