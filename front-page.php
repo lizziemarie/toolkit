@@ -210,7 +210,7 @@ get_header(); ?>
               	Visit <a href="" class="underline-teal">New Era of Policing:</a> A Guide for Fair, Safe, and Effective Policing for more information about the current state of policing, and recommendations for all levels of police departments to make improvements.
             	</div>
 							<div class="s5item2">
-								<div>
+								<div id="tools-link">
 									<a href="<?php the_field('box_link_5'); ?>">
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png, <?php echo get_stylesheet_directory_uri(); ?>/img/horn@2x.png 2x" class="inline-icon" alt="tools icon">
 										Tools for Action
@@ -230,6 +230,7 @@ get_header(); ?>
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/chat-alt.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/chat-alt.png, <?php echo get_stylesheet_directory_uri(); ?>/img/chat-alt@2x.png 2x" class="inline-icon" alt="tools icon">
 									</a>
 								</p>
+								
 							</div>
 					</section>
 					<!-- end of section 5 -->
