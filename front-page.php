@@ -78,11 +78,16 @@ get_header(); ?>
 
 					<!-- start of section 1 -->
 					<section class="section-one gradient">
-						<div class="hero-highlight">
+						<div class="hero-highlight not-desktop">
 							<h3><span class="highlight highlight-wrapping highlight-red">You can change the</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">way policing happens</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">in your community.</span></h3>
-						<div>
+						</div>
+
+						<div class="hero-highlight not-mobile not-tablet">
+							<h3><span class="highlight highlight-wrapping highlight-red">You can change the way policing</span></h3>
+							<h3><span class="highlight highlight-wrapping highlight-red">happens in your community.</span></h3>
+						</div>
 
 						<div class="s1content">
 							<div class="homepage-subtitle">
@@ -226,14 +231,17 @@ get_header(); ?>
 									</a>
 								</div>
 
+							</div>
+						</div>
+							<div id="share-button">
 								<p class="share-button">
 									<a href="" target="_blank">
 										Share This
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/chat-alt.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/chat-alt.png, <?php echo get_stylesheet_directory_uri(); ?>/img/chat-alt@2x.png 2x" class="inline-icon" alt="tools icon">
 									</a>
 								</p>
-
 							</div>
+
 					</section>
 					<!-- end of section 5 -->
 

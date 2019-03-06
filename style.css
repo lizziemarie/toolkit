@@ -364,7 +364,7 @@ h3.highlight {
     .s5item2 div {
       margin: 20px 0 0 0;
     }
-      .s5item2 a {
+      .s5item2 a, div#share-button a{
         color: #FFFFFF;
         font-size: 18px;
         font-family: 'Gilroy', sans-serif;
@@ -373,6 +373,10 @@ h3.highlight {
         text-align: left;
         display: flex;
         align-content: center;
+      }
+      div#share-button {
+        padding: 0 0 0 45%;
+        margin: 0px 25px 0 0;
       }
       .share-button {
         border: 2px solid #E23425;
@@ -824,8 +828,15 @@ h3 /* section 3 text over image*/ {
       justify-items: end;
     }
       #glossary-link {
-        padding: 0 58px 0 0;
+        padding: 0 50px 0 0;
       }
+      .section-five div#share-button {
+        margin: 0 48px 0 0;
+        display: block;
+        float:right;
+        clear: right;
+      }
+
 
 /* Section 6 styles */
       .section-six {
@@ -942,6 +953,11 @@ h3 /* section 3 text over image*/ {
           }
 }
 
+
+
+/*------------------------------------*/
+/*-------- Desktop Styles ----------*/
+/*------------------------------------*/
 @media screen and (min-width: 940px) {
 /*OLD styles here!*/
             /* Nav bar styling*/
@@ -983,7 +999,7 @@ h3 /* section 3 text over image*/ {
     }
     h3 /* section 3 text over image*/ {
     	font-size: 60px;
-    	line-height: 1.4;
+    	line-height: 1.6;
     }
     .not-tablet {
       display: block;
@@ -1029,7 +1045,7 @@ h3 /* section 3 text over image*/ {
         }
         .s4item3 {
           grid-column: 1/3;
-          margin: 40px 0 0 0;
+          margin: 10px 0 0 0;
           display: flex;
         }
             .s4item3 a {
@@ -1049,6 +1065,7 @@ h3 /* section 3 text over image*/ {
 
       .section-five-content {
         max-width: 547px;
+        margin-top: 100px;
       }
 
         .s5item1 {
@@ -1072,10 +1089,14 @@ h3 /* section 3 text over image*/ {
         div#glossary-link {
           padding: 0 0 0 0;
         }
-        .share-button {
-          margin: 80px 0 0 0;
-          max-width: 200px;
+
+        .section-five div#share-button {
+          padding: 100px 0 0 0;
         }
+            .share-button {
+              max-width: 200px;
+            }
+
 
     /* Section 6 styles */
     .section-six {
@@ -1099,14 +1120,14 @@ h3 /* section 3 text over image*/ {
 
 
 
-    /* desktop highlight styles */
-    h3 .highlight {
-      margin-bottom: 10px;
-    }
-
+/*------------------------------------*/
+/*-------- Highlight Styles ----------*/
+/*------------------------------------*/
       .highlight-wrapping {
-        padding: 8px 10px 8px 60px;
+        padding: 5px 10px 5px 60px;
       }
+
+
 
 /* --------------------------------------- */
 /* ---- Desktop Footer Styles ------------ */
