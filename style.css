@@ -11,13 +11,13 @@
 /* Site Wide Styles ======================*/
 @font-face {
   font-family: 'Gilroy';
-  src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/38E43B_1_0.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/38E43B_0_0.woff);
+  src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-light-webfont.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-light-webfont.woff);
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/38E43B_1_0.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/38E43B_1_0.woff);
+  src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-extrabold-webfont.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-extrabold-webfont.woff);
   font-weight: 800;
 }
 
