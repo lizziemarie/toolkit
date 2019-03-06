@@ -200,11 +200,26 @@ h3.highlight {
     font-weight: 800;
     width: 100%;
   }
-    .download-button a, .download-button a:visited{
+  .video-button {
+    background-color: #38A5A8;
+    width: 200px;
+    display: flex;
+    align-content: center;
+    font-weight: 800;
+    padding: 1.16em 0 1.16em 2em;
+    position: relative;
+    top: -24px;
+    left: 80vw;
+  }
+    .download-button a,
+    .download-button a:visited,
+    .video-button a,
+    .video-button a:visited{
       color: #FFFFFF;
       text-decoration: none;
     }
-    .download-button img {
+    .download-button img,
+    .video-button img {
       margin: 0 0 0 24px;
     }
   .download-spanish {
@@ -1006,6 +1021,25 @@ h3 /* section 3 text over image*/ {
     }
 
     /* Front Page  Styles */
+    .section-one {
+      height: 767px;
+      display: grid;
+      grid-template-rows: 300px auto;
+    }
+    .s1content {
+      justify-self: right;
+      max-width: 50vw;
+      padding-top: 100px;
+    }
+    .homepage-subtitle {
+      font-size: 30px;
+    }
+    .scrollarrow {
+      align-self: end;
+      padding-bottom:25px;
+    }
+
+    /* section two and four styles*/
     .section-two, .section-four {
       grid-template-columns: 35% 65%;
       padding: 80px 40px 100px 0px;

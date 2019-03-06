@@ -28,16 +28,6 @@ get_header(); ?>
         $size = "full";
         ?>
         <section>
-          <div class="home-section hero not-mobile not-tablet" style="background-image: url(<?php echo $feature_image; ?>);">
-            <div class="hero-content grid">
-              <div>
-								<h2><?php the_field('feature_title'); ?></h2>
-              	<h6><?php the_field('feature_subtitle'); ?></h6>
-							</div>
-              <p><a href="<?php the_field('download'); ?>" class="btn btnRed btnHero" target="_blank"><?php the_field('download_button_text'); ?></a></p>
-							<p><a href="<?php the_field('download'); ?>" class="" target="_blank">Descargar en Español</a></p>
-            </div>
-          </div>
 
 					<div id="gallery" class="not-mobile not-tablet">
 						<figure class="slider">
@@ -111,6 +101,15 @@ get_header(); ?>
 							<a href="#sectiontwo">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/scrollarrow.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/scrollarrow.png, <?php echo get_stylesheet_directory_uri(); ?>/img/scrollarrow@2x.png 2x"class="inline-icon" alt="scroll">
 							</a>
+						</div>
+
+						<div class="not-mobile not-tablet" id="asl-video">
+							<p class="video-button click">
+								<a href="" class="" target="_blank">
+									ASL Video
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x"class="inline-icon" alt="download">
+								</a>
+							</p>
 						</div>
 
 					</section>
