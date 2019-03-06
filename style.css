@@ -68,7 +68,7 @@ p {
 
 
 /*------------------------------------*/
-/*--- Individual Custom Underlines ---*/
+/*--- Individual Underline Styles ----*/
 /*------------------------------------*/
 .underline-red {
   text-decoration: underline;
@@ -90,7 +90,9 @@ span a:focus .underline-teal-large {
   text-decoration-color: #38A5A8;
 }
 
-/* highlight styles */
+/*------------------------------------*/
+/*-------- Highlight Styles ----------*/
+/*------------------------------------*/
 h3.highlight {
   line-height: 0.85em;
   margin-bottom: 1px;
@@ -102,7 +104,7 @@ h3.highlight {
 
   .highlight-wrapping {
     position: relative;
-    padding: 8px 10px 8px 30px; /* top and bottom padding adds to highlighted area*/
+    padding: 4px 10px 4px 30px; /* top and bottom padding adds to highlighted area*/
   }
 
   .highlight-wrapping-inline {
@@ -287,6 +289,7 @@ h3.highlight {
         .s4item3 a {
           color: #E23425;
           font-size: 18px;
+          font-family: 'Gilroy', sans-serif;
           font-weight: 800;
           line-height: 1.22;
           margin: 40px 40px 0 0;
@@ -330,7 +333,7 @@ h3.highlight {
 }
 .section-five h3 {
   margin: 0 0 0 0; /* this is different for desktop*/
-  line-height: 1.6; /* this is different for desktop*/
+  line-height: 1.7; /* this is different for desktop*/
 }
 
 .section-five-content {
@@ -433,7 +436,7 @@ h3.highlight {
     }
 /* footer logo */
 #footer-logo {
-  border-bottom: 0.5px solid #D3D3D3;
+  border-bottom: 2px solid #29373E;
   padding: 0 0 15px 0;
 }
     #footer-logo p{
@@ -714,13 +717,13 @@ ul#menu-footer-menu.menu li {
               padding-right: 0px;
             }
 
-/* ========================================*/
-/* ============ Media Queries =============*/
-/* ========================================*/
+/* --------------------------------------- */
+/* ----------- Media Queries ------------- */
+/* --------------------------------------- */
 @media screen and (min-width: 768px) {
-/* ========================================*/
-/* ============ Tablet Styles =============*/
-/* ========================================*/
+/* --------------------------------------- */
+/* ----------- Tablet Styles ------------- */
+/* --------------------------------------- */
 /* NEW DESKTOP STYLES AS OF MAR 5 */
 .not-desktop {
   display: none;
@@ -741,7 +744,19 @@ h3 /* section 3 text over image*/ {
   line-height: 1.6;
 }
 
-/* Front Page  Styles */
+/* --------------------------------------- */
+/* ----------- Front Page Styles --------- */
+/* --------------------------------------- */
+.s1content{
+  max-width: 70vw;
+  padding: 60px 20px 40px 30px;
+}
+
+.download-button {
+  max-width: 330px;
+}
+
+
 .section-two {
   padding: 40px 30px 60px 30px;
 }
@@ -850,12 +865,60 @@ h3 /* section 3 text over image*/ {
           padding: 10px 0 0 0;
 
           grid-column: 2/3;
-      }*/
+      }
+
+
+
+/* --------------------------------------- */
+/* ----------- Footer Styles ------------- */
+/* --------------------------------------- */
+#footer {
+  padding: 45px 100px 45px 100px;
+  grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+}
+#footer-logo {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+  #footer-logo img {
+    width: 500px;
+  }
+#footer-additional-links {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding-top: 0px;
+}
+
+#footer-location{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+#footer-download-toolkit {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#footer-download-guidebook {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+#footer-social {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+#footer-copyright {
+  grid-column: 1/3;
+  grid-row: 5/6;
+}
+
 
 
   /*OLD styles*/
-
-          /* Site Wide Styles ======================*/
+  /* Site Wide Styles ======================*/
           .hero-content {
             grid-template-columns: repeat(2,50%);
           }
@@ -1044,3 +1107,66 @@ h3 /* section 3 text over image*/ {
       .highlight-wrapping {
         padding: 8px 10px 8px 60px;
       }
+
+/* --------------------------------------- */
+/* ---- Desktop Footer Styles ------------ */
+/* --------------------------------------- */
+#footer {
+  padding: 65px 10% 65px 10%;
+  grid-template-columns: 25% 35% 40%;
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+}
+#footer-logo {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  padding: 20px 5% 0 5%;
+  margin-right: 30px;
+  border-bottom: none;
+  border-right: 2px solid #29373E;
+}
+  #footer-logo img {
+    width: 500px;
+  }
+#footer-additional-links {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-left: 0px;
+}
+#footer-location{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  padding-left: 0px;
+}
+#footer-download-toolkit {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#footer-download-guidebook {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+      .footer-download-div {
+        padding-left: calc(10% + 12px);
+        max-width: 350px;
+      }
+      .footer-download-div p.download-spanish {
+        text-align: left;
+      }
+
+#footer-social {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: right;
+  align-self: top;
+}
+
+#footer-copyright {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+  #footer-copyright p {
+    text-align: left;
+    padding-left: 5%;
+  }

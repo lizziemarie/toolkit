@@ -28,7 +28,7 @@ get_header(); ?>
         $size = "full";
         ?>
         <section>
-          <div class="home-section hero not-mobile" style="background-image: url(<?php echo $feature_image; ?>);">
+          <div class="home-section hero not-mobile not-tablet" style="background-image: url(<?php echo $feature_image; ?>);">
             <div class="hero-content grid">
               <div>
 								<h2><?php the_field('feature_title'); ?></h2>
@@ -39,7 +39,7 @@ get_header(); ?>
             </div>
           </div>
 
-					<div id="gallery" class="not-mobile">
+					<div id="gallery" class="not-mobile not-tablet">
 						<figure class="slider">
 							<figure>
 								<?php
@@ -93,11 +93,13 @@ get_header(); ?>
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/download.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/download.png, <?php echo get_stylesheet_directory_uri(); ?>/img/download@2x.png 2x"class="inline-icon" alt="download">
 								</a>
 							</p>
-							<p class="download-spanish">
-								<a href="<?php the_field('download'); ?>" class="underline-teal" target="_blank">
+							<div>
+								<p class="download-spanish">
+									<a href="<?php the_field('download'); ?>" class="underline-teal" target="_blank">
 									Descargar en Español
-								</a>
-							</p>
+									</a>
+								</p>
+							</div>
 						</div>
 
 						<div class="scrollarrow">
@@ -230,7 +232,7 @@ get_header(); ?>
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/chat-alt.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/chat-alt.png, <?php echo get_stylesheet_directory_uri(); ?>/img/chat-alt@2x.png 2x" class="inline-icon" alt="tools icon">
 									</a>
 								</p>
-								
+
 							</div>
 					</section>
 					<!-- end of section 5 -->

@@ -15,7 +15,7 @@
       <a href="" target="_blank">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef.png, <?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef@2x.png 2x"alt="The Leadership Conference on Civil and Human Rights Logo">
       </a>
-      <p>The Policing Campaign is a project of The Leadership Conference on Civil and Human Rights & The Leadership Conference Education Fund.</p>
+      <p>The Policing Campaign is a project of <a href="" class="underline-teal">The Leadership Conference on Civil and Human Rights</a> & The Leadership Conference Education Fund.</p>
     </div>
 
     <div class="footer-item" id="footer-additional-links">
