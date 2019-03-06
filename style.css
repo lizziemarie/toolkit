@@ -10,15 +10,15 @@
 
 /* Site Wide Styles ======================*/
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-light-webfont.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-light-webfont.woff);
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-extrabold-webfont.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-extrabold-webfont.woff);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 body {
@@ -30,8 +30,8 @@ body {
 
 /* NEW MOBILE STYLES AS OF FEB 27 */
 h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
-  font-family: 'Gilroy', sans-serif, Arial;
-  font-weight: 800;
+  font-family: "Gilroy", sans-serif, Arial;
+  font-weight: 700;
   font-size: 30px;
   color: #135971;
   line-height: 1.66;
@@ -180,21 +180,23 @@ h3.highlight {
     top: 100px;
   }
   .s1content{
-    padding: 100px 47px 60px 17px;
+    padding: 100px 10% 50px 17px;
   }
   .homepage-subtitle {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 800;
+    font-family: 'Gilroy', sans-serif;
     line-height: 1.2;
   }
   .download-button {
     border: 2px solid #38A5A8;
-    padding: 21px 0 21px 36px;
+    padding: 1.16em 0 1.16em 2em;
     margin: 20px 0 0 0;
     display: flex;
     align-content: center;
     font-weight: 800;
+    width: 100%;
   }
     .download-button a, .download-button a:visited{
       color: #FFFFFF;
@@ -205,6 +207,7 @@ h3.highlight {
     }
   .download-spanish {
       padding: 14px 0 0 0;
+      font-family: 'Gilroy', sans-serif;
   }
 
       .download-spanish a {
@@ -275,6 +278,7 @@ h3.highlight {
     }
     .s4item2 {
       color: #FFFFFF;
+      font-family: 'Gilroy', sans-serif;
       font-size: 24px; /*different for desktop*/
       font-weight: 800;
       line-height: 1.22;
@@ -337,6 +341,7 @@ h3.highlight {
   .s5item1 {
     color: #FFFFFF;
     font-size: 20px;
+    font-family: 'Gilroy', sans-serif;
     font-weight: 800;
     line-height: 1.35; /* different on desktop*/
   }
@@ -359,6 +364,7 @@ h3.highlight {
       .s5item2 a {
         color: #FFFFFF;
         font-size: 18px;
+        font-family: 'Gilroy', sans-serif;
         font-weight: 800;
         line-height: 1.22;
         text-align: left;
@@ -386,6 +392,7 @@ h3.highlight {
 }
 .section-six #toolkit-title {
   color: #38A5A8;
+  font-family: 'Gilroy', sans-serif;
   font-size: 36px;
   font-weight: 800;
   line-height: 1.55;
@@ -438,6 +445,9 @@ h3.highlight {
     }
 
 /* additional links */
+.footer-item p.title {
+  font-family: 'Gilroy', sans-serif;
+}
 #footer-additional-links {
   margin: 20px 0 0 0;
 }
