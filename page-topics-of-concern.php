@@ -16,28 +16,74 @@ get_header();
       $feature_image = get_field('feature_image');
       $size = "full";
       ?>
-    <div class="home-section hero" style="background-image: url(<?php echo $feature_image; ?>);">
-      <div class="hero-content grid">
-        <h2><?php the_title(); ?></h2>
-        <p><a href="<?php the_field('download'); ?>" class="btn btnRed btnHero" target="_blank"><?php the_field('download_button_text'); ?></a></p>
-      </div>
-    </div>
 
-    <div class="grid content-container content-grid-2">
-      <div class="social-bar">
-        <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
-      </div>
-      <div class="page-content">
-        <?php the_content(); ?>
-      </div>
+
+      <section class="section-one gradient" style="background-image: url(<?php echo $feature_image; ?>);">
+        <div class="hero-highlight not-desktop">
+          <h3><span class="highlight highlight-wrapping highlight-red"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/trending-up@2x.png 2x" class="inline-icon" alt="trending up icon">Topics</span></h3>
+          <h3><span class="highlight highlight-wrapping highlight-red">of Concern</span></h3>
+        </div>
+
+        <div class="hero-highlight not-mobile not-tablet">
+          <h3><span class="highlight highlight-wrapping highlight-red">You can change the way policing</span></h3>
+          <h3><span class="highlight highlight-wrapping highlight-red">happens in your community.</span></h3>
+        </div>
+
+        <div class="s1content">
+          <div class="homepage-subtitle">
+            Find information about key issues, elements of change, talking points and strategies for overcoming opposition.
+          </div>
+          <p class="download-button click">
+            <a href="<?php the_field('download'); ?>" class="" target="_blank">Download Topics of Concern
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/download.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/download.png, <?php echo get_stylesheet_directory_uri(); ?>/img/download@2x.png 2x"class="inline-icon" alt="download">
+            </a>
+          </p>
+
+        </div>
+
+        <div class="scrollarrow">
+          <a href="#sectiontwo">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/scrollarrow.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/scrollarrow.png, <?php echo get_stylesheet_directory_uri(); ?>/img/scrollarrow@2x.png 2x"class="inline-icon" alt="scroll">
+          </a>
+        </div>
+
+      </section>
+      <!-- end of section 1 -->
+
+      <!-- start of section 2 -->
+      <section class="section-two" id="sectiontwo">
+
+        <div class="s2content secondary-page">
+
+          <div class="s2item1 secondary-page">
+            <h2 class="underline-red">Download the documents relevant to the issues your are concerned about to learn more, To take to your next meeting with community members, legislators or policymakers!</h2>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- end of section 2 -->
+
+      <!-- start of section 3 -->
+
+
       <div class="custom-post-types-section grid">
         <?php $args = array( 'post_type' =>'topics concern', );
         $query = new WP_Query( $args );?>
         <?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
           <a href="<?php the_permalink(); ?>" class="">
-            <div class="special-color custom-post" style="background-color: <?php the_field('color'); ?>;">
+            <div class="special-color custom-post">
+              <?php
+              $topics_icon = get_field('topics_icon');
+              $size = "full";
+                if( $topics_icon ) {
+                  echo wp_get_attachment_image( $topics_icon, $size );
+                }
+              ?>
               <h2><?php the_title(); ?></h2>
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x"class="inline-icon" alt="download">
+              <p><?php the_field(topics_of_concern_subtitle); ?></p>
             </div>
           </a>
 

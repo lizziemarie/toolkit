@@ -73,7 +73,6 @@ p {
 .underline-red {
   text-decoration: underline;
   text-decoration-color: #E23425;
-  text-decoration-skip: ink;
 }
 
 a.underline-teal,
@@ -174,6 +173,9 @@ h3.highlight {
   background-repeat: no-repeat;
 
   height: 700px;
+
+  display: grid;
+  align-items: end;
 }
 
 
@@ -182,7 +184,7 @@ h3.highlight {
     top: 100px;
   }
   .s1content{
-    padding: 100px 10% 50px 17px;
+    padding: 100px 10% 0 17px;
   }
   .homepage-subtitle {
     color: #FFFFFF;
@@ -237,6 +239,7 @@ h3.highlight {
     .scrollarrow {
       display: flex;
       justify-content: center;
+      padding-bottom: 20px;
     }
 
 /* turn mouse to a click icon*/
@@ -504,15 +507,12 @@ ul#menu-footer-menu.menu li {
   padding: 4px 0 0 0;
 }
 
-/* location details */
-/*#footer p.footer-text {
-  padding: 10px 0 0 18px;
-} */
+/* mobile location details */
 #footer-copyright p {
   text-align: center;
 }
 
-/* download details */
+/* mobile download details */
 .footer-download-div {
   padding: 0 4% 0 4%;
 }
@@ -527,7 +527,7 @@ ul#menu-footer-menu.menu li {
   padding: 0 0 0 0;
   margin: 0 0 10px 0;
 }
-/* social links */
+/* mobile social links */
 #footer-social {
   display: flex;
   justify-content: center;
@@ -537,31 +537,14 @@ ul#menu-footer-menu.menu li {
   padding: 0 5px 0 5px;
 }
 
+/* Mobile Topics of Concern  ==================================*/
+
+.secondary-page h2 {
+  font-size: 20px;
+}
 
 
-
-
-
-/*Old Styles */
-            .content-container {
-              width: 96%;
-              max-width: 1300px;
-              padding: 0 2%;
-              margin: 20px auto 0;
-            }
-            .hero {
-              height: 45vh;
-              background-size: cover;
-              background-position: center center;
-              position: relative;
-              vertical-align: top;
-            }
-            .hero-content {
-              justify-items: center;
-              text-align: center;
-              padding: 10% 5% 0% 5%;
-              color: #ffffff;
-            }
+/*OLD*/
             /* Hide Site Info Bar */
             .site-info {
               display: none;
@@ -571,32 +554,7 @@ ul#menu-footer-menu.menu li {
               margin: 0;
             }
 
-            /*Button styling*/
-            a.btn {
-              display: block;
-              position: relative;
-              float: left;
-              padding: 15px 20px;
-              margin: 10px 0px 10px 0;
-              font-weight: 600;
-              text-align: center;
-              text-transform: uppercase;
-              line-height: 40px;
-              color: #FFF;
-              transition: all 0.2s ;
-            }
-            .btnRed {
-              background: #FC371E;
-            }
-            .btnTeal {
-              background:#34A9AC;
-            }
-            .btnHero {
-              width: 250px;
-            }
-            .btnSide {
-              width: 100%;
-            }
+
 
             /* Set site container to full width */
             body .site.grid-container {
@@ -617,49 +575,10 @@ ul#menu-footer-menu.menu li {
               text-align: center;
             }
             .custom-post h2 {
-              color: #ffffff;
               font-weight: bold;
               margin: 0 2%;
               text-transform: uppercase;
             }
-            /* Front Page Styles =====================*/
-            /* Gallery styles*/
-            @keyframes slidy {
-            0% { left: 0%; }
-            20% { left: 0%; }
-            25% { left: -100%; }
-            45% { left: -100%; }
-            50% { left: -200%; }
-            70% { left: -200%; }
-            75% { left: -300%; }
-            95% { left: -300%; }
-            100% { left: -400%; }
-            }
-            * {
-              box-sizing: border-box;
-            }
-            figure {
-              margin: 0;
-            }
-            div#gallery {
-              width: 100%;
-              overflow: hidden;
-            }
-            figure.slider {
-              position: relative;
-              width: 500%;
-              font-size: 0;
-              animation: 20s slidy infinite;
-            }
-            figure.slider figure {
-              width: 20%;
-              height: auto;
-              display: inline-block;
-              position: inherit;
-            }
-            figure.slider img {
-              width: 100%;
-              height: auto; }
 
 
             /* By the Numbers ============================*/
