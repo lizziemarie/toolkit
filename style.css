@@ -24,11 +24,26 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
-.grid {
-  display: grid;
-} /* take this out!*/
+.not-mobile {
+  display: none;
+}
+/* Hide Site Info Bar */
+.site-info {
+  display: none;
+}
+/* Page Content */
+.page-content {
+  margin: 0;
+}
 
-/* NEW MOBILE STYLES AS OF FEB 27 */
+/* Set site container to full width */
+body .site.grid-container {
+    max-width: 100%; /* POTENTIAL TO REMOVE */
+}
+
+/*------------------------------------*/
+/*-------- Mobile Styles ----------*/
+/*------------------------------------*/
 h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
   font-family: "Gilroy", sans-serif, Arial;
   font-weight: 700;
@@ -60,12 +75,6 @@ p {
   font-size: 18px;
   line-height: 1.44;
 }
-
-
-/*------------------------------------*/
-/*------ Basic Underline Styles ------*/
-/*------------------------------------*/
-
 
 /*------------------------------------*/
 /*--- Individual Underline Styles ----*/
@@ -133,13 +142,16 @@ h3.highlight {
     color: #ffffff;
   }
 
-  /* icons inline */
+  /*------------------------------------*/
+  /*-------- Inline Icons Styles -------*/
+  /*------------------------------------*/
   img.inline-icon {
     padding: 0 12px 0 0;
   }
 
-
-/* Accesibility Skip to content*/
+/*------------------------------------*/
+/*-------- Accesibility Styles -------*/
+/*------------------------------------*/
 #skip-to-content {
   padding: 1em;
   position: absolute;
@@ -154,12 +166,11 @@ h3.highlight {
   top: 0;
   background: #222;
 }
-/*More site wide styles*/
-.not-mobile {
-  display: none;
-}
 
-/* Front Page  Styles */
+
+/*------------------------------------*/
+/*----- Mobile Front Page Styles -----*/
+/*------------------------------------*/
 .section-one {
   /*overlay grey gradient on bottom homepage image*/
   background: -moz-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png') no-repeat;
@@ -179,44 +190,31 @@ h3.highlight {
 }
 
 
-  .hero-highlight {
-    position: relative;
-    top: 100px;
-  }
-  .s1content{
-    padding: 100px 10% 0 17px;
-  }
-  .homepage-subtitle {
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 800;
-    font-family: 'Gilroy', sans-serif;
-    line-height: 1.2;
-  }
-  .download-button {
-    border: 2px solid #38A5A8;
-    padding: 1.16em 0 1.16em 2em;
-    margin: 20px 0 0 0;
-    display: flex;
-    align-content: center;
-    font-weight: 800;
-    width: 100%;
-  }
-  .video-button {
-    background-color: #38A5A8;
-    width: 200px;
-    display: flex;
-    align-content: center;
-    font-weight: 800;
-    padding: 1.16em 0 1.16em 2em;
-    position: relative;
-    top: -24px;
-    left: 80vw;
-  }
+    .hero-highlight {
+      position: relative;
+      top: 100px;
+    }
+    .s1content{
+      padding: 100px 10% 0 17px;
+    }
+    .homepage-subtitle {
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: 'Gilroy', sans-serif;
+      line-height: 1.2;
+    }
+    .download-button {
+      border: 2px solid #38A5A8;
+      padding: 1.16em 5% 1.16em 5%;
+      margin: 20px 0 0 0;
+      display: flex;
+      align-content: center;
+      font-weight: 800;
+
+    }
     .download-button a,
-    .download-button a:visited,
-    .video-button a,
-    .video-button a:visited{
+    .download-button a:visited {
       color: #FFFFFF;
       text-decoration: none;
     }
@@ -241,8 +239,22 @@ h3.highlight {
       justify-content: center;
       padding-bottom: 20px;
     }
+    /* styling for asl video button*/
+    #asl-video {
+      display: none;
+    }
+    /*.video-button {
+      background-color: #38A5A8;
+      width: 200px;
+      display: flex;
+      align-content: center;
+      font-weight: 800;
+      padding: 1.16em 0 1.16em 2em;
+      position: relative;
+      top: -24px;
+      left: 80vw;
+    }*/
 
-/* turn mouse to a click icon*/
 /* Section 2 and 4 on homepage */
 .section-two, .section-four {
   display: grid;
@@ -283,10 +295,10 @@ h3.highlight {
             display: flex;
             align-items: center;
           }
-  /* section four styles */
-  .section-four {
-    background-color: #091C27;
-  }
+/* section four styles */
+.section-four {
+  background-color: #091C27;
+}
   .s4content {
     display: grid;
     grid-template-columns: 1fr; /* this is different for desktop*/
@@ -318,21 +330,21 @@ h3.highlight {
           padding: 0 0 0 3px;
         }
 
-  /* Section Three and Five Styles */
-  .section-three{
-    background-image: url(http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png);
-    height: 671px;
-  }
-  .section-five {
-    background: -moz-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 28, 39, 0)), color-stop(59%, rgba(9, 28, 39, 0)), color-stop(100%, rgba(9, 28, 39, 0.65))), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
-    background: -webkit-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
-    background: -o-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
-    background: -ms-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
-    background: linear-gradient(top to bottom, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.58) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+/* Section Three and Five Styles */
+.section-three{
+  background-image: url(http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionthreeplaceholder.png);
+  height: 671px;
+}
+.section-five {
+  background: -moz-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 28, 39, 0)), color-stop(59%, rgba(9, 28, 39, 0)), color-stop(100%, rgba(9, 28, 39, 0.65))), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+  background: -webkit-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+  background: -o-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+  background: -ms-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
+  background: linear-gradient(top to bottom, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.58) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
 
-    height:640px; /* this is different for desktop*/
-  }
+  height:640px; /* this is different for desktop*/
+}
   .section-three, .section-five {
     background-position: center top; /* this is different for desktop*/
     background-size: auto;
@@ -343,55 +355,57 @@ h3.highlight {
       top: -20px; /* this is different for desktop*/
     }
 
-.section-five h3 span {
-  color: #FFFFFF;
-  font-size: 30px; /* this is different for desktop*/
-  font-weight: 800;
-  line-height: 1.6;
-}
-.section-five h3 {
-  margin: 0 0 0 0; /* this is different for desktop*/
-  line-height: 1.7; /* this is different for desktop*/
-}
-
-.section-five-content {
-  text-align: right;
-  margin: 20px 25px 23px 13px;
-}
-
-  .s5item1 {
-    color: #FFFFFF;
-    font-size: 20px;
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 800;
-    line-height: 1.35; /* different on desktop*/
-  }
-  .s5item1 a {
-    color: #FFFFFF;
-  }
-
-
-  .s5item2{
-    margin: 30px 0 0 0;
-    display: grid;
-    grid-template-columns: auto;
-    padding: 0 0 0 45%;
-    justify-items: start;
-    grid-row-gap: 5px;
-  }
-    .s5item2 div {
-      margin: 20px 0 0 0;
+    .section-five h3 span {
+      color: #FFFFFF;
+      font-size: 30px; /* this is different for desktop*/
+      font-weight: 800;
+      line-height: 1.6;
     }
-      .s5item2 a, div#share-button a{
+    .section-five h3 {
+      margin: 0 0 0 0; /* this is different for desktop*/
+      line-height: 1.7; /* this is different for desktop*/
+    }
+
+    .section-five-content {
+      text-align: right;
+      margin: 20px 25px 23px 13px;
+    }
+
+      .s5item1 {
         color: #FFFFFF;
-        font-size: 18px;
+        font-size: 20px;
         font-family: 'Gilroy', sans-serif;
         font-weight: 800;
-        line-height: 1.22;
-        text-align: left;
-        display: flex;
-        align-content: center;
+        line-height: 1.35; /* different on desktop*/
       }
+      .s5item1 a {
+        color: #FFFFFF;
+      }
+
+
+      .s5item2{
+        margin: 30px 0 0 0;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0 0 0 45%;
+        justify-items: start;
+        grid-row-gap: 5px;
+      }
+        .s5item2 div {
+          margin: 20px 0 0 0;
+        }
+          .s5item2 a, div#share-button a{
+            color: #FFFFFF;
+            font-size: 18px;
+            font-family: 'Gilroy', sans-serif;
+            font-weight: 800;
+            line-height: 1.22;
+            text-align: left;
+            display: flex;
+            align-content: center;
+          }
+
+      /* Share Button Styles */
       div#share-button {
         padding: 0 0 0 45%;
         margin: 0px 25px 0 0;
@@ -415,13 +429,13 @@ h3.highlight {
 .section-six {
   padding: 24px 36px 24px 36px;
 }
-.section-six #toolkit-title {
-  color: #38A5A8;
-  font-family: 'Gilroy', sans-serif;
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 1.55;
-}
+  .section-six #toolkit-title {
+    color: #38A5A8;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.55;
+  }
     #mobile-toolkit-dropdown {
       width: 290px;
       height: 66px;
@@ -434,9 +448,9 @@ h3.highlight {
       #mobile-toolkit-dropdown img{
         padding: 0 0 0 15px;
       }
-
-/* New Footer Mobile ==================================*/
-
+/* --------------------------------- */
+/* ------ Mobile New Footer ---------*/
+/* --------------------------------- */
 #footer {
   background-color: #091C27;
   padding: 45px 35px 5% 35px;
@@ -464,9 +478,13 @@ h3.highlight {
     #footer-logo p{
       padding: 20px 15% 0 15%;
     }
+    #footer-logo a.lcef-img-link {
+      display: grid;
+    }
     #footer-logo img{
       width: 100%;
-      padding: 0 20% 0 20%;
+      max-width: 200px;
+      justify-self: center;
     }
 
 /* additional links */
@@ -537,31 +555,22 @@ ul#menu-footer-menu.menu li {
   padding: 0 5px 0 5px;
 }
 
-/* Mobile Topics of Concern  ==================================*/
+/* --------------------------------- */
+/* ---- Mobile Topics of Concern ----*/
+/* --------------------------------- */
 
 .secondary-page h2 {
   font-size: 20px;
 }
 
 
-/*OLD*/
-            /* Hide Site Info Bar */
-            .site-info {
-              display: none;
-            }
-            /* Page Content */
-            .page-content {
-              margin: 0;
-            }
 
+/* --------------------------------- */
+/* ---- Custom Post Types Styling ---*/
+/* --------------------------------- */
+/* -- includes topics, opps, tools - */
 
-
-            /* Set site container to full width */
-            body .site.grid-container {
-                max-width: 100%;
-            }
-
-            /* Custom Post Types Styling - Topics, Opps, Tools */
+            /* old */
             .custom-post-types-section {
               grid-template-columns: 100%;
               grid-row-gap: 20px;
@@ -581,14 +590,14 @@ ul#menu-footer-menu.menu li {
             }
 
 
-            /* By the Numbers ============================*/
+            /* old By the Numbers ============================*/
             .related-content, .download-files, .related-reports, .related-chapters {
               display: grid;
               grid-template-columns: 100%;
               justify-items: stretch;
             }
 
-            /* Single Topics of Concern ===================*/
+            /* old Single Topics of Concern ===================*/
             .tablink {
               background-color: #105870;
               color: white;
@@ -605,7 +614,7 @@ ul#menu-footer-menu.menu li {
               background-color: #38A5A9;
             }
 
-            /* Style the tab content */
+            /* old Style the tab content */
             .tabcontent {
               color: #000000;
               display: none;
@@ -630,13 +639,13 @@ ul#menu-footer-menu.menu li {
               background-color:#ffffff;
             }
 
-            /* Glossary Page ===================*/
+            /* old Glossary Page ===================*/
 
             .glossary-page-content {
               padding-left: 50px;
             }
 
-            /* Header============================*/
+            /* old Header============================*/
 
             .menu-toggle {
               padding: 0 0;
@@ -828,7 +837,8 @@ h3 /* section 3 text over image*/ {
   grid-row: 1/2;
 }
   #footer-logo img {
-    width: 500px;
+    max-width: 350px;
+    padding: 0 0 0 0;
   }
 #footer-additional-links {
   grid-column: 1/2;
@@ -926,7 +936,9 @@ h3 /* section 3 text over image*/ {
               margin: 0 auto 20px;
     }
 
-    /* NEW DESKTOP STYLES AS OF FEB 27 */
+    /*------------------------------------*/
+    /*-------- New Desktop Styles --------*/
+    /*------------------------------------*/
     h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
       font-size: 40px;
       line-height: 1.75;
@@ -939,7 +951,9 @@ h3 /* section 3 text over image*/ {
       display: block;
     }
 
-    /* Front Page  Styles */
+    /*------------------------------------*/
+    /*-------- Frontpage Styles ----------*/
+    /*------------------------------------*/
     .section-one {
       height: 767px;
       display: grid;
@@ -1094,14 +1108,15 @@ h3 /* section 3 text over image*/ {
 #footer-logo {
   grid-column: 1/2;
   grid-row: 1/4;
-  padding: 20px 5% 0 5%;
+  padding: 20px 8% 0 0;
   margin-right: 30px;
   border-bottom: none;
   border-right: 2px solid #29373E;
 }
-  #footer-logo img {
-    width: 500px;
+  #footer-logo p {
+    padding: 20px 0 0 0;
   }
+
 #footer-additional-links {
   grid-column: 2/3;
   grid-row: 1/2;

@@ -103,7 +103,7 @@ get_header(); ?>
 							</a>
 						</div>
 
-						<div class="not-mobile not-tablet" id="asl-video">
+						<div id="asl-video">
 							<p class="video-button click">
 								<a href="" class="" target="_blank">
 									ASL Video
