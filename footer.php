@@ -41,7 +41,7 @@
 
     <div class="footer-item footer-download-div" id="footer-download-toolkit">
       <p>
-        <a href="<?php the_field('download'); ?>" class="download-button" target="_blank"><?php the_field('download_button_text'); ?>
+        <a href="<?php the_field('download'); ?>" class="download-button" target="_blank">Download Entire Toolkit
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-download-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-download-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-download-red@2x.png 2x" alt="">
         </a>
       </p>
