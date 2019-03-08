@@ -68,13 +68,13 @@ get_header(); ?>
 
 					<!-- start of section 1 -->
 					<section class="section-one gradient">
-						<div class="hero-highlight not-desktop">
+						<div class="hero-highlight mobile-tablet-only">
 							<h3><span class="highlight highlight-wrapping highlight-red">You can change the</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">way policing happens</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">in your community.</span></h3>
 						</div>
 
-						<div class="hero-highlight not-mobile not-tablet">
+						<div class="hero-highlight desktop-only">
 							<h3><span class="highlight highlight-wrapping highlight-red">You can change the way policing</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">happens in your community.</span></h3>
 						</div>
@@ -82,6 +82,7 @@ get_header(); ?>
 						<div class="s1content">
 							<div class="homepage-subtitle">
 								Morbi tempus nunc ultrices augue ultricies tempus. A toolkit for individuals, organizations and communities.
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-info.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-info.png, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-info@2x.png 2x"class="inline-icon" alt="info icon">
 							</div>
 							<p class="download-button click">
 								<a href="<?php the_field('download'); ?>" class="" target="_blank"><?php the_field('download_button_text'); ?>
@@ -141,7 +142,7 @@ get_header(); ?>
 									</a>
 
 									<a href="<?php the_field('box_link_2'); ?>" id="bolt-icon">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bolt.png" class="inline-icon" alt="bolt icon">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc@2x.png 2x"class="inline-icon" alt="topics of concern icon">
 										Topics of Concern
 									</a>
 						</div>
@@ -151,7 +152,7 @@ get_header(); ?>
 
 					<!-- start of section 3 -->
 					<section class="section-three gradient">
-						<div class="highlight-text-overlay not-desktop">
+						<div class="highlight-text-overlay mobile-tablet-only">
 							<h3><span class="highlight highlight-wrapping highlight-teal">We all have a role to</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-teal">play in resisting</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-teal">infringements on civil</span></h3>
@@ -159,7 +160,7 @@ get_header(); ?>
 							<h3><span class="highlight highlight-wrapping highlight-teal">through policing</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-teal">practices.</span></h3>
 						</div>
-						<div class="highlight-text-overlay not-mobile">
+						<div class="highlight-text-overlay desktop-only">
 							<h3><span class="highlight highlight-wrapping highlight-teal">We all have a role to play in</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-teal">resisting infringements on civil</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-teal">and human rights through</span></h3>
@@ -199,14 +200,14 @@ get_header(); ?>
 
 					<!-- start of section 5 -->
 					<section class="section-five gradient">
-						<div class="highlight-text-overlay not-desktop">
+						<div class="highlight-text-overlay mobile-tablet-only">
 							<h3><span class="highlight highlight-wrapping highlight-red">This <a href="" class="underline-teal-large">Toolkit</a> is part of</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">The Leadership</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">Conference’s Policing</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">Campaign project.</span></h3>
 						</div>
 
-						<div class="highlight-text-overlay not-mobile">
+						<div class="highlight-text-overlay desktop-only">
 							<h3><span class="highlight highlight-wrapping highlight-red">This Toolkit is part of <a href="">The Leadership</a></span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red"><a href="">Conference’s Policing Campaign</a> project.</span></h3>
 						</div>
@@ -250,7 +251,7 @@ get_header(); ?>
 							Toolkit Topics:
 						</div>
 
-						<div id="mobile-toolkit-dropdown" class="not-desktop">
+						<div id="mobile-toolkit-dropdown" class="mobile-tablet-only">
 							<strong>Jump to toolkit sections</strong>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dropdown.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/dropdown.png, <?php echo get_stylesheet_directory_uri(); ?>/img/dropdown@2x.png 2x" class="">
 						</div>
@@ -258,7 +259,7 @@ get_header(); ?>
 
 						<div class="toolkit-item not-mobile">
 							<a href="<?php the_field('box_link_3'); ?>">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png, <?php echo get_stylesheet_directory_uri(); ?>/img/sunset@2x.png 2x" class="" alt="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc@2x.png 2x"class="inline-icon" alt="topics of concern icon">
 								<h6>Topics for Concern<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
 								<p>Find information about key issues elements of change, talking points and strategies for overcoming opposition.</p>
 							</a>
