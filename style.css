@@ -568,6 +568,7 @@ ul#menu-footer-menu.menu li {
 .secondary-page h2 {
   font-size: 20px;
   color: #135971;
+  font-weight: 800;
 }
 
 .secondary-page h4 {
@@ -575,11 +576,14 @@ ul#menu-footer-menu.menu li {
   font-family: Gilroy;
   font-size: 30px;
   font-weight: 800;
-  line-height: 40px;}
+  line-height: 40px;
+}
+section.secondary-page.section-two {
+  padding-bottom: 40px;
 }
 /* related topics div */
-.related-topics-div {
-  padding: 5% 0 0 0;
+div.related-topics-div {
+  padding: 8% 0 0 0;
 }
 .related-topic-item a {
   color: #E23425;
@@ -588,13 +592,19 @@ ul#menu-footer-menu.menu li {
   font-weight: 800;
   line-height: 1.2;
   display: grid;
-  grid-template-columns: calc(15% - 15px) calc(85% - 15px);
+  grid-template-columns: calc(15% - 10px) calc(65% - 10px) calc(20% - 10px);
   grid-column-gap: 30px;
+  padding: 5% 0 6% 0;
   margin: 0 0 0 0;
-  padding: 4% 0 4% 0;
   align-items: center;
 }
-.related-topic-item a:visited {
+    .related-topic-item a#policing-icon {
+      align-items: start;
+    }
+.related-topic-item img {
+  max-width: 30px;
+}
+.secondary.related-topic-item a:visited {
   color: #E23425;
 }
 /* --------------------------------- */
@@ -605,13 +615,16 @@ ul#menu-footer-menu.menu li {
 .pbn-item{
   padding: 12% 8% 8% 0;
 }
+.pbn-item h3 {
+  padding: 0 0 5% 0;
+}
 .pbn-dark p {
   color: #ffffff;
   font-family: "Nunito Sans";
   font-size: 20px;
   font-weight: 800;
   line-height: 27px;
-  margin-bottom: 0;
+  margin: 0 0 0 0;
   }
 .pbn-light p {
   color: #091C27;
@@ -619,7 +632,7 @@ ul#menu-footer-menu.menu li {
   font-size: 20px;
   font-weight: 800;
   line-height: 27px;
-  margin-bottom: 0;
+  margin: 0 0 0 0;
 }
 
 
@@ -632,6 +645,7 @@ div.bullet-point {
   }
   div.bullet-point img {
     justify-self: center;
+    padding-top: 5px;
   }
 /* highlight bullet styles */
   .pbn-item span.highlight-wrapping.highlight-teal {
@@ -648,7 +662,7 @@ ul .custom-bullet li {
   list-style-image: url('img/bullet@2x.png');
 }
 
-ul .no-bullet {
+ul .no-bullet li{
   list-style: none;
 }
 
@@ -1037,7 +1051,7 @@ h3 /* section 3 text over image*/ {
 }
 
 /* --------------------------------- */
-/* ---- Mobile Police by Numbers ----*/
+/* ---- Tablet Police by Numbers ----*/
 /* --------------------------------- */
 
 /* colors for divs on pbn */
@@ -1053,6 +1067,8 @@ h3 /* section 3 text over image*/ {
   font-size: 20px;
   font-weight: 800;
   line-height: 1.2;
+  padding: 4% 0 2% 0;
+  grid-template-columns: calc(5% - 15px) calc(95% - 15px);
 }
 /* grid bullet system */
 div.bullet-point {
@@ -1322,8 +1338,10 @@ div.bullet-point img {
 
 
 /* --------------------------------- */
-/* ---- Mobile PBN Styles  ----------*/
+/* ---- Desktop PBN Styles  ----------*/
 /* --------------------------------- */
+
+
 #pbn-facts-section {
   display: grid;
   grid-template-columns: 42% 16% 42%;
@@ -1401,4 +1419,7 @@ section.section-two.secondary-page .s2item1 {
     }
     .related-topics-div img {
       max-width: 30px;
+    }
+    .related-topic-item a#policing-icon {
+      align-items: center;
     }

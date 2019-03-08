@@ -56,7 +56,7 @@ get_header(); ?>
 		      <!-- end of section 1 -->
 
 					<!-- section 2 -->
-          <section class="section-two secondary-page">
+          <section class="secondary-page section-two">
 
 						<div class="s2item1">
 	            <h2 class="underline-red">With over 2 million people behind bars, 9 million more ensnared in the criminal legal system, and 10 million arrests every year - the vast majority Black and other people of color - we have reached a
@@ -93,7 +93,7 @@ get_header(); ?>
 									</div>
 
 		              <div class="related-topic-item">
-										<a href="<?php the_field('related_topic_link_3'); ?>" target="_blank">
+										<a href="<?php the_field('related_topic_link_3'); ?>" target="_blank" id="policing-icon">
 											<?php
 												$related_topic_icon_3 = get_field('related_topic_icon_3');
 												$size = "full";
