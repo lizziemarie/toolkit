@@ -57,33 +57,35 @@ get_header();
 
       <!-- start of section 3 -->
       <section class="toc-grid">
-        <?php $args = array( 'post_type' =>'topics concern', );
-        $query = new WP_Query( $args );?>
-        <?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
+        <div>
+        <div class="toc-loop">
+          <?php $args = array( 'post_type' =>'topics concern', );
+          $query = new WP_Query( $args );?>
+          <?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-        <div class="toc-item">
-          <a href="<?php the_permalink(); ?>" class="">
-              <div class="toc-item-icon">
-                <?php
-                $topics_icon = get_field('topics_icon');
-                $size = "full";
-                  if( $topics_icon ) {
-                    echo wp_get_attachment_image( $topics_icon, $size );
-                  }
-                ?>
-              </div>
-              <h2><?php the_title(); ?></h2>
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x"class="inline-icon" alt="download">
-              <p><?php the_field(topics_of_concern_subtitle); ?></p>
-            </div>
-          </a>
+
+            <a href="<?php the_permalink(); ?>" >
+                <div class="toc-item">
+                  <div class="toc-item-icon">
+                    <?php
+                    $topics_icon = get_field('topics_icon');
+                    $size = "full";
+                      if( $topics_icon ) {
+                        echo wp_get_attachment_image( $topics_icon, $size );
+                      }
+                    ?>
+                  </div>
+
+                  <h6><?php the_title(); ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x"class="inline-icon" alt="download"></h6>
+                  <p><?php the_field('topics_of_concern_subtitle'); ?></p>
+                </div>
+            </a>
+
+            <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+          </div> <!-- end of toc loop -->
         </div>
-
-        <?php endwhile; ?>
-        <?php else: ?>
-        <?php endif; ?>
-      </section>
-
     <?php endwhile; // end of the loop. ?>
   </section>
 

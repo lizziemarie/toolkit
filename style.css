@@ -265,7 +265,7 @@ h3.highlight {
 .section-two, .section-four {
   display: grid;
   grid-template-columns: 100%; /* this is different for desktop*/
-  padding: 40px 20px 60px 20px; /* this is different for desktop*/
+  padding: 40px 5% 60px 5%; /* this is different for desktop*/
 }
     .s2img1 {
       width:100%;
@@ -581,32 +581,42 @@ ul#menu-footer-menu.menu li {
 section.secondary-page.section-two {
   padding-bottom: 40px;
 }
-/* related topics div */
-div.related-topics-div {
-  padding: 8% 0 0 0;
-}
-.related-topic-item a {
-  color: #E23425;
-  font-family: 'Gilroy', sans-serif;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 1.2;
+
+
+/* toc grid ------------------ */
+.toc-loop {
   display: grid;
-  grid-template-columns: calc(15% - 10px) calc(65% - 10px) calc(20% - 10px);
-  grid-column-gap: 30px;
-  padding: 5% 0 6% 0;
-  margin: 0 0 0 0;
+}
+a div.toc-item{
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: auto 100px;
+  padding: 0 5% 4% 5%;
   align-items: center;
 }
-    .related-topic-item a#policing-icon {
-      align-items: start;
-    }
-.related-topic-item img {
+.toc-item-icon {
   max-width: 30px;
 }
-.secondary.related-topic-item a:visited {
-  color: #E23425;
+a div.toc-item h6{
+    color: #135971;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 25px;
+    display: inline;
+    padding: 3px 20% 0 0;
 }
+a div.toc-item h6 img {
+  padding: 0 0 0 10px;
+}
+a div.toc-item p {
+    color: #091C27;
+    font-size: 14px;
+    line-height: 1.42;
+    padding: 10px 5% 0 0;
+
+    grid-column: 2/3;
+}
+
 /* --------------------------------- */
 /* ---- Mobile Police by Numbers ----*/
 /* --------------------------------- */
@@ -635,6 +645,32 @@ div.related-topics-div {
   margin: 0 0 0 0;
 }
 
+/* related topics div */
+div.related-topics-div {
+  padding: 8% 0 0 0;
+}
+.related-topic-item a {
+  color: #E23425;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  display: grid;
+  grid-template-columns: calc(15% - 10px) calc(65% - 10px) calc(20% - 10px);
+  grid-column-gap: 30px;
+  padding: 5% 0 6% 0;
+  margin: 0 0 0 0;
+  align-items: center;
+}
+    .related-topic-item a#policing-icon {
+      align-items: start;
+    }
+.related-topic-item img {
+  max-width: 30px;
+}
+.secondary.related-topic-item a:visited {
+  color: #E23425;
+}
 
 /* grid bullet system */
 div.bullet-point {
@@ -657,7 +693,7 @@ div.bullet-point {
 /* --------------------------------- */
 /* -- includes topics, opps, tools - */
 
-/* Accordion styles ----------------
+/* Accordion styles ---------------- */
 ul .custom-bullet li {
   list-style-image: url('img/bullet@2x.png');
 }
@@ -685,49 +721,6 @@ ul .no-bullet li{
 }
 
 
-h1, h2 {
-  color: #ff6873;
-}
-
-h1 {
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 3px;
-  font-weight: 100;
-}
-
-h2 {
-  font-size: 26px;
-  line-height: 34px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  display: block;
-  background-color: #fefffa;
-  margin: 0;
-  cursor: pointer;
-}
-
-p {
-  color: rgba(48, 69, 92, 0.8);
-  font-size: 17px;
-  line-height: 26px;
-  letter-spacing: 1px;
-  position: relative;
-  overflow: hidden;
-  max-height: 800px;
-  opacity: 1;
-  transform: translate(0, 0);
-  margin-top: 14px;
-  z-index: 2;
-}
-
-ul {
-  list-style: none;
-  perspective: 900;
-  padding: 0;
-  margin: 0;
-}
 ul li {
   position: relative;
   padding: 0;
@@ -1044,12 +1037,20 @@ h3 /* section 3 text over image*/ {
 }
 
 /*------------------------------------*/
-/*-------- Inline Icons Styles -------*/
+/*--- Tablet Inline Icons Styles -------*/
 /*------------------------------------*/
 .homepage-subtitle img.inline-icon {
   padding: 0 0 6px 6px;
 }
 
+
+
+/* --------------------------------- */
+/* ---- Tablet TOC (main) -----------*/
+/* --------------------------------- */
+.toc-loop {
+  grid-template-columns: repeat(2,1fr);
+}
 /* --------------------------------- */
 /* ---- Tablet Police by Numbers ----*/
 /* --------------------------------- */
@@ -1335,6 +1336,17 @@ div.bullet-point img {
 /* -- includes topics, opps, tools - */
 
 
+
+/* --------------------------------- */
+/* ---- Tablet TOC (main) -----------*/
+/* --------------------------------- */
+.toc-loop {
+  grid-template-columns: repeat(3,1fr);
+  padding-bottom: 50px;
+}
+a div.toc-item {
+  grid-template-rows: 80px 100px;
+}
 
 
 /* --------------------------------- */
