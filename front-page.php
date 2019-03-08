@@ -118,7 +118,7 @@ get_header(); ?>
 
 					<!-- start of section 2 -->
           <section class="section-two" id="sectiontwo">
-						<div class="s2img1 not-mobile not-tablet" alt="">
+						<div class="s2img1 desktop-only" alt="">
 							<?php if($s2img1) {
               echo wp_get_attachment_image( $s2img1, $size);}
             	?>
@@ -172,7 +172,7 @@ get_header(); ?>
 
 					<!-- start of section 4 -->
 					<section class="section-four">
-						<div class="s4img1 not-mobile" alt="">
+						<div class="s4img1 desktop-only" alt="">
 							<?php if($s4img1) {
               echo wp_get_attachment_image( $s4img1, $size);
 							}?>
@@ -257,7 +257,7 @@ get_header(); ?>
 						</div>
 
 
-						<div class="toolkit-item not-mobile">
+						<div class="toolkit-item desktop-only">
 							<a href="<?php the_field('box_link_3'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc@2x.png 2x"class="inline-icon" alt="topics of concern icon">
 								<h6>Topics for Concern<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
@@ -265,7 +265,7 @@ get_header(); ?>
 							</a>
 						</div>
 
-						<div class="toolkit-item not-mobile">
+						<div class="toolkit-item desktop-only">
 							<a href="<?php the_field('box_link_4'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png, <?php echo get_stylesheet_directory_uri(); ?>/img/sunset@2x.png 2x" class="" alt="">
 								<h6>Opportunities for Change<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
@@ -274,7 +274,7 @@ get_header(); ?>
 
 						</div>
 
-						<div class="toolkit-item not-mobile">
+						<div class="toolkit-item desktop-only">
 							<a href="<?php the_field('box_link_1'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png, <?php echo get_stylesheet_directory_uri(); ?>/img/trending-up@2x.png 2x" class="" alt="">
 								<h6>Policing by the Numbers<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
@@ -285,7 +285,7 @@ get_header(); ?>
 						<div class="not-tablet">
 						</div>
 
-						<div class="toolkit-item not-mobile">
+						<div class="toolkit-item desktop-only">
 							<a href="<?php the_field('box_link_2'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png, <?php echo get_stylesheet_directory_uri(); ?>/img/map@2x.png 2x" class="" alt="">
 								<h6>Policing by State<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
@@ -294,7 +294,7 @@ get_header(); ?>
 
 						</div>
 
-						<div class="toolkit-item not-mobile">
+						<div class="toolkit-item desktop-only">
 							<a href="<?php the_field('box_link_5'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png, <?php echo get_stylesheet_directory_uri(); ?>/img/horn@2x.png 2x" class="" alt="">
 								<h6>Tools for Action<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
@@ -303,7 +303,7 @@ get_header(); ?>
 
 						</div>
 
-						<div class="toolkit-item not-mobile">
+						<div class="toolkit-item desktop-only">
 							<a href="<?php the_field('box_link_6'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png, <?php echo get_stylesheet_directory_uri(); ?>/img/book-opened@2x.png 2x" class="" alt="">
 								<h6>Glossary<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
