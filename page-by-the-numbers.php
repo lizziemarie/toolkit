@@ -134,7 +134,7 @@ get_header(); ?>
 							</div>
 						</div><!-- end of div-->
 
-						<div class="desktop-only">
+						<div id="pbn1-img" class="desktop-only">
 						</div>
 
 						<div class="pbn-light pbn-item" id="pbn2">
@@ -160,7 +160,7 @@ get_header(); ?>
 							</div>
 						</div><!-- end of div-->
 
-						<div class="desktop-only">
+						<div id="pbn2-img" class="desktop-only">
 						</div>
 
 						<div class="pbn-dark pbn-item" id="pbn3" style="background-color: #091C27;">
@@ -182,7 +182,7 @@ get_header(); ?>
 
 						</div><!-- end of div-->
 
-						<div class="desktop-only">
+						<div id="pbn3-img" class="desktop-only">
 						</div>
 
 						<div class="pbn-light pbn-item" id="pbn4">
@@ -208,7 +208,7 @@ get_header(); ?>
 							</div>
 						</div><!-- end of div-->
 
-						<div class="desktop-only">
+						<div id="pbn4-img" class="desktop-only">
 						</div>
 
 				</section>

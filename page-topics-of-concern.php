@@ -18,15 +18,10 @@ get_header();
       ?>
 
 
-      <section class="section-one gradient" style="background-image: url(<?php echo $feature_image; ?>);">
-        <div class="hero-highlight not-desktop">
-          <h3><span class="highlight highlight-wrapping highlight-red"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/trending-up@2x.png 2x" class="inline-icon" alt="trending up icon">Topics</span></h3>
+      <section class="toc section-one gradient secondary-page" style="background-image: url(<?php echo $feature_image; ?>);">
+        <div class="hero-highlight">
+          <h3><span class="highlight highlight-wrapping highlight-red"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc@2x.png 2x" class="inline-icon" alt="trending up icon">Topics</span></h3>
           <h3><span class="highlight highlight-wrapping highlight-red">of Concern</span></h3>
-        </div>
-
-        <div class="hero-highlight not-mobile not-tablet">
-          <h3><span class="highlight highlight-wrapping highlight-red">You can change the way policing</span></h3>
-          <h3><span class="highlight highlight-wrapping highlight-red">happens in your community.</span></h3>
         </div>
 
         <div class="s1content">
@@ -51,47 +46,43 @@ get_header();
       <!-- end of section 1 -->
 
       <!-- start of section 2 -->
-      <section class="section-two" id="sectiontwo">
-
-        <div class="s2content secondary-page">
+      <section class="secondary-page section-two">
 
           <div class="s2item1 secondary-page">
             <h2 class="underline-red">Download the documents relevant to the issues your are concerned about to learn more, To take to your next meeting with community members, legislators or policymakers!</h2>
           </div>
 
-        </div>
-
       </section>
       <!-- end of section 2 -->
 
       <!-- start of section 3 -->
-
-
-      <div class="custom-post-types-section grid">
+      <section class="toc-grid">
         <?php $args = array( 'post_type' =>'topics concern', );
         $query = new WP_Query( $args );?>
         <?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
+        <div class="toc-item">
           <a href="<?php the_permalink(); ?>" class="">
-            <div class="special-color custom-post">
-              <?php
-              $topics_icon = get_field('topics_icon');
-              $size = "full";
-                if( $topics_icon ) {
-                  echo wp_get_attachment_image( $topics_icon, $size );
-                }
-              ?>
+              <div class="toc-item-icon">
+                <?php
+                $topics_icon = get_field('topics_icon');
+                $size = "full";
+                  if( $topics_icon ) {
+                    echo wp_get_attachment_image( $topics_icon, $size );
+                  }
+                ?>
+              </div>
               <h2><?php the_title(); ?></h2>
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x"class="inline-icon" alt="download">
               <p><?php the_field(topics_of_concern_subtitle); ?></p>
             </div>
           </a>
+        </div>
 
         <?php endwhile; ?>
         <?php else: ?>
         <?php endif; ?>
-      </div>
-    </div>
+      </section>
 
     <?php endwhile; // end of the loop. ?>
   </section>
