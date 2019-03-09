@@ -48,39 +48,31 @@ get_header(); ?>
 		      </section>
 		      <!-- end of section 1 -->
 
-          <section>
+          <section class="content">
 						<div>
 							<h2 class="page-intro"><?php the_field('tertiary_page_intro'); ?></h2>
 						</div>
 
+            <div>
 
-						<div class="bullet-point">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bullet.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/bullet.png, <?php echo get_stylesheet_directory_uri(); ?>/img/bullet@2x.png 2x"class="inline-icon" alt="bullet point">
-							<h6>title</h6>
-							<p>Officers ticket, search, and arrest Black and Latinx drivers more often than whites.</p>
-						</div>
-
-            <div class="content">
-
-
-							<ul>
+							<ul class="accordion">
 							  <li>
 							    <input type="checkbox" checked>
 							    <i></i>
 							    <h2>Key Issues</h2>
-									<p><?php the_field('key_issues_content'); ?></p>
+									<div class="accordion-bullet-item"><?php the_field('key_issues_content'); ?></div>
 							  </li>
 							  <li>
 							    <input type="checkbox" checked>
 							    <i></i>
 							    <h2>Elements of Change</h2>
-							    <p>Using the sibling and checked selectors, we can determine the styling of sibling elements based on the checked state of the checkbox input element. One use, as demonstrated here, is an entirely CSS and HTML accordion element. Media queries are used to make the element responsive to different screen sizes.</p>
+							    <div class="accordion-bullet-item">Using the sibling and checked selectors, we can determine the styling of sibling elements based on the checked state of the checkbox input element. One use, as demonstrated here, is an entirely CSS and HTML accordion element. Media queries are used to make the element responsive to different screen sizes.</div>
 							  </li>
 							  <li>
 							    <input type="checkbox" checked>
 							    <i></i>
 							    <h2>Third</h2>
-							    <p>By making the open state default for when :checked isn't detected, we can make this system accessable for browsers that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with Javascript (if needed) by changing the "checked" property of the input element.</p>
+							    <div class="accordion-bullet-item">By making the open state default for when :checked isn't detected, we can make this system accessable for browsers that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with Javascript (if needed) by changing the "checked" property of the input element.</div>
 							  </li>
 							</ul>
 
