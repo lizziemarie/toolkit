@@ -694,15 +694,54 @@ div.bullet-point {
 /* -- includes topics, opps, tools - */
 
 /* Accordion styles ---------------- */
-ul .custom-bullet li {
-  list-style-image: url('img/bullet@2x.png');
+.content {
+  padding: 2% 4% 2% 4%;
 }
-
-ul .no-bullet li{
+/* Accordion bullet styles ---------------- */
+ul.accordion {
   list-style: none;
+  margin: 0 0 0 0;
+}
+ul.custom-bullet li {
+  list-style-image: url('img/bullet@2x.png');
+  color: #135971;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
 }
 
-.transition, p, ul li i:before, ul li i:after {
+ul.no-bullet li{
+  list-style: none;
+  	color: #091C27;
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+/*.custom-bullet {
+  background-image: url('img/bullet@2x.png');
+  width: 20px;
+}*/
+
+/* Accordion Interior Text Styles ------------*/
+div.accordion-bullet-item li {
+  color: #135971;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+}
+div.accordion-bullet-item li.no-bullet {
+  	color: #091C27;
+    font-family: "Nunito Sans";
+    font-size: 14px;	
+    line-height: 20px;
+}
+
+/* Accordion Animation Styles ------------*/
+
+.transition, p, ul.accordion li i:before, ul.accordion li i:after {
   transition: all 0.25s ease-in-out;
 }
 
@@ -720,47 +759,45 @@ ul .no-bullet li{
   user-select: none;
 }
 
-
-ul li {
+ul.accordion li {
   position: relative;
   padding: 0;
   margin: 0;
   padding-bottom: 4px;
   padding-top: 18px;
-  border-top: 1px dotted #dce7eb;
 }
-ul li:nth-of-type(1) {
+ul.accordion li:nth-of-type(1) {
   animation-delay: 0.5s;
 }
-ul li:nth-of-type(2) {
+ul.accordion li:nth-of-type(2) {
   animation-delay: 0.75s;
 }
-ul li:nth-of-type(3) {
+ul.accordion li:nth-of-type(3) {
   animation-delay: 1s;
 }
-ul li:last-of-type {
+ul.accordion li:last-of-type {
   padding-bottom: 0;
 }
-ul li i {
+ul.accordion li i {
   position: absolute;
   transform: translate(-6px, 0);
   margin-top: 16px;
   right: 0;
 }
-ul li i:before, ul li i:after {
+ul.accordion li i:before, ul li i:after {
   content: "";
   position: absolute;
   background-color: #ff6873;
   width: 3px;
   height: 9px;
 }
-ul li i:before {
+ul.accordion li i:before {
   transform: translate(-2px, 0) rotate(45deg);
 }
-ul li i:after {
+ul.accordion li i:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
-ul li input[type=checkbox] {
+ul.accordion li input[type=checkbox] {
   position: absolute;
   cursor: pointer;
   width: 100%;
@@ -768,16 +805,16 @@ ul li input[type=checkbox] {
   z-index: 1;
   opacity: 0;
 }
-ul li input[type=checkbox]:checked ~ p {
+ul.accordion > li input[type=checkbox]:checked ~ div {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
   transform: translate(0, 50%);
 }
-ul li input[type=checkbox]:checked ~ i:before {
+ul.accordion li input[type=checkbox]:checked ~ i:before {
   transform: translate(2px, 0) rotate(45deg);
 }
-ul li input[type=checkbox]:checked ~ i:after {
+ul.accordion li input[type=checkbox]:checked ~ i:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
