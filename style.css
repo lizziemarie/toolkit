@@ -24,7 +24,7 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
-.not-mobile {
+.desktop-only {
   display: none;
 }
 /* Hide Site Info Bar */
@@ -735,7 +735,7 @@ div.accordion-bullet-item li {
 div.accordion-bullet-item li.no-bullet {
   	color: #091C27;
     font-family: "Nunito Sans";
-    font-size: 14px;	
+    font-size: 14px;
     line-height: 20px;
 }
 

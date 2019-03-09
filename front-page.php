@@ -251,12 +251,60 @@ get_header(); ?>
 							Toolkit Topics:
 						</div>
 
-						<div id="mobile-toolkit-dropdown" class="mobile-tablet-only">
-							<strong>Jump to toolkit sections</strong>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dropdown.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/dropdown.png, <?php echo get_stylesheet_directory_uri(); ?>/img/dropdown@2x.png 2x" class="">
+						<!-- start of mobile only toolkit topics section -->
+						<div class="toolkit-item mobile-only">
+							<a href="<?php the_field('box_link_3'); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc@2x.png 2x"class="inline-icon" alt="topics of concern icon">
+								<h6>Topics for Concern</h6>
+								<div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></div>
+							</a>
+						</div>
+						<div class="toolkit-item mobile-only">
+							<a href="<?php the_field('box_link_4'); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/sunset.png, <?php echo get_stylesheet_directory_uri(); ?>/img/sunset@2x.png 2x" class="" alt="">
+								<h6>Opportunities for Change</h6>
+								<div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></div>
+							</a>
 						</div>
 
+						<div class="toolkit-item mobile-only">
+							<a href="<?php the_field('box_link_1'); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/trending-up.png, <?php echo get_stylesheet_directory_uri(); ?>/img/trending-up@2x.png 2x" class="" alt="">
+								<h6>Policing by the Numbers</h6>
+								<div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></div>
+							</a>
+						</div>
 
+						<div class="toolkit-item mobile-only">
+							<a href="<?php the_field('box_link_2'); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png, <?php echo get_stylesheet_directory_uri(); ?>/img/map@2x.png 2x" class="" alt="">
+								<h6>Policing by State</h6>
+								<div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></div>
+							</a>
+
+						</div>
+
+						<div class="toolkit-item mobile-only">
+							<a href="<?php the_field('box_link_5'); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/horn.png, <?php echo get_stylesheet_directory_uri(); ?>/img/horn@2x.png 2x" class="" alt="">
+								<h6>Tools for Action</h6>
+								<div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></div>
+							</a>
+
+						</div>
+
+						<div class="toolkit-item mobile-only">
+							<a href="<?php the_field('box_link_6'); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/book-opened.png, <?php echo get_stylesheet_directory_uri(); ?>/img/book-opened@2x.png 2x" class="" alt="">
+								<h6>Glossary</h6>
+								<div><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></div>
+							</a>
+						</div>
+						<!-- end of mobile only toolkit topics section -->
+
+
+
+						<!-- start of tablet and desktop toolkit topics section -->
 						<div class="toolkit-item desktop-only">
 							<a href="<?php the_field('box_link_3'); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc@2x.png 2x"class="inline-icon" alt="topics of concern icon">
@@ -271,7 +319,6 @@ get_header(); ?>
 								<h6>Opportunities for Change<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x" class="" alt=""></h6>
 								<p>In order to enact lasting change to the policing in our communities, it’s important to understand the law enforcement structures already in place.</p>
 							</a>
-
 						</div>
 
 						<div class="toolkit-item desktop-only">
