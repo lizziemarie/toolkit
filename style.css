@@ -288,7 +288,6 @@ h3.highlight {
       display: flex;
       align-content: center;
       font-weight: 800;
-
     }
     .download-button a,
     .download-button a:visited {
@@ -684,7 +683,7 @@ section.secondary-page.section-two {
 }
 
 
-/* toc grid ------------------ */
+/* toc main grid ------------------ */
 .toc-loop {
   display: grid;
 }
@@ -794,51 +793,88 @@ div.bullet-point {
 /* --------------------------------- */
 /* -- includes topics, opps, tools - */
 
-/* Accordion styles ---------------- */
-.content {
-  padding: 2% 4% 2% 4%;
+/* -- section one of tertiary page - */
+
+.toc-single {
+  height: 284px;
+  background-color: black;
 }
+  .page-title {
+    padding: 25% 15% 0 0%;
+  }
+  .return-toc {
+    padding: 10% 0 15px 30px;
+  }
+    .return-toc a,
+    .return-toc a:hover,
+    .return-toc a:visited {
+      color: #FFFFFF;
+      font-family: 'Gilroy';
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 22px;
+    }
+
+/* -- section two of tertiary page - */
+.content {
+  padding: 40px 5% 40px 5%;
+}
+
+h2.content-intro {
+  color: #135971;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+}
+/* -- download button on tertiary page - */
+.tertiary-download-button a {
+  color: #091C27;
+  border: 2px solid #38A5A8;
+  padding: 1.16em 5% 1.16em 5%;
+  margin: 20px 0 0 0;
+  display: flex;
+  align-content: center;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* -- content accordion on tertiary page - */
+ul.accordion h2 {
+  border-bottom: 3px solid #E4E4E4;
+  color: #135971;
+  font-family: 'Gilroy';
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+}
+
+.content h6 {
+  color: #135971;
+  font-family: 'Gilroy';
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+}
+.content p {
+  	color: #091C27;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    line-height: 20px;
+}
+div.accordion-bullet-item {
+  padding: 0 0 0 0;
+}
+
+/* Accordion styles ---------------- */
 /* Accordion bullet styles ---------------- */
 ul.accordion {
   list-style: none;
   margin: 0 0 0 0;
 }
-ul.custom-bullet li {
-  list-style-image: url('img/bullet@2x.png');
-  color: #135971;
-  font-family: Gilroy;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 25px;
-}
 
-ul.no-bullet li{
-  list-style: none;
-  	color: #091C27;
-    font-family: "Nunito Sans";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-}
-/*.custom-bullet {
-  background-image: url('img/bullet@2x.png');
-  width: 20px;
-}*/
-
-/* Accordion Interior Text Styles ------------*/
-div.accordion-bullet-item li {
-  color: #135971;
-  font-family: Gilroy;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 25px;
-}
-div.accordion-bullet-item li.no-bullet {
-  	color: #091C27;
-    font-family: "Nunito Sans";
-    font-size: 14px;
-    line-height: 20px;
-}
 
 /* Accordion Animation Styles ------------*/
 
@@ -881,14 +917,14 @@ ul.accordion li:last-of-type {
 }
 ul.accordion li i {
   position: absolute;
-  transform: translate(-6px, 0);
-  margin-top: 16px;
+  transform: translate(-16px, 0);/*this moves it to the left as a whole*/
+  margin-top: 0;
   right: 0;
 }
 ul.accordion li i:before, ul li i:after {
   content: "";
   position: absolute;
-  background-color: #ff6873;
+  background-color: #38A5A8;
   width: 3px;
   height: 9px;
 }
@@ -902,7 +938,7 @@ ul.accordion li input[type=checkbox] {
   position: absolute;
   cursor: pointer;
   width: 100%;
-  height: 100%;
+  height: 100%; /* height of clickable area on accordion*/
   z-index: 1;
   opacity: 0;
 }
@@ -1228,7 +1264,17 @@ div.bullet-point img {
   justify-self: center;
 }
 
+/* --------------------------------- */
+/* ---- Custom Post Types Styling ---*/
+/* --------------------------------- */
+/* -- includes topics, opps, tools - */
 
+/* -- section one of tertiary page - */
+
+.toc-single {
+  height: 500px;
+  background-color: black;
+}
 
 
 }
