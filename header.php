@@ -24,8 +24,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="site-header">
 <div class="site-logo">
 	<!-- generate logo form -->
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Mobile_Final.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Mobile_Final.png, <?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Mobile_Final@2x.png 2x"class="inline-icon mobile-tablet-only" alt="Policing Campaign Logo">
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Desktop_Final_white.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Desktop_Final_white.png, <?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Desktop_Final_white@2x.png 2x"class="inline-icon desktop-only" alt="Policing Campaign Logo">
+	<a href="#">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Mobile_Final.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Mobile_Final.png, <?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Mobile_Final@2x.png 2x"class="inline-icon mobile-tablet-only" alt="Policing Campaign Logo">
+	</a>
+	<a href="#">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Desktop_Final_white.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Desktop_Final_white.png, <?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Desktop_Final_white@2x.png 2x"class="inline-icon desktop-only" alt="Policing Campaign Logo">
+	</a>
 </div>
 <div class="site-nav">
 	<!-- generate menu link -->
