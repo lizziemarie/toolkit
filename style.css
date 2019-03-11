@@ -430,10 +430,13 @@ h3.highlight {
         margin: 0 0 0 12px;
       }
 
-/* Section 6 styles */
+/* Section 6 styles Toolkit Topics*/
 
 .section-six {
-  padding: 24px 36px 24px 36px;
+  padding: 24px 36px 48px 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80px repeat(3, 167.5px;)
 }
   .section-six #toolkit-title {
     color: #38A5A8;
@@ -441,19 +444,43 @@ h3.highlight {
     font-size: 36px;
     font-weight: 800;
     line-height: 1.55;
+    grid-column: 1/3;
+    padding: 0 0 20px 0;
   }
-    #mobile-toolkit-dropdown {
-      width: 290px;
-      height: 66px;
-      font-size: 16px;
-      border: 1px solid #38A5A8;
-      margin: 29px 0 40px 0;
-      padding: 23px 0 21px 36px;
-    }
+  div#toolkit-item-1,
+  div#toolkit-item-2,
+  div#toolkit-item-3,
+  div#toolkit-item-4  {
+    border-bottom: 1px solid #E4E4E4;
+  }
+  div#toolkit-item-1,
+  div#toolkit-item-3,
+  div#toolkit-item-5  {
+    border-right: 1px solid #E4E4E4;
+  }
+  div.toolkit-item {
+    padding: 13px 13px 13px 13px;
+  }
+  div.toolkit-item a h6 {
+    color: #091C27;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    padding: 13px 0 13px 0;
+  }
+  div.toolkit-item a {
+    display: grid;
+    grid-template-rows: 30px 70px 20px;
+  }
+  div.toolkit-item a div {
+    align-self: end;
+    display: grid;
+    justify-items: end;
+  }
 
-      #mobile-toolkit-dropdown img{
-        padding: 0 0 0 15px;
-      }
+
+
 /* --------------------------------- */
 /* ------ Mobile New Footer ---------*/
 /* --------------------------------- */
@@ -880,8 +907,14 @@ ul.accordion li input[type=checkbox]:checked ~ i:after {
 .desktop-only {
   display: none;
 }
+.mobile-only {
+  display: none;
+}
 .mobile-tablet-only {
   display: block;
+}
+.on-tablet {
+  display: grid;
 }
 
 
@@ -987,16 +1020,19 @@ h3 /* section 3 text over image*/ {
 /* Section 6 styles */
       .section-six {
         display: grid;
-        grid-template-columns: repeat(2, calc(50% - 15px));
-        grid-template-rows: repeat (3, 320px);
+        grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+
         padding: 56px 20px 56px 20px;
         grid-column-gap: 30px;
         grid-row-gap: 20px;
+        width: calc(100% - 40px);
       }
-      div#toolkit-title {
+      .section-six #toolkit-title {
         grid-column: 1/3;
         grid-row: 1/2;
-        margin: 0 0 10px 0;
+      }
+      .not-tablet {
+        display: none;
       }
 
       .toolkit-item a{
@@ -1011,6 +1047,7 @@ h3 /* section 3 text over image*/ {
           line-height: 1.2;
           display: inline;
           padding: 3px 0 0 0;
+          align-self: center;
       }
       .section-six a h6 img {
         padding: 0 0 0 8px;
@@ -1143,6 +1180,7 @@ div.bullet-point img {
     /*------------------------------------*/
     /*-------- New Desktop Styles --------*/
     /*------------------------------------*/
+
     h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
       font-size: 40px;
       line-height: 1.75;
@@ -1152,6 +1190,9 @@ div.bullet-point img {
     	line-height: 1.6;
     }
     .mobile-tablet-only {
+      display: none;
+    }
+    .mobile-only {
       display: none;
     }
     .desktop-only {
@@ -1272,7 +1313,10 @@ div.bullet-point img {
             }
 
 
-    /* Section 6 styles */
+    /* Section 6 styles Desktop */
+    .not-tablet {
+      display: block;
+    }
     .section-six {
       display: grid;
       grid-template-columns: repeat(4, calc(25% - 15px));
@@ -1280,8 +1324,9 @@ div.bullet-point img {
       padding: 56px 40px 56px 40px;
       grid-column-gap: 20px;
       grid-row-gap: 20px;
+      width: calc(100% - 80px);
     }
-    div#toolkit-title {
+    .section-six #toolkit-title {
       grid-column: 1/2;
     }
     .toolkit-item {
@@ -1289,7 +1334,7 @@ div.bullet-point img {
     }
 
     .section-six a h6{
-        font-size: 20px;
+      font-size: 20px;
     }
 
 
@@ -1472,3 +1517,4 @@ section.section-two.secondary-page .s2item1 {
     .related-topic-item a#policing-icon {
       align-items: center;
     }
+}
