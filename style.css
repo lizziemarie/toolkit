@@ -85,32 +85,29 @@ p {
 .site-header {
   background-color: transparent;
   position: absolute;
-  top: 0px;
-  left: 0px;
   width: 90%;
   z-index: 1;
   padding: 20px 5% 0 5%;
-  display: grid;
-  grid-template-columns: 78% 12% 10%;
+
 }
 
 /* Search icon positioning */
 .site-header .site-logo {
     position: absolute;
-    left: 12px;
-    top: 12px;
+    left: 20px;
+    top: 20px;
 }
 /* Search icon positioning */
 .site-header .site-nav {
     position: absolute;
-    right: 100px;
-    top: 12px;
+    right: 60px;
+    top: 20px;
 }
 /* Search icon positioning */
 .site-header .search-form {
     position: absolute;
     right: 20px;
-    top: 12px;
+    top: 15px;
 }
 /*------------------------------------*/
 /*----------- Logo Styles ------------*/
@@ -133,7 +130,7 @@ p {
     background-size: 24px 24px;
     border: none;
     cursor: pointer;
-    height: 37px;
+    height: 30px;
     margin: 0;
     padding: 0 0 0 34px;
     position: relative;
@@ -1258,6 +1255,51 @@ div.bullet-point img {
     /*-------- New Desktop Styles --------*/
     /*------------------------------------*/
 
+    /*------------------------------------*/
+    /*------- Site Header Styles ---------*/
+    /*------------------------------------*/
+    .site-header {
+      background-color: transparent;
+      position: absolute;
+      width: 90%;
+      z-index: 1;
+      padding: 20px 5% 0 5%;
+
+    }
+
+    /* Site logo positioning */
+    .site-header .site-logo {
+        left: 40px;
+        top: 40px;
+    }
+    /* Site nav positioning */
+    .site-header .site-nav {
+        right: 140px;
+        top: 40px;
+    }
+      .site-nav a {
+        display: flex;
+        justify-content: space-between;
+      }
+      .site-nav a div{
+        padding: 0 20px 0 0;
+        color: #FFFFFF;
+        font-family: 'Gilroy';
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 23px;
+        text-transform: uppercase;
+      }
+    /* Search icon positioning */
+    .site-header .search-form {
+        right: 80px;
+        top: 37px;
+    }
+
+/*------------------------------------*/
+/*------- Typography Styles ----------*/
+/*------------------------------------*/
+
     h2 /* text on section 2 of homepage: policing is civil rights issue...*/{
       font-size: 40px;
       line-height: 1.75;
@@ -1409,15 +1451,22 @@ div.bullet-point img {
     .toolkit-item {
       padding: 20px 0 0 0;
     }
+      div.toolkit-item a {
+        grid-column-gap: 16px;
+        grid-template-columns: calc(15% - 8px) calc(85% - 8px);
+        grid-template-rows: auto 120px;
+      }
 
-    .section-six a h6{
+    .section-six div.toolkit-item a h6{
       font-size: 20px;
+      padding: 0 0 0 0;
+      align-self: start;
     }
 
 
 
 /*------------------------------------*/
-/*-------- Highlight Styles ----------*/
+/*--- Desktop Highlight Styles -------*/
 /*------------------------------------*/
       .highlight-wrapping {
         padding: 5px 10px 5px 60px;
@@ -1497,7 +1546,7 @@ div.bullet-point img {
 
 
 /* --------------------------------- */
-/* ---- Tablet TOC (main) -----------*/
+/* ---- Desktop TOC (main) -----------*/
 /* --------------------------------- */
 .toc-loop {
   grid-template-columns: repeat(3,1fr);
