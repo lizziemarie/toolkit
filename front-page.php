@@ -29,7 +29,7 @@ get_header(); ?>
         ?>
         <section>
 
-					<div id="gallery" class="not-mobile not-tablet">
+					<div id="gallery" class="hide">
 						<figure class="slider">
 							<figure>
 								<?php

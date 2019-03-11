@@ -20,37 +20,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 </head>
 
 <body <?php body_class(); ?> <?php generate_do_microdata( 'body' ); ?>>
-	<?php
-	/**
-	 * generate_before_header hook.
-	 *
-	 * @since 0.1
-	 *
-	 * @hooked generate_do_skip_to_content_link - 2
-	 * @hooked generate_top_bar - 5
-	 * @hooked generate_add_navigation_before_header - 5
-	 */
-	do_action( 'generate_before_header' );
 
-	/**
-	 * generate_header hook.
-	 *
-	 * @since 1.3.42
-	 *
-	 * @hooked generate_construct_header - 10
-	 */
-	do_action( 'generate_header' );
+<div class="site-header">
+<div class="site-logo">
+	<!-- generate logo form -->
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Mobile_Final.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Mobile_Final.png, <?php echo get_stylesheet_directory_uri(); ?>/img/Logo_Mobile_Final@2x.png 2x"class="inline-icon" alt="Policing Campaign Logo">
+</div>
+<div class="site-nav">
+	<!-- generate menu link -->
+	<a href="#" class="toggle-nav">
+  	<div class="desktop-only"> Menu </div>
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Icon-hamburger-mobile.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Icon-hamburger-mobile.png, <?php echo get_stylesheet_directory_uri(); ?>/img/Icon-hamburger-mobile@2x.png 2x"class="inline-icon" alt="Menu Icon">
+  </a>
+</div>
+	<!-- generate search form -->
+	<?php get_search_form(); ?>
 
-	/**
-	 * generate_after_header hook.
-	 *
-	 * @since 0.1
-	 *
-	 * @hooked generate_featured_page_header - 10
-	 */
-	do_action( 'generate_after_header' );
-	?>
-
+</div><!-- end of site header -->
 	<div id="page" class="hfeed site grid-container container grid-parent">
 		<a id="skip-to-content" href="#content">skip to main content</a>
     <div id="content" class="site-content">

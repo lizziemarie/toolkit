@@ -35,6 +35,9 @@ body {
 .page-content {
   margin: 0;
 }
+.hide {
+  display: none;
+}
 
 /* Set site container to full width */
 body .site.grid-container {
@@ -76,6 +79,80 @@ p {
   line-height: 1.44;
 }
 
+/*------------------------------------*/
+/*------- Site Header Styles ---------*/
+/*------------------------------------*/
+.site-header {
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  z-index: 1;
+  padding: 20px 5% 0 5%;
+  display: grid;
+  grid-template-columns: 78% 12% 10%;
+}
+
+/* Search icon positioning */
+.site-header .site-logo {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+/* Search icon positioning */
+.site-header .site-nav {
+    position: absolute;
+    right: 100px;
+    top: 12px;
+}
+/* Search icon positioning */
+.site-header .search-form {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+/*------------------------------------*/
+/*----------- Logo Styles ------------*/
+/*------------------------------------*/
+
+/*------------------------------------*/
+/*--- Main Navigation Styles ---------*/
+/*------------------------------------*/
+
+/*------------------------------------*/
+/*--- Main Nav Search Styles ---------*/
+/*------------------------------------*/
+
+
+.site-header .search-field {
+    background-color: transparent;
+    background-image: url('img/icon-search@2x.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: none;
+    cursor: pointer;
+    height: 37px;
+    margin: 0;
+    padding: 0 0 0 34px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition:         width 400ms ease, background 400ms ease;
+    width: 0;
+}
+
+.site-header .search-field:focus {
+    background-color: #fff;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 230px;
+}
+.search-form
+.search-submit {
+display:none;
+}
 /*------------------------------------*/
 /*--- Individual Underline Styles ----*/
 /*------------------------------------*/
@@ -195,7 +272,7 @@ h3.highlight {
 
     .hero-highlight {
       position: relative;
-      top: 100px;
+      top: 30px;
     }
     .s1content{
       padding: 100px 10% 0 17px;
