@@ -82,7 +82,12 @@ get_header(); ?>
 						<div class="s1content">
 							<div class="homepage-subtitle">
 								Morbi tempus nunc ultrices augue ultricies tempus. A toolkit for individuals, organizations and communities.
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-info.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-info.png, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-info@2x.png 2x"class="inline-icon" alt="info icon">
+
+
+								<div class="tooltip">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-info.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-info.png, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-info@2x.png 2x"class="inline-icon" alt="info icon">
+									<span class="tooltiptext">Placeholder Text</span>
+								</div>
 							</div>
 							<p class="download-button click">
 								<a href="<?php the_field('download'); ?>" class="" target="_blank"><?php the_field('download_button_text'); ?>
