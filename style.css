@@ -186,7 +186,7 @@ h3.highlight {
 
   .highlight-wrapping {
     position: relative;
-    padding: 4px 10px 4px 30px; /* top and bottom padding adds to highlighted area*/
+    padding: 4px 10px 4px 20px; /* top and bottom padding adds to highlighted area*/
   }
 
   .highlight-wrapping-inline {
@@ -286,6 +286,7 @@ h3.highlight {
       padding: 1.16em 5% 1.16em 5%;
       margin: 20px 0 0 0;
       display: flex;
+      justify-content: space-around;
       align-content: center;
       font-weight: 800;
     }
@@ -422,7 +423,7 @@ h3.highlight {
   background: -ms-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
   background: linear-gradient(top to bottom, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.58) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/02/sectionfiveplaceholder.png') no-repeat;
 
-  height:640px; /* this is different for desktop*/
+  height:660px; /* this is different for desktop*/
 }
   .section-three, .section-five {
     background-position: center top; /* this is different for desktop*/
@@ -720,7 +721,12 @@ a div.toc-item p {
 /* --------------------------------- */
 /* ---- Mobile Police by Numbers ----*/
 /* --------------------------------- */
-
+section.pbn.section-one {
+  height: 580px;
+}
+.pbn .hero-highlight {
+  top: 50px;
+}
 /* colors for divs on pbn */
 .pbn-item{
   padding: 12% 8% 8% 0;
@@ -1040,6 +1046,9 @@ h3 /* section 3 text over image*/ {
 /* --------------------------------------- */
 /* ----------- Front Page Styles --------- */
 /* --------------------------------------- */
+.hero-highlight {
+  top: 50px;
+}
 .s1content{
   max-width: 70vw;
   padding: 60px 20px 40px 30px;
@@ -1103,7 +1112,7 @@ h3 /* section 3 text over image*/ {
   }
 
   .section-five-content {
-    margin: 80px 48px 0 0;
+    margin: 60px 48px 0 0;
     float: right;
     max-width: 500px;
   }
@@ -1601,11 +1610,40 @@ div.bullet-point img {
 a div.toc-item {
   grid-template-rows: 80px 100px;
 }
+section.toc-grid,
+.secondary-page.section-two {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 
 /* --------------------------------- */
 /* ---- Desktop PBN Styles  ----------*/
 /* --------------------------------- */
+section.pbn.section-one {
+  height: 500px;
+  display: grid;
+  padding: 150px 0% 0% 0%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px auto;
+}
+.pbn .hero-highlight {
+  position: static !important;
+  top: 0px !important;
+  align-self: start;
+}
+  .pbn .s1content {
+    padding: 0 20% 0 0;
+  }
+      .pbn .download-button {
+        margin: 10% 0 0 0;
+      }
+      .pbn .download-button img.inline-icon {
+          padding: 0 0 0 20px;
+        }
+.pbn div.scrollarrow {
+  grid-column: 1/3;
+}
 
 
 #pbn-facts-section {

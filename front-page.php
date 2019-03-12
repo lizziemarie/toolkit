@@ -172,7 +172,7 @@ get_header(); ?>
 
 					<!-- start of section 4 -->
 					<section class="section-four">
-						<div class="s4img1 desktop-only" alt="">
+						<div class="s4img1 on-tablet desktop-only" alt="">
 							<?php if($s4img1) {
               echo wp_get_attachment_image( $s4img1, $size);
 							}?>

@@ -18,9 +18,9 @@ get_header();
       ?>
 
 
-      <section class="toc section-one gradient secondary-page" style="background-image: url(<?php echo $feature_image; ?>);">
+      <section class="toc pbn section-one gradient secondary-page" style="background-image: url(<?php echo $feature_image; ?>);">
         <div class="hero-highlight">
-          <h3><span class="highlight highlight-wrapping highlight-red"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc@2x.png 2x" class="inline-icon" alt="trending up icon">Topics</span></h3>
+          <h3><span class="highlight highlight-wrapping highlight-red"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-TOC.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-TOC.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-TOC@2x.png 2x" class="inline-icon" alt="topics of concern icon">Topics</span></h3>
           <h3><span class="highlight highlight-wrapping highlight-red">of Concern</span></h3>
         </div>
 
@@ -49,7 +49,7 @@ get_header();
       <section class="secondary-page section-two">
 
           <div class="s2item1 secondary-page">
-            <h2 class="underline-red">Download the documents relevant to the issues your are concerned about to learn more, To take to your next meeting with community members, legislators or policymakers!</h2>
+            <h2 class="underline-red">Download the documents relevant to the issues your are concerned about to learn more, to take to your next meeting with community members, legislators or policymakers!</h2>
           </div>
 
       </section>
