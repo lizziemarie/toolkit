@@ -13,7 +13,7 @@
 
     <div class="footer-item" id="footer-logo">
       <a href="" target="_blank" class="lcef-img-link">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef.png, <?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef@2x.png 2x"alt="The Leadership Conference on Civil and Human Rights Logo">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-lcef-big@2x.png" alt="The Leadership Conference on Civil and Human Rights Logo">
       </a>
       <p>The Policing Campaign is a project of
         <a href="" class="underline-teal">The Leadership Conference on Civil and Human Rights</a>
@@ -39,6 +39,15 @@
         Suite 1100<br>
         Washington, DC 20036<br>
         (202) 466-3311</p>
+    </div>
+
+    <div class="footer-item" id="footer-email">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Icon_Email.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Icon_Email.png, <?php echo get_stylesheet_directory_uri(); ?>/img/Icon_Email@2x.png 2x" alt="">
+      <p class="footer-text">
+        <a href="mailto:emailaddress@email.com">
+          emailaddress@email.com
+        </a>
+      </p>
     </div>
 
     <div class="footer-item footer-download-div" id="footer-download-toolkit">
