@@ -18,7 +18,7 @@ get_header();
       ?>
 
 
-      <section class="toc pbn section-one gradient secondary-page" style="background-image: url(<?php echo $feature_image; ?>);">
+      <section class="toc pbn section-one gradient secondary-page" style="background: linear-gradient(149.33deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.65) 100%), linear-gradient(38.4deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.6) 100%), url(<?php echo $feature_image; ?>) no-repeat;">
         <div class="hero-highlight">
           <h3><span class="highlight highlight-wrapping highlight-red"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-TOC.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-TOC.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-TOC@2x.png 2x" class="inline-icon" alt="topics of concern icon">Topics</span></h3>
           <h3><span class="highlight highlight-wrapping highlight-red">of Concern</span></h3>

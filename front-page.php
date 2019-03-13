@@ -154,7 +154,7 @@ get_header(); ?>
 										Policing by the Numbers
 									</a>
 
-									<a href="<?php the_field('box_link_2'); ?>" id="bolt-icon">
+									<a href="<?php the_field('box_link_3'); ?>" id="bolt-icon">
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/icon-toc@2x.png 2x"class="inline-icon" alt="topics of concern icon">
 										Topics of Concern
 									</a>
