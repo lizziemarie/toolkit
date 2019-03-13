@@ -67,7 +67,15 @@ get_header(); ?>
 					</div>
 
 					<!-- start of section 1 -->
-					<section class="section-one">
+					<section class="section-one gallery-container">
+
+							<!-- test gallery -->
+							<div class="picone"></div>
+						  <div class="pictwo"></div>
+						  <div class="picthree"></div>
+
+
+
 						<div class="hero-highlight mobile-tablet-only">
 							<h3><span class="highlight highlight-wrapping highlight-red">You can change the</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">way policing happens</span></h3>

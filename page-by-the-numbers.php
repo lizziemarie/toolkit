@@ -28,7 +28,7 @@ get_header(); ?>
         $size = "full";
         ?>
         <section>
-					<section class="pbn section-one gradient secondary-page" style="background-image: url(<?php echo $feature_image; ?>);">
+					<section class="pbn section-one secondary-page" style="background-image: url(<?php echo $feature_image; ?>);">
 		        <div class="hero-highlight">
 		          <h3><span class="highlight highlight-wrapping highlight-red"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-PolicingbyNumbers.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-PolicingbyNumbers.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-PolicingbyNumbers@2x.png 2x" class="inline-icon" alt="trending up icon">Policing by</span></h3>
 		          <h3><span class="highlight highlight-wrapping highlight-red">The Numbers</span></h3>

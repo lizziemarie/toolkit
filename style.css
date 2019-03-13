@@ -249,7 +249,7 @@ h3.highlight {
 /*----- Mobile Front Page Styles -----*/
 /*------------------------------------*/
 .section-one {
-  /*overlay grey gradient on bottom homepage image*/
+  /*overlay grey gradient on bottom homepage image
   background: -moz-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 28, 39, 0)), color-stop(59%, rgba(9, 28, 39, 0)), color-stop(100%, rgba(9, 28, 39, 0.65))), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
   background: -webkit-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
@@ -257,14 +257,78 @@ h3.highlight {
   background: -ms-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
   background: linear-gradient(top to bottom, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.2) 59%, rgba(9, 28, 39, 0.58) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
   background-position: center center; /* this is different for desktop*/
-  background-size: 1100px;
-  background-repeat: no-repeat;
+  /*background-size: 1100px;
+  background-repeat: no-repeat;*/
 
   height: 700px;
 
   display: grid;
   align-items: end;
 }
+
+/* homepage gallery slider beneath hero section */
+
+.gallery-container {
+  position: relative;
+  height: 800px;
+  width: 100%;
+}
+.picone,
+.pictwo,
+.picthree {
+  height: 800px;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  z-index: 1;
+}
+.picone {
+  background: linear-gradient(149.33deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.65) 100%), linear-gradient(38.4deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.6) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/image1.jpg') repeat;
+}
+.pictwo {
+  background: linear-gradient(149.33deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.65) 100%), linear-gradient(38.4deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.6) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/image2.jpg') repeat;
+}
+.picthree {
+  background: linear-gradient(149.33deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.65) 100%), linear-gradient(38.4deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.6) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/image3.jpg') repeat;
+}
+
+/*KEYFRAME ANIMATIONS */
+@keyframes picone {
+  0% {z-index: -4;}
+  20% {z-index: -4;}
+  40% {z-index: -1;}
+  60% {z-index: -1;}
+  80% {z-index: -1;}
+  100% {z-index: -1;}
+}
+.picone {
+	animation: picone 9s linear infinite;
+}
+@keyframes pictwo {
+  0% {z-index: -1;}
+  20% {z-index: -1;}
+  40% {z-index: -4;}
+  60% {z-index: -4;}
+  80% {z-index: -1;}
+  100% {z-index: -1;}
+}
+.pictwo {
+	animation: pictwo 9s linear infinite;
+}
+@keyframes picthree {
+  0% {z-index: -1;}
+  20% {z-index: -1;}
+  40% {z-index: -1;}
+  60% {z-index: -1;}
+  80% {z-index: -4;}
+  100% {z-index: -4;}
+}
+.picthree {
+	animation: picthree 9s linear infinite;
+}
+
+
+/* end of gallery on homepage hero section */
 
 
     .hero-highlight {
