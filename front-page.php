@@ -67,7 +67,7 @@ get_header(); ?>
 					</div>
 
 					<!-- start of section 1 -->
-					<section class="section-one gradient">
+					<section class="section-one">
 						<div class="hero-highlight mobile-tablet-only">
 							<h3><span class="highlight highlight-wrapping highlight-red">You can change the</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">way policing happens</span></h3>
