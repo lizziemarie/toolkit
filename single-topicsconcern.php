@@ -24,6 +24,9 @@ get_header(); ?>
         $related_topic_link_1 = get_field('related_topic_link_1');
         $related_topic_link_2 = get_field('related_topic_link_2');
         $related_topic_link_3 = get_field('related_topic_link_3');
+				$related_topic_icon_1 = get_field('related_topic_icon_1');
+				$related_topic_icon_2 = get_field('related_topic_icon_2');
+				$related_topic_icon_3 = get_field('related_topic_icon_3');
         $related_reports_title = get_field('related_reports_title');
         $related_reports_content = get_field('related_reports_content');
 				$related_reports_link = get_field('related_reports_link');
@@ -63,12 +66,13 @@ get_header(); ?>
 
 						<div class="accordion-container">
 
-						  <div class="set">
-						    <a href="#">
+						  <div class="set" id="accordion-item-1">
+						    <a href="#accordion-item-1">
 										Key Issues
 						      <i class="fa fa-angle-down"></i>
 						    </a>
 						    <div class="accordion-content">
+									<?php the_field('key-issues-content'); ?>
 						      <h5>lalaal</h5>
 						      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 						      <h5>lalaal</h5>
@@ -76,8 +80,8 @@ get_header(); ?>
 						    </div>
 						  </div>
 
-						  <div class="set">
-						    <a href="#">
+						  <div class="set" id="accordion-item-2">
+						    <a href="#accordion-item-2">
 						      Elements of Change
 						      <i class="fa fa-angle-down"></i>
 						    </a>
@@ -86,8 +90,8 @@ get_header(); ?>
 						    </div>
 						  </div>
 
-						  <div class="set">
-						    <a href="#">
+						  <div class="set" id="accordion-item-3">
+						    <a href="#accordion-item-3">
 						      Talking Points
 						      <i class="fa fa-angle-down"></i>
 						    </a>
@@ -96,9 +100,29 @@ get_header(); ?>
 						    </div>
 						  </div>
 
-						  <div class="set">
-						    <a href="#">
+						  <div class="set" id="accordion-item-4">
+						    <a href="#accordion-item-4">
 						      Overcoming Opposition
+						      <i class="fa fa-angle-down"></i>
+						    </a>
+						    <div class="accordion-content">
+						      <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+						    </div>
+						  </div>
+
+							<div class="set" id="accordion-item-5">
+						    <a href="#accordion-item-5">
+						      How to Make Change
+						      <i class="fa fa-angle-down"></i>
+						    </a>
+						    <div class="accordion-content">
+						      <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+						    </div>
+						  </div>
+
+							<div class="set" id="accordion-item-6">
+						    <a href="#accordion-item-6">
+						      External Resources
 						      <i class="fa fa-angle-down"></i>
 						    </a>
 						    <div class="accordion-content">
@@ -109,24 +133,6 @@ get_header(); ?>
 						</div>
 
 
-
-
-						<div class="related">
-  		        <h3><?php the_field('related_topics_of_concern_header'); ?></h3>
-  		        <p>
-								<a href="<?php the_field('related_topic_link_1'); ?>" class="btn btnTeal btnSide" target="_blank"><?php the_field('related_topic_text_1'); ?></a>
-							</p>
-  		        <p>
-								<a href="<?php the_field('related_topic_link_2'); ?>" class="btn btnTeal btnSide" target="_blank"><?php the_field('related_topic_text_2'); ?></a>
-							</p>
-  		        <p>
-								<a href="<?php the_field('related_topic_link_3'); ?>" class="btn btnTeal btnSide" target="_blank"><?php the_field('related_topic_text_3'); ?></a>
-							</p>
-  		        <h3><?php the_field('related_reports_title'); ?></h3>
-  		        <p>
-								<a href="<?php the_field('related_reports_link'); ?>"><?php the_field('related_reports_content'); ?></a>
-							</p>
-						</div>
 
           <?php endwhile; // end of the loop. ?>
         </section>
