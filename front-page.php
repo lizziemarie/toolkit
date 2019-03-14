@@ -29,42 +29,7 @@ get_header(); ?>
         ?>
         <section>
 
-					<div id="gallery" class="hide">
-						<figure class="slider">
-							<figure>
-								<?php
-									$gallery_image_1 = get_field('gallery_image_1');
-									if( !empty($gallery_image_1) ): ?>
-										<img src="<?php echo $gallery_image_1['url']; ?>" alt="<?php echo $gallery_image_1['alt']; ?>" />
-									<?php endif;
-								?>
-							</figure>
-							<figure>
-								<?php
-									$gallery_image_2 = get_field('gallery_image_2');
-									if( !empty($gallery_image_2) ): ?>
-										<img src="<?php echo $gallery_image_2['url']; ?>" alt="<?php echo $gallery_image_2['alt']; ?>" />
-									<?php endif;
-								?>
-							</figure>
-							<figure>
-								<?php
-									$gallery_image_3 = get_field('gallery_image_3');
-									if( !empty($gallery_image_3) ): ?>
-										<img src="<?php echo $gallery_image_3['url']; ?>" alt="<?php echo $gallery_image_3['alt']; ?>" />
-									<?php endif;
-								?>
-							</figure>
-							<figure>
-								<?php
-									$gallery_image_3 = get_field('gallery_image_3');
-									if( !empty($gallery_image_3) ): ?>
-										<img src="<?php echo $gallery_image_3['url']; ?>" alt="<?php echo $gallery_image_3['alt']; ?>" />
-									<?php endif;
-								?>
-							</figure>
-						</figure>
-					</div>
+				
 
 					<!-- start of section 1 -->
 					<section class="section-one gallery-container">
