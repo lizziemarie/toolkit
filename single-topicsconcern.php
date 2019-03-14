@@ -61,47 +61,53 @@ get_header(); ?>
 								</a>
 						</p>
 
+						<div class="accordion-container">
 
-            <div class="accordion-div">
-							<ul class="accordion">
-							  <li>
-							    <input type="checkbox" checked>
-							    <i></i>
-							    <h2>Key Issues</h2>
-									<div class="accordion-bullet-item"><?php the_field('key_issues_content'); ?></div>
-							  </li>
-							  <li>
-							    <input type="checkbox" checked>
-							    <i></i>
-							    <h2>Elements of Change</h2>
-							    <div class="accordion-bullet-item"><?php the_field('key_issues_content'); ?></div>
-							  </li>
-							  <li>
-							    <input type="checkbox" checked>
-							    <i></i>
-							    <h2>Talking Points</h2>
-							    <div class="accordion-bullet-item"><?php the_field('key_issues_content'); ?></div>
-							  </li>
-								<li>
-							    <input type="checkbox" checked>
-							    <i></i>
-							    <h2>Overcoming Opposition</h2>
-							    <div class="accordion-bullet-item"><?php the_field('key_issues_content'); ?></div>
-							  </li>
-								<li>
-							    <input type="checkbox" checked>
-							    <i></i>
-							    <h2>How to Make Change</h2>
-							    <div class="accordion-bullet-item"><?php the_field('key_issues_content'); ?></div>
-							  </li>
-								<li>
-							    <input type="checkbox" checked>
-							    <i></i>
-							    <h2>External Resources</h2>
-							    <div class="accordion-bullet-item"><?php the_field('key_issues_content'); ?></div>
-							  </li>
-							</ul>
-            </div>
+						  <div class="set">
+						    <a href="#">
+										Key Issues
+						      <i class="fa fa-angle-down"></i>
+						    </a>
+						    <div class="accordion-content">
+						      <h5>lalaal</h5>
+						      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						      <h5>lalaal</h5>
+						      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						    </div>
+						  </div>
+
+						  <div class="set">
+						    <a href="#">
+						      Elements of Change
+						      <i class="fa fa-angle-down"></i>
+						    </a>
+						    <div class="accordion-content">
+						      <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum.</p>
+						    </div>
+						  </div>
+
+						  <div class="set">
+						    <a href="#">
+						      Talking Points
+						      <i class="fa fa-angle-down"></i>
+						    </a>
+						    <div class="accordion-content">
+						      <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						    </div>
+						  </div>
+
+						  <div class="set">
+						    <a href="#">
+						      Overcoming Opposition
+						      <i class="fa fa-angle-down"></i>
+						    </a>
+						    <div class="accordion-content">
+						      <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+						    </div>
+						  </div>
+
+						</div>
+
 
 
 
@@ -125,10 +131,11 @@ get_header(); ?>
           <?php endwhile; // end of the loop. ?>
         </section>
 
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-
+	<script src="/js/accordions.js"></script>
 
 	<?php
 
