@@ -44,7 +44,7 @@ get_header(); ?>
 		        </div>
 
 		        <div class="return-toc">
-		            <a href="#" class="" target="_blank">
+		            <a href="/toolkit/topics-of-concern" class="">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x"class="inline-icon" alt="arrow back">
 									Topics of Concern
 		            </a>

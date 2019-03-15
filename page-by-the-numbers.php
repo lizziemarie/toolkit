@@ -28,7 +28,7 @@ get_header(); ?>
         $size = "full";
         ?>
         <section>
-					<section class="pbn section-one secondary-page" style="background: linear-gradient(149.33deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.65) 100%), linear-gradient(38.4deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.6) 100%), url(<?php echo $feature_image; ?>) no-repeat;">
+					<section class="pbn section-one secondary-page" style="background: linear-gradient(149.33deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.65) 100%), linear-gradient(38.4deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.6) 100%), url(<?php echo $feature_image; ?>) no-repeat; background-position: center center; background-size: cover;">
 		        <div class="hero-highlight">
 		          <h3><span class="highlight highlight-wrapping highlight-red"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-PolicingbyNumbers.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-PolicingbyNumbers.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/Header-mobile-icon-PolicingbyNumbers@2x.png 2x" class="inline-icon" alt="trending up icon">Policing by</span></h3>
 		          <h3><span class="highlight highlight-wrapping highlight-red">The Numbers</span></h3>

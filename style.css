@@ -1832,6 +1832,7 @@ section.section-two.secondary-page .s2item1 {
   line-height: 31px;
 }
 
+
 section.toc-content {
     display: grid;
     grid-template-columns: calc(65% - 30px) calc(35% - 30px);
@@ -1849,7 +1850,7 @@ section.toc-content {
     .toc-content-item-2 {
       grid-column: 2/3;
       grid-row: 1/2;
-      padding: 3% 10% 3% 3%;
+      padding: 0 5% 0 0;
     }
     .toc-content-item-3 {
       grid-column: 1/3;
