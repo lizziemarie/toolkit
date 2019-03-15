@@ -12,11 +12,7 @@ get_header(); ?>
       <?php while ( have_posts() ) : the_post();
         $feature_image = get_field('feature_image');
         $download_file_1 = get_field('download_file_1');
-        $download_file_2 = get_field('download_file_2');
-        $download_file_3 = get_field('download_file_3');
         $download_button_text_1 = get_field('download_button_text_1');
-        $download_button_text_2 = get_field('download_button_text_2');
-        $download_button_text_3 = get_field('download_button_text_3');
         $related_topics_title = get_field('related_topics_title');
         $related_topic_text_1 = get_field('related_topic_text_1');
         $related_topic_text_2 = get_field('related_topic_text_2');
@@ -200,14 +196,16 @@ get_header(); ?>
 
 						</div><!-- end of related link div -->
 
+						</section> <!-- end of section two -->
+
 						<!-- start of download div -->
-						<div class="download-div toc-content-item-6">
+						<div class="download-div">
 
 							<h2>Download this section to find more information about how to make change, <span class="highlight highlight-wrapping highlight-teal">talking points,</span> and <span class="highlight highlight-wrapping highlight-teal">strategies</span> for overcoming opposition. </h2>
 
 							<p class="tertiary-download-button">
 									<a href="<?php the_field('download_file_1'); ?>" class="" target="_blank">
-										<?php the_title(); ?>
+										<?php the_title(); ?><br>
 										DOWNLOAD SECTION
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/download.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/download.png, <?php echo get_stylesheet_directory_uri(); ?>/img/download@2x.png 2x"class="inline-icon" alt="download">
 									</a>
@@ -216,7 +214,7 @@ get_header(); ?>
 						</div><!-- end of download div -->
 
 
-					</section> <!-- end of section two -->
+
 
 					<?php endwhile; // end of the loop. ?>
         </section>
