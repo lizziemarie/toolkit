@@ -33,6 +33,11 @@ get_header(); ?>
 				$related_report_icon = get_field('related_report_icon');
 				$tertiary_page_intro = get_field('tertiary_page_intro');
 				$key_issues_content = get_field('key_issues_content');
+				$elements_of_change_content = get_field('elements_of_change_content');
+				$talking_points_content = get_field('talking_points_content');
+				$overcoming_opposition_content = get_field('overcoming_opposition_content');
+				$how_to_make_change_content = get_field('how_to_make_change_content');
+				$external_resources_content = get_field('external_resources_content');
         $size = "full";
       ?>
         <section class="single-toc">
@@ -44,7 +49,7 @@ get_header(); ?>
 
 		        <div class="return-toc">
 		            <a href="#" class="" target="_blank">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x"class="inline-icon" alt="download">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x"class="inline-icon" alt="arrow back">
 									Topics of Concern
 		            </a>
 		        </div>
@@ -61,7 +66,7 @@ get_header(); ?>
 								<a href="<?php the_field('download_file_1'); ?>" class="" target="_blank">
 									<?php the_title(); ?> <br>
 									DOWNLOAD SECTION
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/download.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/download.png, <?php echo get_stylesheet_directory_uri(); ?>/img/download@2x.png 2x"class="inline-icon" alt="download">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red.png, <?php echo get_stylesheet_directory_uri(); ?>/img/arrow-red@2x.png 2x"class="inline-icon" alt="download">
 								</a>
 						</p>
 
@@ -73,11 +78,7 @@ get_header(); ?>
 						      <i class="fa fa-angle-down"></i>
 						    </a>
 						    <div class="accordion-content">
-									<?php the_field('key-issues-content'); ?>
-						      <h5>lalaal</h5>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-						      <h5>lalaal</h5>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						      <?php the_field('key_issues_content'); ?>
 						    </div>
 						  </div>
 
@@ -87,7 +88,7 @@ get_header(); ?>
 						      <i class="fa fa-angle-down"></i>
 						    </a>
 						    <div class="accordion-content">
-						      <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum.</p>
+						      <?php the_field('elements_of_change_content'); ?>
 						    </div>
 						  </div>
 
@@ -97,7 +98,7 @@ get_header(); ?>
 						      <i class="fa fa-angle-down"></i>
 						    </a>
 						    <div class="accordion-content">
-						      <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						      <?php the_field('talking_points_content'); ?>
 						    </div>
 						  </div>
 
@@ -107,7 +108,7 @@ get_header(); ?>
 						      <i class="fa fa-angle-down"></i>
 						    </a>
 						    <div class="accordion-content">
-						      <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+						      <?php the_field('overcoming_opposition_content'); ?>
 						    </div>
 						  </div>
 
@@ -117,7 +118,7 @@ get_header(); ?>
 						      <i class="fa fa-angle-down"></i>
 						    </a>
 						    <div class="accordion-content">
-						      <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+						      <?php the_field('how_to_make_change_content'); ?>
 						    </div>
 						  </div>
 
@@ -127,7 +128,7 @@ get_header(); ?>
 						      <i class="fa fa-angle-down"></i>
 						    </a>
 						    <div class="accordion-content">
-						      <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+						      <?php the_field('external_resources_content'); ?>
 						    </div>
 						  </div>
 
