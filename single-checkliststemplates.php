@@ -27,11 +27,8 @@ get_header(); ?>
       ?>
         <section>
 
-          <div class="grid content-container content-grid-3">
+          <div class="">
 
-            <div class="social-bar">
-              <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
-            </div>
 
             <div class="page-content">
               <h2 class=""><?php the_title(); ?></h2>

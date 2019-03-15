@@ -26,11 +26,7 @@ get_header(); ?>
           <div class="home-section hero" style="background-image: url(<?php echo $feature_image; ?>);">
           </div>
 
-          <div class="grid content-container content-grid-3">
-
-            <div class="social-bar">
-              <?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
-            </div>
+          <div class="">
 
             <div class="page-content">
               <h2 class=""><?php the_title(); ?></h2>

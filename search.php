@@ -13,10 +13,7 @@ get_header(); ?>
 
 	<div id="primary" <?php generate_do_element_classes( 'content' ); ?>>
 		<main id="main" <?php generate_do_element_classes( 'main' ); ?>>
-      <div class="grid content-container content-grid-2">
-				<div class="social-bar">
-        	<?php echo do_shortcode('[Sassy_Social_Share style="background-color:#ffffff;"]') ?>
-      	</div>
+      <div class="">
 				<div class="page-content">
 
       <?php

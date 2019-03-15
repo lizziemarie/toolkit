@@ -213,13 +213,8 @@ get_header(); ?>
 
 						</div><!-- end of download div -->
 
-
-
-
 					<?php endwhile; // end of the loop. ?>
         </section>
-
-
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

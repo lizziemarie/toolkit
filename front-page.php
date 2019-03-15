@@ -11,7 +11,6 @@ get_header(); ?>
 	<div id="primary">
 		<main id="main">
       <?php while ( have_posts() ) : the_post();
-        $feature_image = get_field('feature_image');
         $feature_title = get_field('feature_title');
         $feature_subtitle = get_field('feature_subtitle');
         $download = get_field('download');
@@ -29,15 +28,14 @@ get_header(); ?>
         ?>
         <section>
 
-				
-
 					<!-- start of section 1 -->
 					<section class="section-one gallery-container">
 
-							<!-- test gallery -->
+							<!-- homepage hero loop -->
 							<div class="picone"></div>
 						  <div class="pictwo"></div>
 						  <div class="picthree"></div>
+							<!-- will need to add more photos here once carousel loop finalized-->
 
 
 
@@ -54,7 +52,7 @@ get_header(); ?>
 
 						<div class="s1content">
 							<div class="homepage-subtitle">
-								Morbi tempus nunc ultrices augue ultricies tempus. A toolkit for individuals, organizations and communities.
+								<?php the_field('feature_subtitle') ?>
 
 
 								<div class="tooltip">
@@ -82,7 +80,7 @@ get_header(); ?>
 							</a>
 						</div>
 
-						<div id="asl-video">
+						<div id="asl-video"> <!-- this is phase two -->
 							<p class="video-button click">
 								<a href="" class="" target="_blank">
 									ASL Video
@@ -129,7 +127,7 @@ get_header(); ?>
 					<!-- end of section 2 -->
 
 					<!-- start of section 3 -->
-					<section class="section-three gradient">
+					<section class="section-three">
 						<div class="highlight-text-overlay mobile-tablet-only">
 							<h3><span class="highlight highlight-wrapping highlight-teal">We all have a role to</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-teal">play in resisting</span></h3>
@@ -177,7 +175,7 @@ get_header(); ?>
 					<!-- end of section 4 -->
 
 					<!-- start of section 5 -->
-					<section class="section-five gradient">
+					<section class="section-five">
 						<div class="highlight-text-overlay mobile-tablet-only">
 							<h3><span class="highlight highlight-wrapping highlight-red">This <a href="" class="underline-teal-large">Toolkit</a> is part of</span></h3>
 							<h3><span class="highlight highlight-wrapping highlight-red">The Leadership</span></h3>

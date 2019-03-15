@@ -10,13 +10,13 @@
 
 /* Site Wide Styles ======================*/
 @font-face {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-light-webfont.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-light-webfont.woff);
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   src: url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-extrabold-webfont.woff2), url(http://localhost:8888/toolkit/wp-content/themes/generatepress_child/fonts/gilroy-extrabold-webfont.woff);
   font-weight: 700;
 }
@@ -249,19 +249,7 @@ h3.highlight {
 /*----- Mobile Front Page Styles -----*/
 /*------------------------------------*/
 .section-one {
-  /*overlay grey gradient on bottom homepage image
-  background: -moz-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 28, 39, 0)), color-stop(59%, rgba(9, 28, 39, 0)), color-stop(100%, rgba(9, 28, 39, 0.65))), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
-  background: -webkit-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
-  background: -o-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
-  background: -ms-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
-  background: linear-gradient(top to bottom, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.2) 59%, rgba(9, 28, 39, 0.58) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/police-crime-tape.jpg') no-repeat;
-  background-position: center center; /* this is different for desktop*/
-  /*background-size: 1100px;
-  background-repeat: no-repeat;*/
-
   height: 700px;
-
   display: grid;
   align-items: end;
 }
@@ -286,14 +274,18 @@ h3.highlight {
   background: linear-gradient(149.33deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.65) 100%), linear-gradient(38.4deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.6) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/megaphone-silhouette-against-a-pink-and-blue-sky_t20_W71RB1-RE.jpg') no-repeat;
   background-position: center center;
   background-size:cover;
+  /* Need to add prefixes for gradients here */
+  */
 }
 .pictwo {
   background: linear-gradient(149.33deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.65) 100%), linear-gradient(38.4deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.6) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/image2.jpg') repeat;
   background-position: center center;
+  /* Need to add prefixes for gradients here */
 }
 .picthree {
   background: linear-gradient(149.33deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.65) 100%), linear-gradient(38.4deg, rgba(9,28,39,0) 0%, rgba(9,28,39,0.6) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/image3.jpg') repeat;
   background-position: center center;
+  /* Need to add prefixes for gradients here */
 }
 
 /*KEYFRAME ANIMATIONS */
@@ -387,7 +379,7 @@ h3.highlight {
       justify-content: center;
       padding-bottom: 20px;
     }
-    /* styling for asl video button*/
+    /* styling for asl video button this is phase two*/
     #asl-video {
       display: none;
     }
@@ -448,17 +440,17 @@ h3.highlight {
 /* Section 2 and 4 on homepage */
 .section-two, .section-four {
   display: grid;
-  grid-template-columns: 100%; /* this is different for desktop*/
-  padding: 40px 5% 60px 5%; /* this is different for desktop*/
+  grid-template-columns: 100%;
+  padding: 40px 5% 60px 5%;
 }
     .s2img1 {
       width:100%;
     }
     .s2content {
       display: grid;
-      grid-template-columns: 1fr; /* this is different for desktop*/
-      grid-template-rows: auto auto auto; /* this is different for desktop*/
-      padding: 0 0 0 0; /* this is different for desktop*/
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      padding: 0 0 0 0;
     }
       .s2item2 {
         padding: 30px 0 0 0;
@@ -491,9 +483,9 @@ h3.highlight {
 }
   .s4content {
     display: grid;
-    grid-template-columns: 1fr; /* this is different for desktop*/
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    padding: 60px 0 50px 0; /*different for desktop*/
+    padding: 60px 0 50px 0;
   }
     .s4img1 {
       width: 100%;
@@ -501,7 +493,7 @@ h3.highlight {
     .s4item2 {
       color: #FFFFFF;
       font-family: 'Gilroy', sans-serif;
-      font-size: 24px; /*different for desktop*/
+      font-size: 24px;
       font-weight: 800;
       line-height: 1.22;
     }
@@ -534,27 +526,27 @@ h3.highlight {
   background: -ms-linear-gradient(top, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.65) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/100-000-march-at-the-minnesota-state-capitol-on-january-21-2017-some-marched-against-trump-some-for_t20_6wPO6N-RE.jpg') no-repeat;
   background: linear-gradient(top to bottom, rgba(9, 28, 39, 0.65) 0%, rgba(9, 28, 39, 0.1) 59%, rgba(9, 28, 39, 0.58) 100%), url('http://localhost:8888/toolkit/wp-content/uploads/2019/03/100-000-march-at-the-minnesota-state-capitol-on-january-21-2017-some-marched-against-trump-some-for_t20_6wPO6N-RE.jpg') no-repeat;
   background-size: cover;
-  height:660px; /* this is different for desktop*/
+  height:660px;
 }
   .section-three, .section-five {
-    background-position: center top; /* this is different for desktop*/
+    background-position: center top;
     background-size: auto;
     background-repeat: no-repeat;
   }
     .highlight-text-overlay {
       position: relative;
-      top: -20px; /* this is different for desktop*/
+      top: -20px;
     }
 
     .section-five h3 span {
       color: #FFFFFF;
-      font-size: 30px; /* this is different for desktop*/
+      font-size: 30px;
       font-weight: 800;
       line-height: 1.6;
     }
     .section-five h3 {
-      margin: 0 0 0 0; /* this is different for desktop*/
-      line-height: 1.7; /* this is different for desktop*/
+      margin: 0 0 0 0;
+      line-height: 1.7;
     }
 
     .section-five-content {
@@ -567,7 +559,7 @@ h3.highlight {
         font-size: 20px;
         font-family: 'Gilroy', sans-serif;
         font-weight: 800;
-        line-height: 1.35; /* different on desktop*/
+        line-height: 1.35;
       }
       .s5item1 a {
         color: #FFFFFF;
@@ -1229,7 +1221,7 @@ h3 /* section 3 text over image*/ {
 
 
 /* --------------------------------------- */
-/* ----------- Footer Styles ------------- */
+/* ------- Tablet Footer Styles ---------- */
 /* --------------------------------------- */
 #footer {
   padding: 45px 100px 45px 100px;
@@ -1326,9 +1318,9 @@ div.bullet-point img {
   justify-self: center;
 }
 
-/* --------------------------------- */
-/* ---- TOC Single Styles  --------- */
-/* --------------------------------- */
+/* ---------------------------------------- */
+/* ---- Tablet TOC Single Styles  --------- */
+/* ---------------------------------------- */
 /* -- includes topics, opps, tools - */
 
 /* -- section one of tertiary page - */
@@ -1367,31 +1359,13 @@ div.bullet-point img {
 
 }
 /*------------------------------------*/
-/*-------- Desktop Styles ----------*/
+/*-------- Desktop Styles ------------*/
 /*------------------------------------*/
 @media screen and (min-width: 940px) {
-/*OLD styles here!*/
-            /* Nav bar styling*/
-            #menu-main-navigation .menu-item {
-              /*max-width: 150px;*/
-            }
-            .main-navigation .main-nav ul li a {
-              font-size: 16px;
-              line-height: 24px;
-              text-align: center;
-              text-transform: uppercase;
-            }
-            .inside-header {
-              padding: 40px 40px 0px 40px;
-            }
 
-    /*------------------------------------*/
-    /*-------- New Desktop Styles --------*/
-    /*------------------------------------*/
-
-    /*------------------------------------*/
-    /*------- Site Header Styles ---------*/
-    /*------------------------------------*/
+/*------------------------------------*/
+/*------- Site Header Styles ---------*/
+/*------------------------------------*/
     .site-header {
       background-color: transparent;
       position: absolute;
@@ -1431,7 +1405,7 @@ div.bullet-point img {
     }
 
 /*------------------------------------*/
-/*------- Typography Styles ----------*/
+/*-- Desktop Typography Styles -------*/
 /*------------------------------------*/
 
     h2 /* text on section 2 of homepage: policing is civil rights issue...*/{

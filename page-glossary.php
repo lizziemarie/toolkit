@@ -20,7 +20,7 @@ get_header(); ?>
 						<h3><span class="highlight highlight-wrapping highlight-red"><?php the_title(); ?></span></h3>
 					</div>
 
-          <div class="grid content-container content-grid-2">
+          <div class="">
             <div class="glossary-page-content">
               <?php the_content(); ?>
             </div>
